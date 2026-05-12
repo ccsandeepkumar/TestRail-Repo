@@ -1,36 +1,24 @@
 {
   "schema_version": "testrail_context.v1",
-
   "default_shard_size": 25,
-
   "pagination_limit": 250,
-
   "retry_limit": 2,
-
   "hash_algorithm": "sha256",
-
   "process_unchanged_cases": false,
-
   "enable_hash_diff": true,
-
   "required_fields": [
     "case_id",
     "title",
     "steps_original",
     "expected_results_original"
   ],
-
   "paths": {
-
     "normalized_output_path":
       "processed/normalized/",
-
     "delta_shards_path":
       "processed/delta_shards/",
-
     "manifest_path":
       "manifests/",
-
     "logs_path":
       "logs/"
   }
