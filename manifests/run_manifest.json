@@ -1,14 +1,3 @@
 {
-  "run_id": "",
-  "run_name": "",
-  "status": "initialized",
-  "total_cases_fetched": 0,
-  "new_cases": 0,
-  "changed_cases": 0,
-  "unchanged_cases": 0,
-  "delta_cases": 0,
-  "total_shards": 0,
-  "failed_shards": [],
-  "started_at": "",
-  "completed_at": ""
+  "status": "initialized"
 }
