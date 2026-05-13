@@ -2,6 +2,6 @@
   "schema_version": "testrail_context.v1",
   "default_shard_size": 25,
   "pagination_limit": 250,
-  "retry_limit": 2,
+  "retry_limit": 3,
   "hash_algorithm": "sha256"
 }
