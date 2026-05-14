@@ -3,147 +3,44 @@
     "case_count": 5,
     "cases": [
         {
-            "schema_version": "testrail_context.v1",
             "case_id": "C626",
             "record_id": "TestRail_C626",
-            "source": "TestRail",
-            "project_id": 3,
-            "suite_id": 10,
-            "section_id": 77,
-            "title": "CSRF protection - Scenario 19",
-            "preconditions_original": "System active and user accesses Security",
-            "steps_original": [
-                "1. Trigger csrf protection",
-                "2. Monitor system behavior",
-                "3. Verify expected results"
-            ],
-            "expected_results_original": [
-                "System correctly handles csrf protection scenario"
-            ],
-            "priority": "1",
-            "type": "7",
-            "references": [],
             "content_hash": "6aecc36823ae35b3f377796f4765a091e20044469d47de2610905e2be2e93482",
             "change_status": "new",
             "kb_action": "include_in_active_kb",
-            "requires_contextualization": true,
-            "run_id": "run_20260514153646",
-            "shard_id": "delta_shard_012"
+            "requires_contextualization": true
         },
         {
-            "schema_version": "testrail_context.v1",
             "case_id": "C627",
             "record_id": "TestRail_C627",
-            "source": "TestRail",
-            "project_id": 3,
-            "suite_id": 10,
-            "section_id": 77,
-            "title": "Prevent SQL injection - Scenario 20",
-            "preconditions_original": "User is logged in and on Security module",
-            "steps_original": [
-                "1. Execute prevent sql injection",
-                "2. Capture response",
-                "3. Validate outcome"
-            ],
-            "expected_results_original": [
-                "System correctly handles prevent sql injection scenario"
-            ],
-            "priority": "2",
-            "type": "7",
-            "references": [],
             "content_hash": "186d9adec44cb7682bad639952ecffced1ec8f08d4584a2b6c4e4107f88767f8",
             "change_status": "new",
             "kb_action": "include_in_active_kb",
-            "requires_contextualization": true,
-            "run_id": "run_20260514153646",
-            "shard_id": "delta_shard_012"
+            "requires_contextualization": true
         },
         {
-            "schema_version": "testrail_context.v1",
             "case_id": "C511",
             "record_id": "TestRail_C511",
-            "source": "TestRail",
-            "project_id": 3,
-            "suite_id": 10,
-            "section_id": 77,
-            "title": "Change password - Scenario 4",
-            "preconditions_original": "User is logged in and on Auth module",
-            "steps_original": [
-                "1. Perform change password",
-                "2. Observe logs/output",
-                "3. Confirm correctness"
-            ],
-            "expected_results_original": [
-                "System correctly handles change password scenario"
-            ],
-            "priority": "4",
-            "type": "7",
-            "references": [],
             "content_hash": "4619f121efbb3abbbad67252a6937ee49b3a9544a5a19b7e08ccb6c27d58c3d7",
             "change_status": "changed",
             "kb_action": "include_in_active_kb",
-            "requires_contextualization": true,
-            "previous_content_hash": "OLD_CHANGED_HASH_511",
-            "run_id": "run_20260514153646",
-            "shard_id": "delta_shard_012"
+            "requires_contextualization": true
         },
         {
-            "schema_version": "testrail_context.v1",
             "case_id": "C599",
             "record_id": "TestRail_C599",
-            "source": "TestRail",
-            "project_id": 3,
-            "suite_id": 10,
-            "section_id": 77,
-            "title": "Apply coupon - Scenario 42",
-            "preconditions_original": "User is logged in and on Promo module",
-            "steps_original": [
-                "1. Trigger apply coupon",
-                "2. Monitor system behavior",
-                "3. Verify expected results"
-            ],
-            "expected_results_original": [
-                "System correctly handles apply coupon scenario"
-            ],
-            "priority": "3",
-            "type": "7",
-            "references": [],
             "content_hash": "bbf6120e86622371dc787c1d3db13f04a99f437d9560cdbfba1c79d9e6406df6",
             "change_status": "changed",
             "kb_action": "include_in_active_kb",
-            "requires_contextualization": true,
-            "previous_content_hash": "deleted_case_hash_599",
-            "run_id": "run_20260514153646",
-            "shard_id": "delta_shard_012"
+            "requires_contextualization": true
         },
         {
-            "schema_version": "testrail_context.v1",
             "case_id": "C600",
             "record_id": "TestRail_C600",
-            "source": "TestRail",
-            "project_id": 3,
-            "suite_id": 10,
-            "section_id": 77,
-            "title": "Admin add product - Scenario 43",
-            "preconditions_original": "System active and user accesses Admin",
-            "steps_original": [
-                "1. Initiate admin add product",
-                "2. Check output",
-                "3. Validate business rules"
-            ],
-            "expected_results_original": [
-                "System correctly handles admin add product scenario"
-            ],
-            "priority": "3",
-            "type": "7",
-            "references": [],
             "content_hash": "365e8087517091742f9143828d2ba22da7e33598daf7bc190f538ad17fdfeee0",
             "change_status": "changed",
             "kb_action": "include_in_active_kb",
-            "requires_contextualization": true,
-            "previous_content_hash": "deleted_case_hash_600",
-            "run_id": "run_20260514153646",
-            "shard_id": "delta_shard_012"
+            "requires_contextualization": true
         }
     ]
 }
