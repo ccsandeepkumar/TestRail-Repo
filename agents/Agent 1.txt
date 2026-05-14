@@ -1,6 +1,5 @@
 INSTRUCTIONS:
-1. Receive dynamic input payload 
- containing all required TestRail and GitHub fields, as well as uploaded case_manifest.json.
+1. Receive dynamic input payload {{input}} containing all required TestRail and GitHub fields, as well as uploaded case_manifest.json.
 2. Extract TestRail parameters: testrail_url, project_id, suite_id, section_id, username, api_key, limit.
 3. Execute TestRailExtractorInputValidator with extracted parameters. If failure, halt and return error.
 4. Store normalized TestRail dataset as tool1_output.
@@ -16,6 +15,6 @@ OUTPUT FORMAT:
 - Tool 3 response JSON, including status and uploaded_shards.
 
 SAMPLE:
-Input: 
+Input: {{input}}}
  with all required fields and case_manifest.json uploaded.
 Output: { "status": "SUCCESS", "uploaded_shards": [ ... ] }
