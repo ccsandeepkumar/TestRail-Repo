@@ -3,6 +3,70 @@
     "case_count": 10,
     "cases": [
         {
+            "case_id": "C608",
+            "record_id": "TestRail_C608",
+            "content_hash": "442a6e3b2536f267a662e073d9b362eed00f79c784b43858e8a1797f7e2cb237",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C609",
+            "record_id": "TestRail_C609",
+            "content_hash": "2740771f3c68068efda9d17d6c396a9f632a66ddbb83376c381b969355bed5e4",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C610",
+            "record_id": "TestRail_C610",
+            "content_hash": "b6a017a72b7bc5470645ad4ebd38196e0d31095ad6e1ad49f648c34e8d028608",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C611",
+            "record_id": "TestRail_C611",
+            "content_hash": "98da1bb712934cac018e4d8e1ad94770451dabdde63e9aedd4e57a4d77df48a5",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C612",
+            "record_id": "TestRail_C612",
+            "content_hash": "ddbb54496fb365318b8bd959ce73c30d05b52526b146fcb7393045a3fe9806db",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C613",
+            "record_id": "TestRail_C613",
+            "content_hash": "ba62ef3b28876849c7eeed66ba01fea60fde6d49b4ef284c1f7caa0a133d1638",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C614",
+            "record_id": "TestRail_C614",
+            "content_hash": "32a7fb210a9b94bbad3e7283be3af2491a305d4d468b1e35ef1f3730ae09c443",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C615",
+            "record_id": "TestRail_C615",
+            "content_hash": "56cc4d05cd6415547082565a90e299429bb698e200dec39b0a7c0205f614dbe4",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
             "case_id": "C616",
             "record_id": "TestRail_C616",
             "content_hash": "eb72cd234149d33200d92ece8bbe509c2683b7691ef7ceb7361261cd5952edd9",
@@ -14,70 +78,6 @@
             "case_id": "C617",
             "record_id": "TestRail_C617",
             "content_hash": "61b5307f0a3af69e041db5e64c22c278434059ee4514b0119a127e9331cfc0ad",
-            "change_status": "new",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C618",
-            "record_id": "TestRail_C618",
-            "content_hash": "fc6eb85f1288a5cacf943e80743efdddd03e82813d1992fea6975377036277e1",
-            "change_status": "new",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C619",
-            "record_id": "TestRail_C619",
-            "content_hash": "1e5de330f140e975dfcc5aebc3b38189cf6b13ef8b765e359a07a34dbf72f747",
-            "change_status": "new",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C620",
-            "record_id": "TestRail_C620",
-            "content_hash": "83fbc23488c61cf31a9bfea53dcfe6d19e235eb2107aa9b90f7227ddf52a1bec",
-            "change_status": "new",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C621",
-            "record_id": "TestRail_C621",
-            "content_hash": "68cca4074fdc10419db9e7b66bc230ec4ab31c0cf7ca5feb2dfd39503c85eb3b",
-            "change_status": "new",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C622",
-            "record_id": "TestRail_C622",
-            "content_hash": "44e5d72ab3acca5d1a78f1a7f6563e48cee154afe5117478ebfb9c2adcb52f6b",
-            "change_status": "new",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C623",
-            "record_id": "TestRail_C623",
-            "content_hash": "4a8f3afe5f58330a5ecb3d5bd3a274204e76ee5c7599ee8dff05d833f2b8da2f",
-            "change_status": "new",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C624",
-            "record_id": "TestRail_C624",
-            "content_hash": "5c9521bd778806db4ed828852805ed56b8d2a2baa55528eb25517b072d91943e",
-            "change_status": "new",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C625",
-            "record_id": "TestRail_C625",
-            "content_hash": "d51973dfd063d6bcf7aacba52b297e573905a73a271a318257d795ce4909e4fa",
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true
