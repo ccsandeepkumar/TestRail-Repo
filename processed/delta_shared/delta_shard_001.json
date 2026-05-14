@@ -1,0 +1,62 @@
+{
+    "shard_id": "delta_shard_001",
+    "case_count": 2,
+    "cases": [
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C628",
+            "record_id": "TestRail_C628",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 78,
+            "title": "Push notifications - Scenario 21",
+            "preconditions_original": "Notifications service available and ready for operations",
+            "steps_original": [
+                "1. Trigger push notifications",
+                "2. Monitor system behavior",
+                "3. Verify expected results"
+            ],
+            "expected_results_original": [
+                "System correctly handles push notifications scenario"
+            ],
+            "priority": "3",
+            "type": "7",
+            "references": [],
+            "content_hash": "4fbdd0620c0921f757d1f675de7a7903719ef602dc2e4b3dcca515589e1903bf",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260514063041",
+            "shard_id": "delta_shard_001"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C629",
+            "record_id": "TestRail_C629",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 78,
+            "title": "Email notifications - Scenario 22",
+            "preconditions_original": "Valid session and user is on Notifications page",
+            "steps_original": [
+                "1. Perform email notifications",
+                "2. Observe logs/output",
+                "3. Confirm correctness"
+            ],
+            "expected_results_original": [
+                "System correctly handles email notifications scenario"
+            ],
+            "priority": "1",
+            "type": "7",
+            "references": [],
+            "content_hash": "b1f23c95b5a8a2651330f558f040309e96b7f8661b9bbb0b7fc08f89c12245b2",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260514063041",
+            "shard_id": "delta_shard_001"
+        }
+    ]
+}
