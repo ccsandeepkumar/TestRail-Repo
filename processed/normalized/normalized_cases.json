@@ -1,0 +1,2768 @@
+{
+  "status": "completed",
+  "total_valid_cases": 120,
+  "total_invalid_cases": 0,
+  "invalid_cases": [],
+  "cases": [
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C508",
+      "record_id": "TestRail_C508",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Login with Google - Scenario 1",
+      "preconditions_original": "Valid session and user is on Auth page",
+      "steps_original": [
+        "1. Initiate login with google",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles login with google scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "0bc6e611760f9cab3e4c90af3241e4a53d602ea079d4a7e1435e650bf68e3660"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C509",
+      "record_id": "TestRail_C509",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Password reset - Scenario 2",
+      "preconditions_original": "User is logged in and on Auth module",
+      "steps_original": [
+        "1. Execute password reset",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles password reset scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "7f65c1b1cafb6815ccbc9f1249632e4f9d4ba4771673ceb6f3ced52c78cc8ca2"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C510",
+      "record_id": "TestRail_C510",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "User registration - Scenario 3",
+      "preconditions_original": "User is logged in and on Auth module",
+      "steps_original": [
+        "1. Initiate user registration",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles user registration scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "a949decea1981c8bc41c855d7aab4ea485d319410f05e5006d6464a064592133"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C511",
+      "record_id": "TestRail_C511",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Change password - Scenario 4",
+      "preconditions_original": "User is logged in and on Auth module",
+      "steps_original": [
+        "1. Perform change password",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles change password scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "4619f121efbb3abbbad67252a6937ee49b3a9544a5a19b7e08ccb6c27d58c3d7"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C512",
+      "record_id": "TestRail_C512",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Login with email - Scenario 5",
+      "preconditions_original": "System active and user accesses Auth",
+      "steps_original": [
+        "1. Initiate login with email",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles login with email scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "db4ccccba4769da7cabb70d6527a4675905c0d840970e7935a6fa01a4b50acab"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C513",
+      "record_id": "TestRail_C513",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "View product details - Scenario 6",
+      "preconditions_original": "User is logged in and on Catalog module",
+      "steps_original": [
+        "1. Execute view product details",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles view product details scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "208662da5410fe58d0b420778847dd9637151326bdd35791afcf3d82b34fadae"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C514",
+      "record_id": "TestRail_C514",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Search product - Scenario 7",
+      "preconditions_original": "Catalog service available and ready for operations",
+      "steps_original": [
+        "1. Perform search product",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles search product scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "0d5085f47f606fb3756f5ade57f609f42b4bd8b0be676d9b144904a584c16f6e"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C515",
+      "record_id": "TestRail_C515",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Product reviews - Scenario 8",
+      "preconditions_original": "Catalog service available and ready for operations",
+      "steps_original": [
+        "1. Perform product reviews",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles product reviews scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "6965e1d6cb6918c5b88bb6c1a4b400d6930603f5d6e98e9cfaa7725a0e36cb92"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C516",
+      "record_id": "TestRail_C516",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Browse product list - Scenario 9",
+      "preconditions_original": "User is logged in and on Catalog module",
+      "steps_original": [
+        "1. Perform browse product list",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles browse product list scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "338fe2025cbbf9cc91e26cf56c371f3709efdc6d92db562c02d40b52859c9795"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C517",
+      "record_id": "TestRail_C517",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Add to cart - Scenario 10",
+      "preconditions_original": "Valid session and user is on Cart page",
+      "steps_original": [
+        "1. Perform add to cart",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles add to cart scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "baf95eabcaa5becef4a18611e70cca8c9b7829f5d8d93f76144c780fe5f00acb"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C518",
+      "record_id": "TestRail_C518",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Remove from cart - Scenario 11",
+      "preconditions_original": "Valid session and user is on Cart page",
+      "steps_original": [
+        "1. Perform remove from cart",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles remove from cart scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "88c87e1e8793ee7a6410ea1e6648f80bd0160a8e2a8e8206d1fd5c683f6184be"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C519",
+      "record_id": "TestRail_C519",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Update cart quantity - Scenario 12",
+      "preconditions_original": "Valid session and user is on Cart page",
+      "steps_original": [
+        "1. Initiate update cart quantity",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles update cart quantity scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "308740f0a90057ff5a828a94d17822ba80542c065bed76fbfdb8b77ccd3737f2"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C520",
+      "record_id": "TestRail_C520",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Pay using UPI - Scenario 13",
+      "preconditions_original": "Payment service available and ready for operations",
+      "steps_original": [
+        "1. Initiate pay using upi",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles pay using upi scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "f60e93c8c3e73f4fbf3df0301eb904586d2edbd2499cb7d9ea04e73225ce6231"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C521",
+      "record_id": "TestRail_C521",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Pay using card - Scenario 14",
+      "preconditions_original": "System active and user accesses Payment",
+      "steps_original": [
+        "1. Execute pay using card",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles pay using card scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "318d988c6bcd27f8a2e640a410233d5875d5d41173e94116230899eb6aaa1157"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C522",
+      "record_id": "TestRail_C522",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Handle payment failure - Scenario 15",
+      "preconditions_original": "Payment service available and ready for operations",
+      "steps_original": [
+        "1. Initiate handle payment failure",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles handle payment failure scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "de49f9382f2834e94d38fa4bc4293ba5f811f43e7238f4876561afbb4548735c"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C523",
+      "record_id": "TestRail_C523",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Create order - Scenario 16",
+      "preconditions_original": "User is logged in and on Order module",
+      "steps_original": [
+        "1. Perform create order",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles create order scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "6ea1fe0b40e6027a6385ac8eb7dbb8a85a1a42a722066b33ac05e8f7b4559857"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C524",
+      "record_id": "TestRail_C524",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Cancel order - Scenario 17",
+      "preconditions_original": "Valid session and user is on Order page",
+      "steps_original": [
+        "1. Initiate cancel order",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles cancel order scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "e7486dc18b37d13f9e30e5367d48b597fa6e984ee9e5f79013d863b723842585"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C525",
+      "record_id": "TestRail_C525",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Return order - Scenario 18",
+      "preconditions_original": "User is logged in and on Order module",
+      "steps_original": [
+        "1. Execute return order",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles return order scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "04801f6c6b642f8ac5593e4341c15c7e0352399ea03dc6f4c02d337d8bad222a"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C526",
+      "record_id": "TestRail_C526",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Logged-in checkout - Scenario 19",
+      "preconditions_original": "User is logged in and on Checkout module",
+      "steps_original": [
+        "1. Execute logged-in checkout",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles logged-in checkout scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "c24fbc7b0b113b56ffca5d10c46c8cdf87be6ed84cc9c24c552c2bc19932d7e5"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C527",
+      "record_id": "TestRail_C527",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Guest checkout - Scenario 20",
+      "preconditions_original": "Checkout service available and ready for operations",
+      "steps_original": [
+        "1. Execute guest checkout",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles guest checkout scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "acb9edc7a79e33b62ba72c59119eff76df254bdcdecb7626c909517923f41a54"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C528",
+      "record_id": "TestRail_C528",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Refund to source - Scenario 21",
+      "preconditions_original": "Valid session and user is on Refund page",
+      "steps_original": [
+        "1. Trigger refund to source",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles refund to source scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "63baaf5ed83934ee775f706f0f31debd7714ed4aae18ab855530f7fb3edc5fae"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C529",
+      "record_id": "TestRail_C529",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Partial refund - Scenario 22",
+      "preconditions_original": "User is logged in and on Refund module",
+      "steps_original": [
+        "1. Initiate partial refund",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles partial refund scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "eb2cd52f060e62006a4167715fd7beb77711a633429cb084563a95ffdac6cd19"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C530",
+      "record_id": "TestRail_C530",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "CSRF protection - Scenario 23",
+      "preconditions_original": "Valid session and user is on Security page",
+      "steps_original": [
+        "1. Perform csrf protection",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles csrf protection scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "4e17d714d96243084af96cc4ca0d796841f23f7c93ad008b574843e6045987a5"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C531",
+      "record_id": "TestRail_C531",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Prevent SQL injection - Scenario 24",
+      "preconditions_original": "System active and user accesses Security",
+      "steps_original": [
+        "1. Initiate prevent sql injection",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles prevent sql injection scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "50f13db90dda6d126cbbbc0ec3a3be14dfe7f9766e9bd76d25082441fecd12b2"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C532",
+      "record_id": "TestRail_C532",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Push notifications - Scenario 25",
+      "preconditions_original": "User is logged in and on Notifications module",
+      "steps_original": [
+        "1. Execute push notifications",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles push notifications scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "6b5012fd971b3f0369136fba7022ebdda49dc4a7823fa63ad2cf985c58e13199"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C533",
+      "record_id": "TestRail_C533",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Email notifications - Scenario 26",
+      "preconditions_original": "Notifications service available and ready for operations",
+      "steps_original": [
+        "1. Trigger email notifications",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles email notifications scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "aa69a27102a777450d188a3fdb510622412444cabd2aa925a016d0f1fc07d3c6"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C534",
+      "record_id": "TestRail_C534",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Price calculation - Scenario 27",
+      "preconditions_original": "Valid session and user is on Pricing page",
+      "steps_original": [
+        "1. Perform price calculation",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles price calculation scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "21b269e30d074271d91e652173ef4e94a838053163139c36af792a2665e0eb65"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C535",
+      "record_id": "TestRail_C535",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Apply coupon - Scenario 28",
+      "preconditions_original": "System active and user accesses Promo",
+      "steps_original": [
+        "1. Initiate apply coupon",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles apply coupon scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "0e6f9709ca861dfece6ff833775a67d8f5e84fed44bb0dff78715d1941b6a9ad"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C536",
+      "record_id": "TestRail_C536",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Admin add product - Scenario 29",
+      "preconditions_original": "System active and user accesses Admin",
+      "steps_original": [
+        "1. Initiate admin add product",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles admin add product scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "9273635bc2ce3abe45ad6a23c6037d50d677bee829a732184acd87d34272883b"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C537",
+      "record_id": "TestRail_C537",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Inventory update - Scenario 30",
+      "preconditions_original": "User is logged in and on Inventory module",
+      "steps_original": [
+        "1. Perform inventory update",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles inventory update scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "5193306d600d4aea3b6da1308948d3d1de2a8371d43d81f4ece2cd85007d3f2e"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C538",
+      "record_id": "TestRail_C538",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Support 10k users - Scenario 31",
+      "preconditions_original": "Valid session and user is on Performance page",
+      "steps_original": [
+        "1. Trigger support 10k users",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles support 10k users scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "68eaaef20cca580ebf4f1a57ec403702c9b154132ed2d2d6e6f58f861fbacaa2"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C539",
+      "record_id": "TestRail_C539",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Database failover - Scenario 32",
+      "preconditions_original": "Valid session and user is on Resilience page",
+      "steps_original": [
+        "1. Initiate database failover",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles database failover scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "5bdd6cb87841250d885287e8318fd6a1aba44f9624f60686c008186529c7a269"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C540",
+      "record_id": "TestRail_C540",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Login with Google - Scenario 33",
+      "preconditions_original": "System active and user accesses Auth",
+      "steps_original": [
+        "1. Execute login with google",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles login with google scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "5700a4eae378c3593696adae668c5cf56548f7846a3d5867243c7603e90d62d0"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C541",
+      "record_id": "TestRail_C541",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Password reset - Scenario 34",
+      "preconditions_original": "Valid session and user is on Auth page",
+      "steps_original": [
+        "1. Execute password reset",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles password reset scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "e729d254ced4ba88b594cbb822cb23d3d68336812d73a16af529bd8b34a6e4e3"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C542",
+      "record_id": "TestRail_C542",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "User registration - Scenario 35",
+      "preconditions_original": "System active and user accesses Auth",
+      "steps_original": [
+        "1. Perform user registration",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles user registration scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "b7b400d3cdae76157e35d251829402f7e9f16f726adf5a4b7d27ef774b66c258"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C543",
+      "record_id": "TestRail_C543",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Change password - Scenario 36",
+      "preconditions_original": "User is logged in and on Auth module",
+      "steps_original": [
+        "1. Execute change password",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles change password scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "bbaae9021bf994d14acf34623dd191a97a97f7d1099c6b23f211399c637099dd"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C544",
+      "record_id": "TestRail_C544",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Login with email - Scenario 37",
+      "preconditions_original": "User is logged in and on Auth module",
+      "steps_original": [
+        "1. Perform login with email",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles login with email scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "cea38fbecc4fb5d0793e0f391c8d4f165d7ee4e534fa88b34a9edd963fcbf371"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C545",
+      "record_id": "TestRail_C545",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "View product details - Scenario 38",
+      "preconditions_original": "Valid session and user is on Catalog page",
+      "steps_original": [
+        "1. Execute view product details",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles view product details scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "c0dd379e3a596d6612b17f015a6cc90657c33cac088123513602797823d036d0"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C546",
+      "record_id": "TestRail_C546",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Search product - Scenario 39",
+      "preconditions_original": "Valid session and user is on Catalog page",
+      "steps_original": [
+        "1. Trigger search product",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles search product scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "2afee874829142d2837bf5d2b9b3f709532383b733132c63af48ae9aa4f65657"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C547",
+      "record_id": "TestRail_C547",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Product reviews - Scenario 40",
+      "preconditions_original": "Valid session and user is on Catalog page",
+      "steps_original": [
+        "1. Perform product reviews",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles product reviews scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "a6c3f3a486db1153c9da3cf5aa14c62b2d350c9025380d6240a33fb4cb708e46"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C548",
+      "record_id": "TestRail_C548",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Browse product list - Scenario 41",
+      "preconditions_original": "Catalog service available and ready for operations",
+      "steps_original": [
+        "1. Trigger browse product list",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles browse product list scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "bc958928ff5b236a80b0f494f97e212b0808c1d39de4c4c527885a068560fab6"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C549",
+      "record_id": "TestRail_C549",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Add to cart - Scenario 42",
+      "preconditions_original": "User is logged in and on Cart module",
+      "steps_original": [
+        "1. Execute add to cart",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles add to cart scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "40c3110492b496355f534dc548c46738b73cbc26c9a1ea052bb0fecdb1cd9f74"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C550",
+      "record_id": "TestRail_C550",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Remove from cart - Scenario 43",
+      "preconditions_original": "User is logged in and on Cart module",
+      "steps_original": [
+        "1. Perform remove from cart",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles remove from cart scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "337921d534ce945c0a9f45c216434617e877b041ef0c16ea349f65eab87981d0"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C551",
+      "record_id": "TestRail_C551",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Update cart quantity - Scenario 44",
+      "preconditions_original": "User is logged in and on Cart module",
+      "steps_original": [
+        "1. Trigger update cart quantity",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles update cart quantity scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "7d713f32c502b11f06225a1a8b13fa24fb962b7c2fab1e4fb5e99e83cce55411"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C552",
+      "record_id": "TestRail_C552",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Pay using UPI - Scenario 45",
+      "preconditions_original": "Valid session and user is on Payment page",
+      "steps_original": [
+        "1. Execute pay using upi",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles pay using upi scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "b3dd49d5c208a6dc3c90ae336d4e8f6109e9892c5bc238c328e490e9266abd2c"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C553",
+      "record_id": "TestRail_C553",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Pay using card - Scenario 46",
+      "preconditions_original": "Valid session and user is on Payment page",
+      "steps_original": [
+        "1. Execute pay using card",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles pay using card scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "483e3baa336202d081c5ae8fc33185ab3b974dd1f5469b78e236122a5f19730c"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C554",
+      "record_id": "TestRail_C554",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Handle payment failure - Scenario 47",
+      "preconditions_original": "System active and user accesses Payment",
+      "steps_original": [
+        "1. Execute handle payment failure",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles handle payment failure scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "693f20d243236d03a8de1bd8b909cb3244beb41774a19e3a1c36b8da9eab841e"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C555",
+      "record_id": "TestRail_C555",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Create order - Scenario 48",
+      "preconditions_original": "System active and user accesses Order",
+      "steps_original": [
+        "1. Perform create order",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles create order scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "607724e82fd9abbb5fad8e2ca260c7888ed0f8794b59981c51975c3ee572d989"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C556",
+      "record_id": "TestRail_C556",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Cancel order - Scenario 49",
+      "preconditions_original": "System active and user accesses Order",
+      "steps_original": [
+        "1. Execute cancel order",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles cancel order scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "6a774171d7152862a8ec35b4c651c323efd610e247144f3cb3de650b33fec5a1"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C557",
+      "record_id": "TestRail_C557",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Return order - Scenario 50",
+      "preconditions_original": "Valid session and user is on Order page",
+      "steps_original": [
+        "1. Execute return order",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles return order scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "52a3c1a516d7f32f09138776cb9aa62679493b445c7915fd1fca9a88b2087dec"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C558",
+      "record_id": "TestRail_C558",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Logged-in checkout - Scenario 1",
+      "preconditions_original": "Checkout service available and ready for operations",
+      "steps_original": [
+        "1. Initiate logged-in checkout",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles logged-in checkout scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "d6ad94bbfe988d568b506ab6e652d07cb874fe9978d52c221706cc55efac6b1b"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C559",
+      "record_id": "TestRail_C559",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Guest checkout - Scenario 2",
+      "preconditions_original": "System active and user accesses Checkout",
+      "steps_original": [
+        "1. Initiate guest checkout",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles guest checkout scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "3588349a90ea716ab2ec07bab3a61063ea1939dcbbc1133db13efbd9aa4f3f86"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C560",
+      "record_id": "TestRail_C560",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Refund to source - Scenario 3",
+      "preconditions_original": "Refund service available and ready for operations",
+      "steps_original": [
+        "1. Execute refund to source",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles refund to source scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "1dbcf41ec4d3cb7134deb964e515ee4801453545d4652bd32a26dc1d140e82c2"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C561",
+      "record_id": "TestRail_C561",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Partial refund - Scenario 4",
+      "preconditions_original": "System active and user accesses Refund",
+      "steps_original": [
+        "1. Trigger partial refund",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles partial refund scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "62a34e5e5510738230ca969ffc769718a0aa76c01763e07aebdb5223c01c0132"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C562",
+      "record_id": "TestRail_C562",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "CSRF protection - Scenario 5",
+      "preconditions_original": "System active and user accesses Security",
+      "steps_original": [
+        "1. Initiate csrf protection",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles csrf protection scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "1da06e0e7e5063ad90cad1c2640115fd1cd92d8bd5637dd40cdcd7648ed3915a"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C563",
+      "record_id": "TestRail_C563",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Prevent SQL injection - Scenario 6",
+      "preconditions_original": "Security service available and ready for operations",
+      "steps_original": [
+        "1. Trigger prevent sql injection",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles prevent sql injection scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "647c07d30bb75c1edc11acb08c39c4dc97a6fa0ec6b684ec204b12012fd30388"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C564",
+      "record_id": "TestRail_C564",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Push notifications - Scenario 7",
+      "preconditions_original": "System active and user accesses Notifications",
+      "steps_original": [
+        "1. Trigger push notifications",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles push notifications scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "e7a61ceda08f8c7e2f17d9e2fbbce8475d825439654d8769eb721028ce718e00"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C565",
+      "record_id": "TestRail_C565",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Email notifications - Scenario 8",
+      "preconditions_original": "System active and user accesses Notifications",
+      "steps_original": [
+        "1. Perform email notifications",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles email notifications scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "0086619441dd68ca97c8dbf55bbb4ecec329f4c2179ebad1bb74c7563e7cf01f"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C566",
+      "record_id": "TestRail_C566",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Price calculation - Scenario 9",
+      "preconditions_original": "User is logged in and on Pricing module",
+      "steps_original": [
+        "1. Trigger price calculation",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles price calculation scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "88d8b679b5f4f6257f77e8adeebc5f13009ee083919035e2b5efaf6195d59ce1"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C567",
+      "record_id": "TestRail_C567",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Apply coupon - Scenario 10",
+      "preconditions_original": "System active and user accesses Promo",
+      "steps_original": [
+        "1. Initiate apply coupon",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles apply coupon scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "8361f14c61b73275bdb35d849fb75dabe490115d0b131378ffc65a281a8167d2"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C568",
+      "record_id": "TestRail_C568",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Admin add product - Scenario 11",
+      "preconditions_original": "Valid session and user is on Admin page",
+      "steps_original": [
+        "1. Initiate admin add product",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles admin add product scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "e482cdaa74136ac57cfd367739f31154cfcbdd75e9427795de46d1abb4d64643"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C569",
+      "record_id": "TestRail_C569",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Inventory update - Scenario 12",
+      "preconditions_original": "Valid session and user is on Inventory page",
+      "steps_original": [
+        "1. Initiate inventory update",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles inventory update scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "4cb7ed422a426d9aed43795733e750c92cf4813c9529cfcb1378be108c4fcdc7"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C570",
+      "record_id": "TestRail_C570",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Support 10k users - Scenario 13",
+      "preconditions_original": "System active and user accesses Performance",
+      "steps_original": [
+        "1. Execute support 10k users",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles support 10k users scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "0efea856e7cf1288e717774f7b3c6632c84046eb9a0a55918c18ca9a0bda89ae"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C571",
+      "record_id": "TestRail_C571",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Database failover - Scenario 14",
+      "preconditions_original": "Resilience service available and ready for operations",
+      "steps_original": [
+        "1. Initiate database failover",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles database failover scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "109a1171d704c0dfa61cd41db55b0652442503aeed8a95fe9eac9953db5957b3"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C572",
+      "record_id": "TestRail_C572",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Login with Google - Scenario 15",
+      "preconditions_original": "Auth service available and ready for operations",
+      "steps_original": [
+        "1. Perform login with google",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles login with google scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "124aff80e2ee6eaa35392e9267b10c00096ae8707586e459e15cd09386478417"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C573",
+      "record_id": "TestRail_C573",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Password reset - Scenario 16",
+      "preconditions_original": "Valid session and user is on Auth page",
+      "steps_original": [
+        "1. Trigger password reset",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles password reset scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "bd23442abdb92b923c91154fa6d527a0d872fc53e2dc554a8176223a33f05d33"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C574",
+      "record_id": "TestRail_C574",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "User registration - Scenario 17",
+      "preconditions_original": "System active and user accesses Auth",
+      "steps_original": [
+        "1. Execute user registration",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles user registration scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "b96e6762f6ae079d99283a04750cad1bbd6620daedf4e75e59556ac5c4d720d3"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C575",
+      "record_id": "TestRail_C575",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Change password - Scenario 18",
+      "preconditions_original": "Auth service available and ready for operations",
+      "steps_original": [
+        "1. Perform change password",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles change password scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "cd644b4672509c7e0e802b20a504a2f38455461b5376d52ee95d9aa0c627ddfc"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C576",
+      "record_id": "TestRail_C576",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Login with email - Scenario 19",
+      "preconditions_original": "System active and user accesses Auth",
+      "steps_original": [
+        "1. Trigger login with email",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles login with email scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "c15a87eca5fff3aee96e56eb4a4a527a0c106e35bdf16d8057aa631fc7dcfec6"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C577",
+      "record_id": "TestRail_C577",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "View product details - Scenario 20",
+      "preconditions_original": "System active and user accesses Catalog",
+      "steps_original": [
+        "1. Trigger view product details",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles view product details scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "a904c0aa06402fbacffb3a23f9953f15405dcf1ab3f6bc45be3b066a30785682"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C578",
+      "record_id": "TestRail_C578",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Search product - Scenario 21",
+      "preconditions_original": "System active and user accesses Catalog",
+      "steps_original": [
+        "1. Initiate search product",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles search product scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "cf26e0faae8a6db92cdc1c2da6370b6ed10bfd6745d164e87efe9dd7a7b3c309"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C579",
+      "record_id": "TestRail_C579",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Product reviews - Scenario 22",
+      "preconditions_original": "System active and user accesses Catalog",
+      "steps_original": [
+        "1. Initiate product reviews",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles product reviews scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "120b8427ed9b30b091473a2a8adfab7ba90ae81c091453fc4be401cd47959110"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C580",
+      "record_id": "TestRail_C580",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Browse product list - Scenario 23",
+      "preconditions_original": "System active and user accesses Catalog",
+      "steps_original": [
+        "1. Initiate browse product list",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles browse product list scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "db5b04622f572214bee8e1c3b12e51b66a472bb194346edab0a6857efa9c4897"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C581",
+      "record_id": "TestRail_C581",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Add to cart - Scenario 24",
+      "preconditions_original": "System active and user accesses Cart",
+      "steps_original": [
+        "1. Execute add to cart",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles add to cart scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "73f5f606d3de3ceebd966f9a2a35c6457ce6631239382a248f016882251f66be"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C582",
+      "record_id": "TestRail_C582",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Remove from cart - Scenario 25",
+      "preconditions_original": "Valid session and user is on Cart page",
+      "steps_original": [
+        "1. Initiate remove from cart",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles remove from cart scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "281520456e53fe07d820adf8d93e5377c7322595de26a608fd1c020de68eee00"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C583",
+      "record_id": "TestRail_C583",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Update cart quantity - Scenario 26",
+      "preconditions_original": "System active and user accesses Cart",
+      "steps_original": [
+        "1. Trigger update cart quantity",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles update cart quantity scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "de19435057167ab365836647716e2236a5ab784c312c0efb23a4fcda3a1f274d"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C584",
+      "record_id": "TestRail_C584",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Pay using UPI - Scenario 27",
+      "preconditions_original": "User is logged in and on Payment module",
+      "steps_original": [
+        "1. Perform pay using upi",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles pay using upi scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "426c83aa3f73d6b8dc7ff8223065b783aea2e60fcdd6ababe837c03df2e4fb20"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C585",
+      "record_id": "TestRail_C585",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Pay using card - Scenario 28",
+      "preconditions_original": "Payment service available and ready for operations",
+      "steps_original": [
+        "1. Perform pay using card",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles pay using card scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "151f5e9002c2d0fdddcc4b962a37c2e978ac1dad04cc0a3611d2035138ba183e"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C586",
+      "record_id": "TestRail_C586",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Handle payment failure - Scenario 29",
+      "preconditions_original": "Valid session and user is on Payment page",
+      "steps_original": [
+        "1. Perform handle payment failure",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles handle payment failure scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "b478d73099a433c28920ed82e73990d8684629e9d28f51e6461676e8f3a108b6"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C587",
+      "record_id": "TestRail_C587",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Create order - Scenario 30",
+      "preconditions_original": "System active and user accesses Order",
+      "steps_original": [
+        "1. Trigger create order",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles create order scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "04c5095d8615c4c1df6dd5c68d1f3e6559b8fa2cb1d3b9bd3e2a9910291f9670"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C588",
+      "record_id": "TestRail_C588",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Cancel order - Scenario 31",
+      "preconditions_original": "Order service available and ready for operations",
+      "steps_original": [
+        "1. Trigger cancel order",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles cancel order scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "c9e9749c8d36af72c3512c5f62c2fc0fb9b54024fce3ace9cb91a3785aa3fbc7"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C589",
+      "record_id": "TestRail_C589",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Return order - Scenario 32",
+      "preconditions_original": "User is logged in and on Order module",
+      "steps_original": [
+        "1. Perform return order",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles return order scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "b2d46eee6cf18971faab8176cb5326f5b4d588b1b234b008ee3f93415b4bae39"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C590",
+      "record_id": "TestRail_C590",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Logged-in checkout - Scenario 33",
+      "preconditions_original": "System active and user accesses Checkout",
+      "steps_original": [
+        "1. Execute logged-in checkout",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles logged-in checkout scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "6f0defdb1537d96354a245b1de689ee15c00c601a6930de99389c81a252ceab3"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C591",
+      "record_id": "TestRail_C591",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Guest checkout - Scenario 34",
+      "preconditions_original": "User is logged in and on Checkout module",
+      "steps_original": [
+        "1. Perform guest checkout",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles guest checkout scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "c96593796c661eed6f293933b0bf6a82b7a25598768ff0041ce77eb4cde7f9d9"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C592",
+      "record_id": "TestRail_C592",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Refund to source - Scenario 35",
+      "preconditions_original": "Valid session and user is on Refund page",
+      "steps_original": [
+        "1. Execute refund to source",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles refund to source scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "0a3479fec7e5fd6c91586f6f76205ceee2052b41c0aba71b253509a6e1629257"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C593",
+      "record_id": "TestRail_C593",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Partial refund - Scenario 36",
+      "preconditions_original": "Valid session and user is on Refund page",
+      "steps_original": [
+        "1. Initiate partial refund",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles partial refund scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "9ad7f0be2a090f2ea9e83bf6cc9efcef9b026bcf06905ae0885452d206c59ece"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C594",
+      "record_id": "TestRail_C594",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "CSRF protection - Scenario 37",
+      "preconditions_original": "User is logged in and on Security module",
+      "steps_original": [
+        "1. Perform csrf protection",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles csrf protection scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "a49981fab14c114111b0b11820f597e2a25477603e31050c0bca7c256a9d30fe"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C595",
+      "record_id": "TestRail_C595",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Prevent SQL injection - Scenario 38",
+      "preconditions_original": "System active and user accesses Security",
+      "steps_original": [
+        "1. Initiate prevent sql injection",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles prevent sql injection scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "0830c54ae2ed21e9fcae3a214999acbd2e0766e8900ee52b420aadb215468af0"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C596",
+      "record_id": "TestRail_C596",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Push notifications - Scenario 39",
+      "preconditions_original": "Valid session and user is on Notifications page",
+      "steps_original": [
+        "1. Trigger push notifications",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles push notifications scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "a108bdb6c980ec672bc60d9774782b2fe08c68b943357b681199b51f9ada10ad"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C597",
+      "record_id": "TestRail_C597",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Email notifications - Scenario 40",
+      "preconditions_original": "Valid session and user is on Notifications page",
+      "steps_original": [
+        "1. Trigger email notifications",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles email notifications scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "5d0880f129ff555c37d905637f52f95802c542b8f0de0d8da7157308800c2bff"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C598",
+      "record_id": "TestRail_C598",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Price calculation - Scenario 41",
+      "preconditions_original": "System active and user accesses Pricing",
+      "steps_original": [
+        "1. Perform price calculation",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles price calculation scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "d5138dcd82158201a269f24861aa683ad1474a5935a145c5e9cdd34ee3b9095b"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C599",
+      "record_id": "TestRail_C599",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Apply coupon - Scenario 42",
+      "preconditions_original": "User is logged in and on Promo module",
+      "steps_original": [
+        "1. Trigger apply coupon",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles apply coupon scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "bbf6120e86622371dc787c1d3db13f04a99f437d9560cdbfba1c79d9e6406df6"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C600",
+      "record_id": "TestRail_C600",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Admin add product - Scenario 43",
+      "preconditions_original": "System active and user accesses Admin",
+      "steps_original": [
+        "1. Initiate admin add product",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles admin add product scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "365e8087517091742f9143828d2ba22da7e33598daf7bc190f538ad17fdfeee0"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C601",
+      "record_id": "TestRail_C601",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Inventory update - Scenario 44",
+      "preconditions_original": "System active and user accesses Inventory",
+      "steps_original": [
+        "1. Initiate inventory update",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles inventory update scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "a4e49647caf929f0b2dbf0a6a70470a79d4c41e92800f11a2bb988add455600f"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C602",
+      "record_id": "TestRail_C602",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Support 10k users - Scenario 45",
+      "preconditions_original": "Valid session and user is on Performance page",
+      "steps_original": [
+        "1. Initiate support 10k users",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles support 10k users scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "1bb6597c65a8403d249889fba475a4f96bd13bad5d888aecbe64bcc7927de08c"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C603",
+      "record_id": "TestRail_C603",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Database failover - Scenario 46",
+      "preconditions_original": "System active and user accesses Resilience",
+      "steps_original": [
+        "1. Trigger database failover",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles database failover scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "fdfedcf5711c18eab5d3240cbfe7ca8fa25d44d53c5441cd7b08a1890be7f367"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C604",
+      "record_id": "TestRail_C604",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Login with Google - Scenario 47",
+      "preconditions_original": "User is logged in and on Auth module",
+      "steps_original": [
+        "1. Execute login with google",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles login with google scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "19887564900f970339c3d55dbfc0451e3804b9c88e2194cc65ed22e2faec6644"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C605",
+      "record_id": "TestRail_C605",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Password reset - Scenario 48",
+      "preconditions_original": "System active and user accesses Auth",
+      "steps_original": [
+        "1. Initiate password reset",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles password reset scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "f2e2f5d0460c723eeb0a52e43874b35c5db374518ce6feb31f7321f3ccba9757"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C606",
+      "record_id": "TestRail_C606",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "User registration - Scenario 49",
+      "preconditions_original": "Valid session and user is on Auth page",
+      "steps_original": [
+        "1. Initiate user registration",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles user registration scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "2007fd7b131d52be0c2e5cb0d8c3fcac277721ca1167b44976ab18cba224aacf"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C607",
+      "record_id": "TestRail_C607",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Change password - Scenario 50",
+      "preconditions_original": "System active and user accesses Auth",
+      "steps_original": [
+        "1. Execute change password",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles change password scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "73873c7d7e1949cd771d44de6775dddbd660198bd95ea278284c3ba7ab47f09a"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C608",
+      "record_id": "TestRail_C608",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Login with email - Scenario 1",
+      "preconditions_original": "Valid session and user is on Auth page",
+      "steps_original": [
+        "1. Execute login with email",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles login with email scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "442a6e3b2536f267a662e073d9b362eed00f79c784b43858e8a1797f7e2cb237"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C609",
+      "record_id": "TestRail_C609",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "View product details - Scenario 2",
+      "preconditions_original": "User is logged in and on Catalog module",
+      "steps_original": [
+        "1. Initiate view product details",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles view product details scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "2740771f3c68068efda9d17d6c396a9f632a66ddbb83376c381b969355bed5e4"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C610",
+      "record_id": "TestRail_C610",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Search product - Scenario 3",
+      "preconditions_original": "User is logged in and on Catalog module",
+      "steps_original": [
+        "1. Trigger search product",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles search product scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "b6a017a72b7bc5470645ad4ebd38196e0d31095ad6e1ad49f648c34e8d028608"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C611",
+      "record_id": "TestRail_C611",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Product reviews - Scenario 4",
+      "preconditions_original": "Valid session and user is on Catalog page",
+      "steps_original": [
+        "1. Initiate product reviews",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles product reviews scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "98da1bb712934cac018e4d8e1ad94770451dabdde63e9aedd4e57a4d77df48a5"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C612",
+      "record_id": "TestRail_C612",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Browse product list - Scenario 5",
+      "preconditions_original": "System active and user accesses Catalog",
+      "steps_original": [
+        "1. Trigger browse product list",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles browse product list scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "ddbb54496fb365318b8bd959ce73c30d05b52526b146fcb7393045a3fe9806db"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C613",
+      "record_id": "TestRail_C613",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Add to cart - Scenario 6",
+      "preconditions_original": "System active and user accesses Cart",
+      "steps_original": [
+        "1. Initiate add to cart",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles add to cart scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "ba62ef3b28876849c7eeed66ba01fea60fde6d49b4ef284c1f7caa0a133d1638"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C614",
+      "record_id": "TestRail_C614",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Remove from cart - Scenario 7",
+      "preconditions_original": "User is logged in and on Cart module",
+      "steps_original": [
+        "1. Execute remove from cart",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles remove from cart scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "32a7fb210a9b94bbad3e7283be3af2491a305d4d468b1e35ef1f3730ae09c443"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C615",
+      "record_id": "TestRail_C615",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Update cart quantity - Scenario 8",
+      "preconditions_original": "System active and user accesses Cart",
+      "steps_original": [
+        "1. Execute update cart quantity",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles update cart quantity scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "56cc4d05cd6415547082565a90e299429bb698e200dec39b0a7c0205f614dbe4"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C616",
+      "record_id": "TestRail_C616",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Pay using UPI - Scenario 9",
+      "preconditions_original": "Valid session and user is on Payment page",
+      "steps_original": [
+        "1. Execute pay using upi",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles pay using upi scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "eb72cd234149d33200d92ece8bbe509c2683b7691ef7ceb7361261cd5952edd9"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C617",
+      "record_id": "TestRail_C617",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Pay using card - Scenario 10",
+      "preconditions_original": "Payment service available and ready for operations",
+      "steps_original": [
+        "1. Trigger pay using card",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles pay using card scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "61b5307f0a3af69e041db5e64c22c278434059ee4514b0119a127e9331cfc0ad"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C618",
+      "record_id": "TestRail_C618",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Handle payment failure - Scenario 11",
+      "preconditions_original": "System active and user accesses Payment",
+      "steps_original": [
+        "1. Initiate handle payment failure",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles handle payment failure scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "fc6eb85f1288a5cacf943e80743efdddd03e82813d1992fea6975377036277e1"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C619",
+      "record_id": "TestRail_C619",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Create order - Scenario 12",
+      "preconditions_original": "Order service available and ready for operations",
+      "steps_original": [
+        "1. Initiate create order",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles create order scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "1e5de330f140e975dfcc5aebc3b38189cf6b13ef8b765e359a07a34dbf72f747"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C620",
+      "record_id": "TestRail_C620",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Cancel order - Scenario 13",
+      "preconditions_original": "System active and user accesses Order",
+      "steps_original": [
+        "1. Initiate cancel order",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles cancel order scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "83fbc23488c61cf31a9bfea53dcfe6d19e235eb2107aa9b90f7227ddf52a1bec"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C621",
+      "record_id": "TestRail_C621",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Return order - Scenario 14",
+      "preconditions_original": "User is logged in and on Order module",
+      "steps_original": [
+        "1. Initiate return order",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles return order scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "68cca4074fdc10419db9e7b66bc230ec4ab31c0cf7ca5feb2dfd39503c85eb3b"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C622",
+      "record_id": "TestRail_C622",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Logged-in checkout - Scenario 15",
+      "preconditions_original": "User is logged in and on Checkout module",
+      "steps_original": [
+        "1. Initiate logged-in checkout",
+        "2. Check output",
+        "3. Validate business rules"
+      ],
+      "expected_results_original": [
+        "System correctly handles logged-in checkout scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "44e5d72ab3acca5d1a78f1a7f6563e48cee154afe5117478ebfb9c2adcb52f6b"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C623",
+      "record_id": "TestRail_C623",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Guest checkout - Scenario 16",
+      "preconditions_original": "User is logged in and on Checkout module",
+      "steps_original": [
+        "1. Perform guest checkout",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles guest checkout scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "4a8f3afe5f58330a5ecb3d5bd3a274204e76ee5c7599ee8dff05d833f2b8da2f"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C624",
+      "record_id": "TestRail_C624",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Refund to source - Scenario 17",
+      "preconditions_original": "User is logged in and on Refund module",
+      "steps_original": [
+        "1. Perform refund to source",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles refund to source scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "5c9521bd778806db4ed828852805ed56b8d2a2baa55528eb25517b072d91943e"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C625",
+      "record_id": "TestRail_C625",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Partial refund - Scenario 18",
+      "preconditions_original": "Valid session and user is on Refund page",
+      "steps_original": [
+        "1. Perform partial refund",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles partial refund scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "d51973dfd063d6bcf7aacba52b297e573905a73a271a318257d795ce4909e4fa"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C626",
+      "record_id": "TestRail_C626",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "CSRF protection - Scenario 19",
+      "preconditions_original": "System active and user accesses Security",
+      "steps_original": [
+        "1. Trigger csrf protection",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles csrf protection scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "6aecc36823ae35b3f377796f4765a091e20044469d47de2610905e2be2e93482"
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C627",
+      "record_id": "TestRail_C627",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Prevent SQL injection - Scenario 20",
+      "preconditions_original": "User is logged in and on Security module",
+      "steps_original": [
+        "1. Execute prevent sql injection",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles prevent sql injection scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "186d9adec44cb7682bad639952ecffced1ec8f08d4584a2b6c4e4107f88767f8"
+    }
+  ]
+}
