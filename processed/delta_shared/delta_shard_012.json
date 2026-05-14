@@ -1,7 +1,71 @@
 {
     "shard_id": "delta_shard_012",
-    "case_count": 5,
+    "case_count": 10,
     "cases": [
+        {
+            "case_id": "C618",
+            "record_id": "TestRail_C618",
+            "content_hash": "fc6eb85f1288a5cacf943e80743efdddd03e82813d1992fea6975377036277e1",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C619",
+            "record_id": "TestRail_C619",
+            "content_hash": "1e5de330f140e975dfcc5aebc3b38189cf6b13ef8b765e359a07a34dbf72f747",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C620",
+            "record_id": "TestRail_C620",
+            "content_hash": "83fbc23488c61cf31a9bfea53dcfe6d19e235eb2107aa9b90f7227ddf52a1bec",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C621",
+            "record_id": "TestRail_C621",
+            "content_hash": "68cca4074fdc10419db9e7b66bc230ec4ab31c0cf7ca5feb2dfd39503c85eb3b",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C622",
+            "record_id": "TestRail_C622",
+            "content_hash": "44e5d72ab3acca5d1a78f1a7f6563e48cee154afe5117478ebfb9c2adcb52f6b",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C623",
+            "record_id": "TestRail_C623",
+            "content_hash": "4a8f3afe5f58330a5ecb3d5bd3a274204e76ee5c7599ee8dff05d833f2b8da2f",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C624",
+            "record_id": "TestRail_C624",
+            "content_hash": "5c9521bd778806db4ed828852805ed56b8d2a2baa55528eb25517b072d91943e",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
+        {
+            "case_id": "C625",
+            "record_id": "TestRail_C625",
+            "content_hash": "d51973dfd063d6bcf7aacba52b297e573905a73a271a318257d795ce4909e4fa",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true
+        },
         {
             "case_id": "C626",
             "record_id": "TestRail_C626",
@@ -15,30 +79,6 @@
             "record_id": "TestRail_C627",
             "content_hash": "186d9adec44cb7682bad639952ecffced1ec8f08d4584a2b6c4e4107f88767f8",
             "change_status": "new",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C511",
-            "record_id": "TestRail_C511",
-            "content_hash": "4619f121efbb3abbbad67252a6937ee49b3a9544a5a19b7e08ccb6c27d58c3d7",
-            "change_status": "changed",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C599",
-            "record_id": "TestRail_C599",
-            "content_hash": "bbf6120e86622371dc787c1d3db13f04a99f437d9560cdbfba1c79d9e6406df6",
-            "change_status": "changed",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true
-        },
-        {
-            "case_id": "C600",
-            "record_id": "TestRail_C600",
-            "content_hash": "365e8087517091742f9143828d2ba22da7e33598daf7bc190f538ad17fdfeee0",
-            "change_status": "changed",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true
         }
