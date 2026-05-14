@@ -1,0 +1,62 @@
+{
+    "shard_id": "delta_shard_002",
+    "case_count": 2,
+    "cases": [
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C638",
+            "record_id": "TestRail_C638",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 78,
+            "title": "User registration - Scenario 31",
+            "preconditions_original": "System active and user accesses Auth",
+            "steps_original": [
+                "1. Execute user registration",
+                "2. Capture response",
+                "3. Validate outcome"
+            ],
+            "expected_results_original": [
+                "System correctly handles user registration scenario"
+            ],
+            "priority": "3",
+            "type": "7",
+            "references": [],
+            "content_hash": "85a1bf23cda8e0a399a51f77565ecda26e44ee8ab60d7e1732bd1569306ce48c",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260514063041",
+            "shard_id": "delta_shard_002"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C639",
+            "record_id": "TestRail_C639",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 78,
+            "title": "Change password - Scenario 32",
+            "preconditions_original": "Valid session and user is on Auth page",
+            "steps_original": [
+                "1. Perform change password",
+                "2. Observe logs/output",
+                "3. Confirm correctness"
+            ],
+            "expected_results_original": [
+                "System correctly handles change password scenario"
+            ],
+            "priority": "3",
+            "type": "7",
+            "references": [],
+            "content_hash": "f1604a107eb90fd6c272f90472fc94355d35899d7dcb827d8689faad6efacca9",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260514063041",
+            "shard_id": "delta_shard_002"
+        }
+    ]
+}
