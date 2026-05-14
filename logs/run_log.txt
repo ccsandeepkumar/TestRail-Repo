@@ -1,0 +1,16 @@
+{
+  "log_entries": [
+    {
+      "timestamp": "2024-01-01T00:00:00Z",
+      "run_id": "manual_run",
+      "agent": "contextualize_and_publish",
+      "shards_processed": 0,
+      "cases_contextualized": 0,
+      "cases_failed": 0,
+      "retries": 0,
+      "active_kb_size": 0,
+      "archived_count": 0,
+      "message": "Contextualization completed - no delta shards found in manifest"
+    }
+  ]
+}
