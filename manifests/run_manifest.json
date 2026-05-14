@@ -1,3 +1,11 @@
 {
-  "status": "initialized"
+  "status": "initialized",
+  "run_id": "manual_run",
+  "contextualization_status": "completed",
+  "total_contextualized": 0,
+  "total_failed_contextualization": 0,
+  "active_kb_total_cases": 0,
+  "archived_cases_total": 0,
+  "contextualized_shard_paths": [],
+  "agent_completed_at": "2024-01-01T00:00:00Z"
 }
