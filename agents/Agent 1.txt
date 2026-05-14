@@ -1,0 +1,21 @@
+INSTRUCTIONS:
+1. Receive dynamic input payload 
+ containing all required TestRail and GitHub fields, as well as uploaded case_manifest.json.
+2. Extract TestRail parameters: testrail_url, project_id, suite_id, section_id, username, api_key, limit.
+3. Execute TestRailExtractorInputValidator with extracted parameters. If failure, halt and return error.
+4. Store normalized TestRail dataset as tool1_output.
+5. Extract uploaded case_manifest.json content as manifest_data.
+6. Execute TestCaseChangeClassifier with manifest_data and tool1_output. If failure, halt and return error.
+7. Store delta_shards from tool2_output.
+8. Extract GitHub parameters: github_username, github_token, github_repo, github_branch, github_base_path, commit_message.
+9. Execute GitHubShardFileWriter with GitHub parameters and delta_shards. If failure, halt and return error.
+10. Return Tool 3 response as final output.
+11. Ensure all outputs are deterministic, machine-readable, and strictly JSON.
+
+OUTPUT FORMAT:
+- Tool 3 response JSON, including status and uploaded_shards.
+
+SAMPLE:
+Input: 
+ with all required fields and case_manifest.json uploaded.
+Output: { "status": "SUCCESS", "uploaded_shards": [ ... ] }

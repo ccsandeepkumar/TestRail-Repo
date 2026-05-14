@@ -1,0 +1,20 @@
+INSTRUCTIONS:
+1. Receive all runtime execution inputs via {{input}}.
+2. Extract TestRail parameters: testrail_url, project_id, suite_id, section_id, username, api_key, limit.
+3. Execute TestRailExtractorInputValidator with extracted values to authenticate, fetch, validate, normalize, and hash test cases. Store as tool1_output.
+4. Extract uploaded case_manifest.json content from {{input}}.
+5. Execute TestCaseChangeClassifier with manifest_data (case_manifest.json) and current_output_data (tool1_output) to classify test case deltas and prepare delta shards. Store as tool2_output.
+6. Extract GitHub parameters: github_username, github_token, github_repo, github_branch, github_base_path, commit_message from {{input}}.
+7. Execute GitHubShardFileWriter with extracted GitHub parameters and ONLY tool2_output.delta_shards to publish delta shards to GitHub. Store as tool3_output.
+8. At each step, halt and return immediately if any tool returns FAILURE.
+9. Always return the final tool3_output as the agent's output.
+10. Never modify, summarize, or truncate tool outputs; preserve deterministic structure for downstream automation.
+
+OUTPUT FORMAT:
+- The final output is the exact JSON response from GitHubShardFileWriter (tool3_output), including status and uploaded_shards.
+
+SAMPLE:
+Input: {{input}}
+ = { testrail_url: 'https://testrail.example.com', ... , case_manifest.json: '{...}', github_username: 'octocat', ... }
+
+Output: { "status": "SUCCESS", "uploaded_shards": ["delta_shard_20240601.json", ...] }
