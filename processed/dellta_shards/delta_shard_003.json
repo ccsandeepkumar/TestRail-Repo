@@ -1,0 +1,34 @@
+{
+    "shard_id": "delta_shard_003",
+    "case_count": 3,
+    "cases": [
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C635",
+            "record_id": "TestRail_C635",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 78,
+            "title": "Database failover - Scenario 28",
+            "preconditions_original": "User is logged in and on Resilience module",
+            "steps_original": [
+                "1. Execute database failover",
+                "2. Capture response",
+                "3. Validate outcome"
+            ],
+            "expected_results_original": [
+                "System correctly handles database failover scenario"
+            ],
+            "priority": "3",
+            "type": "7",
+            "references": [],
+            "content_hash": "d2aa24d675897d7e4d0796871f9a6e538dea549d816d19bca25d9700c0f899df",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260513125824",
+            "shard_id": "delta_shard_003"
+        }
+    ]
+}
