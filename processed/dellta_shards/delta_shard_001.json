@@ -1,0 +1,34 @@
+{
+    "shard_id": "delta_shard_001",
+    "case_count": 3,
+    "cases": [
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C655",
+            "record_id": "TestRail_C655",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 78,
+            "title": "Guest checkout - Scenario 48",
+            "preconditions_original": "Checkout service available and ready for operations",
+            "steps_original": [
+                "1. Trigger guest checkout",
+                "2. Monitor system behavior",
+                "3. Verify expected results"
+            ],
+            "expected_results_original": [
+                "System correctly handles guest checkout scenario"
+            ],
+            "priority": "1",
+            "type": "7",
+            "references": [],
+            "content_hash": "2b866cefe1f17d721db31ca7f8d72424da4b63dc3eeeddc3cc5e2659d1be2b2e",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260513125824",
+            "shard_id": "delta_shard_001"
+        }
+    ]
+}
