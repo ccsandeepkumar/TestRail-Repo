@@ -24,29 +24,30 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Validates that the platform can reliably send real-time push notifications so users receive timely updates and alerts on their devices.",
-    "functional_intent": "Checks that triggering push notifications results in messages being correctly generated, routed, and delivered without errors, and that the system logs and status reflect successful processing.",
+    "business_context": "Validates that the platform can proactively inform users about important events through mobile or web push notifications without disruption to their normal usage.",
+    "functional_intent": "Ensures that when a push notification is triggered, it is generated, queued, and delivered correctly to the target user/device, and that the application displays it as expected without errors.",
     "system_areas": [
       "notification_service",
       "push_gateway",
-      "user_device_tokens_store",
-      "event_dispatcher",
+      "user_profile_preferences",
+      "mobile_app_client",
+      "web_client_UI",
       "logging_monitoring"
     ],
     "risk_tags": [
-      "missed_user_communications",
-      "customer_dissatisfaction",
-      "notification_delivery_failure",
-      "regression_risk"
+      "missed_critical_alerts",
+      "user_engagement_drop",
+      "regression_in_notification_delivery",
+      "third_party_integration_failure"
     ],
-    "searchable_summary": "Verify push notification flow so that triggering notifications results in correctly delivered real-time messages and accurate system behavior and logging.",
+    "searchable_summary": "Verifies end-to-end push notification delivery so that triggered notifications are correctly generated, routed, and displayed to users according to their preferences.",
     "keywords": [
       "push_notifications",
-      "real_time_alerts",
       "notification_service",
-      "delivery_status",
-      "event_trigger",
-      "logging"
+      "delivery_queue",
+      "user_alerts",
+      "mobile_push",
+      "web_push"
     ]
   },
   {
@@ -74,29 +75,29 @@
     "priority": "1",
     "type": "7",
     "references": [],
-    "business_context": "Ensures that users receive transactional or informational emails when email notifications are triggered from the notifications page.",
-    "functional_intent": "Validates that initiating email notifications sends messages to the correct recipients with proper content and status, and that failures are surfaced in logs or UI if delivery does not succeed.",
+    "business_context": "Confirms that users receive timely and accurate email communications such as alerts, confirmations, and updates related to their account or transactions.",
+    "functional_intent": "Validates that when an email notification is triggered, the system composes the correct content, addresses it to the right recipient, sends it via the email provider, and records the outcome without errors.",
     "system_areas": [
       "notification_service",
-      "email_service",
-      "smtp_gateway",
-      "user_profile_contacts",
-      "logging_monitoring"
+      "email_template_engine",
+      "SMTP_or_email_gateway",
+      "user_contact_data",
+      "audit_logging"
     ],
     "risk_tags": [
       "communication_failure",
-      "compliance_risk",
-      "customer_support_load",
-      "email_delivery_issues"
+      "compliance_breach",
+      "missed_transactional_emails",
+      "customer_support_load_increase"
     ],
-    "searchable_summary": "Test email notification flow from the notifications page to confirm emails are generated, sent to correct users, and accurately reflected in logs or status outputs.",
+    "searchable_summary": "Tests that email notifications are correctly generated, sent, and logged so users reliably receive system emails for events and actions.",
     "keywords": [
       "email_notifications",
-      "smtp",
+      "SMTP_gateway",
       "transactional_email",
-      "user_communication",
-      "notification_page",
-      "delivery_logs"
+      "notification_templates",
+      "delivery_status",
+      "user_communication"
     ]
   },
   {
@@ -124,29 +125,30 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Confirms that the platform calculates product or order prices correctly so customers see accurate totals before purchase.",
-    "functional_intent": "Verifies that the pricing service returns correct computed prices based on inputs such as base price, taxes, and discounts, and that the response structure matches expectations.",
+    "business_context": "Ensures that customers see accurate prices for products or services, including any applicable taxes, fees, or discounts, before completing a purchase.",
+    "functional_intent": "Verifies that the pricing engine correctly computes final prices based on base price, quantity, discounts, and tax rules, and returns consistent values to consuming channels.",
     "system_areas": [
-      "pricing_service",
-      "tax_engine",
-      "discount_engine",
-      "order_calculation",
-      "api_layer"
+      "pricing_engine",
+      "tax_calculation_module",
+      "discount_rules",
+      "catalog_service",
+      "order_service",
+      "API_layer"
     ],
     "risk_tags": [
-      "incorrect_pricing",
       "revenue_loss",
-      "billing_disputes",
+      "incorrect_pricing",
+      "regulatory_non_compliance",
       "customer_trust_impact"
     ],
-    "searchable_summary": "Validate pricing service calculation to ensure it returns correct order or product prices with proper breakdown and response format.",
+    "searchable_summary": "Checks that the pricing service accurately calculates final product prices using configured rules for discounts and taxes and returns consistent values to clients.",
     "keywords": [
       "price_calculation",
-      "pricing_service",
-      "taxes",
+      "pricing_engine",
+      "tax_rules",
       "discounts",
       "order_total",
-      "billing_accuracy"
+      "ecommerce_pricing"
     ]
   },
   {
@@ -174,29 +176,29 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Ensures that customers can apply promotional coupons so that eligible discounts are reflected in their order pricing.",
-    "functional_intent": "Checks that when a coupon is applied, the system validates its eligibility, applies the correct discount amount, and updates the order totals and related data consistently.",
+    "business_context": "Validates that customers can successfully apply promotional coupons to reduce their payable amount during a purchase.",
+    "functional_intent": "Ensures that when a user enters a coupon, the system validates its eligibility, applies the correct discount to the cart or order total, and handles invalid or expired coupons appropriately.",
     "system_areas": [
-      "promotion_engine",
-      "coupon_validation_service",
-      "pricing_service",
-      "checkout_ui",
-      "order_management"
+      "promotion_service",
+      "coupon_validation_engine",
+      "cart_service",
+      "pricing_engine",
+      "checkout_UI"
     ],
     "risk_tags": [
-      "discount_miscalculation",
       "revenue_leakage",
       "promo_abuse",
-      "negative_customer_experience"
+      "customer_dissatisfaction",
+      "incorrect_discount_application"
     ],
-    "searchable_summary": "Verify coupon application flow so that valid promo codes are accepted, correctly discounted, and reflected in order totals and UI.",
+    "searchable_summary": "Verifies coupon application so that valid promo codes correctly adjust cart totals and invalid codes are rejected with clear feedback.",
     "keywords": [
       "coupon",
       "promo_code",
-      "discount",
-      "pricing",
-      "checkout",
-      "promotion_engine"
+      "discount_application",
+      "cart_total",
+      "promotion_service",
+      "checkout"
     ]
   },
   {
@@ -224,28 +226,28 @@
     "priority": "2",
     "type": "7",
     "references": [],
-    "business_context": "Validates that administrators can add new products to the catalog so they become available for customers to browse and purchase.",
-    "functional_intent": "Ensures that the admin add-product workflow correctly captures product details, enforces required fields and business rules, and persists the new product into the catalog or database.",
+    "business_context": "Ensures that administrators can onboard new products into the catalog so they become available for customers to browse and purchase.",
+    "functional_intent": "Checks that the admin product creation flow correctly captures product attributes, validates mandatory fields and business rules, persists the product, and makes it visible to downstream catalog and search services.",
     "system_areas": [
       "admin_portal",
       "product_catalog_service",
-      "validation_layer",
-      "database_persistence",
-      "audit_logging"
+      "validation_rules_engine",
+      "search_indexer",
+      "media_asset_storage"
     ],
     "risk_tags": [
-      "catalog_data_errors",
-      "product_unavailability",
-      "data_integrity_issues",
-      "admin_workflow_failure"
+      "catalog_data_corruption",
+      "missing_products",
+      "inconsistent_product_info",
+      "operational_inefficiency"
     ],
-    "searchable_summary": "Test admin add-product flow to confirm new product details are validated, saved, and made available in the product catalog.",
+    "searchable_summary": "Tests the admin add-product workflow to confirm new products can be created with valid data and propagated to the customer-facing catalog.",
     "keywords": [
-      "admin",
-      "add_product",
-      "product_catalog",
+      "admin_portal",
+      "product_creation",
+      "catalog_service",
+      "product_metadata",
       "data_validation",
-      "backoffice",
       "merchandising"
     ]
   },
@@ -274,29 +276,29 @@
     "priority": "1",
     "type": "7",
     "references": [],
-    "business_context": "Ensures that stock levels are updated correctly so that product availability shown to customers matches actual inventory.",
-    "functional_intent": "Verifies that an inventory update request adjusts stock quantities as expected, returns a correct response, and maintains consistency across inventory records.",
+    "business_context": "Confirms that stock levels are accurately maintained so that customers see correct availability and operations can manage replenishment effectively.",
+    "functional_intent": "Verifies that inventory updates adjust stock quantities correctly for the specified products, handle edge cases like negative stock, and propagate changes to dependent systems such as ordering and catalog display.",
     "system_areas": [
       "inventory_service",
-      "stock_ledger",
-      "product_catalog",
-      "synchronization_jobs",
-      "api_layer"
+      "warehouse_management_integration",
+      "product_catalog_service",
+      "order_allocation_engine",
+      "event_bus"
     ],
     "risk_tags": [
       "overselling",
-      "stock_out_misreporting",
-      "financial_reconciliation_issues",
-      "data_inconsistency"
+      "stockouts",
+      "inaccurate_availability_display",
+      "fulfillment_failures"
     ],
-    "searchable_summary": "Validate inventory update operation so that stock quantities change correctly and responses reflect accurate inventory state.",
+    "searchable_summary": "Validates that inventory updates correctly modify product stock levels and synchronize availability across ordering and catalog systems.",
     "keywords": [
       "inventory_update",
       "stock_levels",
       "availability",
-      "inventory_service",
-      "product_catalog",
-      "synchronization"
+      "warehouse_integration",
+      "order_allocation",
+      "inventory_service"
     ]
   },
   {
@@ -324,29 +326,30 @@
     "priority": "2",
     "type": "7",
     "references": [],
-    "business_context": "Assesses whether the platform can handle a high concurrent user load of around 10,000 users without performance degradation.",
-    "functional_intent": "Checks that under a simulated 10k-user load, the system remains responsive, within acceptable latency and error thresholds, and does not exhibit resource exhaustion or instability.",
+    "business_context": "Assesses whether the platform can handle high concurrent user load (around 10,000 users) while maintaining acceptable performance for key user journeys.",
+    "functional_intent": "Ensures that under a simulated 10k concurrent user load, critical operations such as login, browsing, and checkout meet defined response time and error-rate thresholds without resource exhaustion.",
     "system_areas": [
       "load_balancer",
       "application_servers",
       "database_cluster",
+      "caching_layer",
       "performance_monitoring",
-      "caching_layer"
+      "autoscaling"
     ],
     "risk_tags": [
       "performance_degradation",
-      "service_outage",
-      "scalability_risk",
-      "sla_breach"
+      "system_outage",
+      "SLA_breach",
+      "poor_user_experience"
     ],
-    "searchable_summary": "Load test the system with approximately 10k concurrent users to verify stable performance, acceptable response times, and error-free operation.",
+    "searchable_summary": "Performs a load test simulating 10k concurrent users to verify that core application flows remain performant and stable under high traffic.",
     "keywords": [
       "load_testing",
-      "10k_users",
-      "performance",
       "scalability",
+      "concurrent_users",
+      "performance_SLA",
       "stress_test",
-      "throughput"
+      "capacity_planning"
     ]
   },
   {
@@ -374,29 +377,29 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Validates that the application remains available and consistent when a database failover occurs, protecting ongoing business operations.",
-    "functional_intent": "Ensures that triggering a database failover switches traffic to the standby node without data loss, major errors, or unacceptable downtime from the application perspective.",
+    "business_context": "Validates that the application remains available or recovers quickly when the primary database node fails and traffic is moved to a replica or standby.",
+    "functional_intent": "Checks that initiating a database failover transitions connections to the standby node with minimal errors, preserves data integrity, and restores normal operation within acceptable recovery time objectives.",
     "system_areas": [
       "database_cluster",
-      "failover_controller",
+      "replication_and_failover",
       "connection_pooling",
-      "application_resilience_module",
+      "application_config",
       "monitoring_alerting"
     ],
     "risk_tags": [
-      "data_loss",
       "extended_downtime",
-      "high_availability_failure",
-      "transaction_errors"
+      "data_inconsistency",
+      "transaction_loss",
+      "resilience_gap"
     ],
-    "searchable_summary": "Test database failover behavior to confirm seamless switchover to standby with maintained application availability and data integrity.",
+    "searchable_summary": "Tests database failover handling to ensure the application can switch to a standby database with preserved data integrity and minimal disruption.",
     "keywords": [
       "database_failover",
       "high_availability",
-      "resilience",
       "replication",
-      "disaster_recovery",
-      "failover_testing"
+      "RTO_RPO",
+      "resilience_testing",
+      "disaster_recovery"
     ]
   },
   {
@@ -424,29 +427,29 @@
     "priority": "1",
     "type": "7",
     "references": [],
-    "business_context": "Ensures that users can authenticate using their Google accounts, simplifying sign-in and reducing friction.",
-    "functional_intent": "Verifies that the Google OAuth login flow completes successfully, creating or linking the local user account and returning a valid authenticated session or token.",
+    "business_context": "Ensures that users can sign in using their Google accounts, simplifying onboarding and reducing password management overhead.",
+    "functional_intent": "Verifies that the Google OAuth login flow correctly redirects users, handles consent, validates tokens, creates or links local accounts, and grants access without exposing security vulnerabilities.",
     "system_areas": [
       "authentication_service",
-      "oauth_integration",
-      "google_identity_provider",
+      "OAuth_integration",
+      "Google_identity_provider",
       "session_management",
       "user_account_linking"
     ],
     "risk_tags": [
-      "login_failure",
-      "security_risk",
-      "third_party_integration_issue",
-      "user_dropoff"
+      "authentication_failure",
+      "account_takeover_risk",
+      "login_regression",
+      "third_party_auth_dependency"
     ],
-    "searchable_summary": "Validate Google OAuth login so that users can sign in with Google and receive a valid authenticated session in the application.",
+    "searchable_summary": "Validates the Google OAuth login flow so users can authenticate with Google accounts and receive proper sessions in the application.",
     "keywords": [
-      "google_login",
-      "oauth",
-      "social_sign_in",
+      "Google_login",
+      "OAuth2",
+      "SSO",
       "authentication",
-      "sso",
-      "identity_provider"
+      "identity_provider",
+      "social_login"
     ]
   },
   {
@@ -474,930 +477,29 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Confirms that users can securely reset their passwords when they forget their credentials, restoring access without compromising security.",
-    "functional_intent": "Checks that initiating a password reset triggers the correct verification flow, generates a secure token or link, and allows the user to set a new password that is properly validated and stored.",
+    "business_context": "Confirms that users who forget their passwords can securely reset access to their accounts without assistance from support.",
+    "functional_intent": "Ensures that the password reset flow issues secure, time-bound reset tokens, verifies user identity via email or other channels, enforces password policies, and invalidates used or expired tokens.",
     "system_areas": [
       "authentication_service",
-      "password_reset_flow",
-      "email_or_sms_service",
-      "token_store",
-      "security_validation"
+      "password_reset_module",
+      "email_notification_service",
+      "security_policy_engine",
+      "user_account_store"
     ],
     "risk_tags": [
       "account_lockout",
-      "unauthorized_access",
-      "security_vulnerability",
+      "unauthorized_account_access",
+      "security_non_compliance",
       "support_ticket_increase"
     ],
-    "searchable_summary": "Test password reset process to ensure secure token generation, user verification, and successful update of the account password.",
+    "searchable_summary": "Tests the password reset workflow to ensure users can securely request, receive, and use reset links or codes to set a new password.",
     "keywords": [
       "password_reset",
-      "account_recovery",
-      "auth",
-      "security",
       "reset_token",
-      "credential_management"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C638",
-    "record_id": "TestRail_C638",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "User registration - Scenario 31",
-    "preconditions_original": "System active and user accesses Auth",
-    "steps_original": [
-      "1. Execute user registration",
-      "2. Capture response",
-      "3. Validate outcome"
-    ],
-    "expected_results_original": [
-      "System correctly handles user registration scenario"
-    ],
-    "content_hash": "85a1bf23cda8e0a399a51f77565ecda26e44ee8ab60d7e1732bd1569306ce48c",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "3",
-    "type": "7",
-    "references": [],
-    "business_context": "Ensures that new users can successfully create accounts so they can start using the application.",
-    "functional_intent": "Verifies that the registration flow accepts valid user details, enforces required validations, creates a new user record, and returns a success response or confirmation.",
-    "system_areas": [
-      "authentication_service",
-      "user_account_service",
-      "data_validation",
-      "email_verification_flow",
-      "database_persistence"
-    ],
-    "risk_tags": [
-      "onboarding_failure",
-      "data_quality_issues",
-      "security_risk",
-      "conversion_drop"
-    ],
-    "searchable_summary": "Validate user registration flow so that new users with valid details can create accounts and receive appropriate confirmation or response.",
-    "keywords": [
-      "user_registration",
-      "sign_up",
-      "auth",
-      "account_creation",
-      "validation",
-      "onboarding"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C639",
-    "record_id": "TestRail_C639",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Change password - Scenario 32",
-    "preconditions_original": "Valid session and user is on Auth page",
-    "steps_original": [
-      "1. Perform change password",
-      "2. Observe logs/output",
-      "3. Confirm correctness"
-    ],
-    "expected_results_original": [
-      "System correctly handles change password scenario"
-    ],
-    "content_hash": "f1604a107eb90fd6c272f90472fc94355d35899d7dcb827d8689faad6efacca9",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "3",
-    "type": "7",
-    "references": [],
-    "business_context": "Allows authenticated users to update their passwords to maintain account security and comply with security policies.",
-    "functional_intent": "Checks that a logged-in user can change their password by providing valid current and new credentials, and that the system updates the stored password securely and logs the event.",
-    "system_areas": [
-      "authentication_service",
-      "credential_store",
-      "security_validation",
-      "session_management",
-      "audit_logging"
-    ],
-    "risk_tags": [
-      "account_takeover_risk",
-      "security_noncompliance",
-      "user_lockout",
-      "support_overhead"
-    ],
-    "searchable_summary": "Test change-password flow for logged-in users to ensure credentials are validated and the new password is securely stored and logged.",
-    "keywords": [
-      "change_password",
-      "auth",
-      "security",
-      "credential_update",
-      "password_policy",
-      "audit_log"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C640",
-    "record_id": "TestRail_C640",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Login with email - Scenario 33",
-    "preconditions_original": "System active and user accesses Auth",
-    "steps_original": [
-      "1. Execute login with email",
-      "2. Capture response",
-      "3. Validate outcome"
-    ],
-    "expected_results_original": [
-      "System correctly handles login with email scenario"
-    ],
-    "content_hash": "d1a706b9ff90f4aa9064ca2c085a1050b4facb825c124fb131b0794247cfff83",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "4",
-    "type": "7",
-    "references": [],
-    "business_context": "Ensures that existing users can sign in using their email credentials to access their accounts and services.",
-    "functional_intent": "Validates that the email-based login flow authenticates users with correct email and password, rejects invalid credentials, and establishes a valid session or token on success.",
-    "system_areas": [
-      "authentication_service",
-      "credential_store",
-      "session_management",
-      "rate_limiting",
-      "logging_monitoring"
-    ],
-    "risk_tags": [
-      "login_failures",
-      "brute_force_risk",
-      "user_access_issues",
-      "security_incident"
-    ],
-    "searchable_summary": "Verify email and password login so that valid users can authenticate successfully and invalid attempts are correctly rejected.",
-    "keywords": [
-      "email_login",
-      "password_authentication",
-      "session",
-      "auth_service",
-      "rate_limiting",
-      "login_flow"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C641",
-    "record_id": "TestRail_C641",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "View product details - Scenario 34",
-    "preconditions_original": "User is logged in and on Catalog module",
-    "steps_original": [
-      "1. Execute view product details",
-      "2. Capture response",
-      "3. Validate outcome"
-    ],
-    "expected_results_original": [
-      "System correctly handles view product details scenario"
-    ],
-    "content_hash": "dcf89d9fd868df79be1bbd54a0726f02586eb29cc3c51f3d65b08986c49b9d2f",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "3",
-    "type": "7",
-    "references": [],
-    "business_context": "Confirms that shoppers can open a product detail page to review information before making a purchase decision.",
-    "functional_intent": "Checks that selecting a product loads the correct details, including name, price, description, and availability, and that the response or UI content is accurate.",
-    "system_areas": [
-      "catalog_ui",
-      "product_catalog_service",
-      "image_cdn",
-      "pricing_service",
-      "tracking_analytics"
-    ],
-    "risk_tags": [
-      "poor_user_experience",
-      "incorrect_product_info",
-      "conversion_impact",
-      "data_inconsistency"
-    ],
-    "searchable_summary": "Test viewing a product detail page to ensure the correct product information, pricing, and availability are displayed to the user.",
-    "keywords": [
-      "product_details",
-      "catalog",
-      "pdp",
-      "pricing",
-      "availability",
-      "ecommerce_ui"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C642",
-    "record_id": "TestRail_C642",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Search product - Scenario 35",
-    "preconditions_original": "System active and user accesses Catalog",
-    "steps_original": [
-      "1. Initiate search product",
-      "2. Check output",
-      "3. Validate business rules"
-    ],
-    "expected_results_original": [
-      "System correctly handles search product scenario"
-    ],
-    "content_hash": "dd0063aad099c59d45b814e9316995b62f9799e023406a16ade49d92623b73eb",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "4",
-    "type": "7",
-    "references": [],
-    "business_context": "Ensures that users can search the catalog to quickly find products matching their interests or queries.",
-    "functional_intent": "Verifies that submitting a product search returns relevant results based on the query, respects business rules like visibility and availability, and formats the response correctly.",
-    "system_areas": [
-      "search_service",
-      "catalog_index",
-      "product_catalog_service",
-      "search_ui",
-      "analytics"
-    ],
-    "risk_tags": [
-      "discoverability_issues",
-      "lost_sales_opportunity",
-      "relevance_problems",
-      "performance_risk"
-    ],
-    "searchable_summary": "Validate product search functionality so that user queries return relevant, policy-compliant product results in the catalog.",
-    "keywords": [
-      "product_search",
-      "catalog",
-      "search_service",
-      "relevance",
-      "filters",
-      "discoverability"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C644",
-    "record_id": "TestRail_C644",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Browse product list - Scenario 37",
-    "preconditions_original": "System active and user accesses Catalog",
-    "steps_original": [
-      "1. Initiate browse product list",
-      "2. Check output",
-      "3. Validate business rules"
-    ],
-    "expected_results_original": [
-      "System correctly handles browse product list scenario"
-    ],
-    "content_hash": "516ca8d887273904cf20036721c4234eddb8d8fff9b4c83a3700f68df47b1e20",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "2",
-    "type": "7",
-    "references": [],
-    "business_context": "Confirms that users can browse lists of products, such as category or collection pages, to discover items to purchase.",
-    "functional_intent": "Checks that browsing a product list returns the correct set of items with proper pagination, sorting, and visibility rules applied.",
-    "system_areas": [
-      "catalog_ui",
-      "product_catalog_service",
-      "pagination_layer",
-      "caching_layer",
-      "analytics"
-    ],
-    "risk_tags": [
-      "navigation_issues",
-      "missing_products",
-      "ux_regression",
-      "revenue_impact"
-    ],
-    "searchable_summary": "Test browsing product listing pages to ensure correct products, pagination, and business rules are applied in the catalog view.",
-    "keywords": [
-      "product_list",
-      "catalog_browse",
-      "pagination",
-      "sorting",
-      "category_page",
-      "ecommerce_browsing"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C645",
-    "record_id": "TestRail_C645",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Add to cart - Scenario 38",
-    "preconditions_original": "Cart service available and ready for operations",
-    "steps_original": [
-      "1. Initiate add to cart",
-      "2. Check output",
-      "3. Validate business rules"
-    ],
-    "expected_results_original": [
-      "System correctly handles add to cart scenario"
-    ],
-    "content_hash": "5fce5b164e7effb0ea1f25d9f79174590b60e5fe2c29618b7677b12380904fd4",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "4",
-    "type": "7",
-    "references": [],
-    "business_context": "Ensures that shoppers can add selected products to their shopping cart as part of the purchase journey.",
-    "functional_intent": "Verifies that invoking add-to-cart creates or updates a cart with the chosen item, quantity, and pricing, and that business rules like stock and eligibility are enforced.",
-    "system_areas": [
-      "cart_service",
-      "product_catalog_service",
-      "pricing_service",
-      "session_management",
-      "cart_ui"
-    ],
-    "risk_tags": [
-      "checkout_blockers",
-      "incorrect_cart_contents",
-      "revenue_loss",
-      "ux_regression"
-    ],
-    "searchable_summary": "Validate add-to-cart functionality so that selected products are correctly added to the user’s cart with proper quantity and pricing.",
-    "keywords": [
-      "add_to_cart",
-      "cart_service",
-      "ecommerce",
-      "basket",
-      "pricing",
-      "session_cart"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C646",
-    "record_id": "TestRail_C646",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Remove from cart - Scenario 39",
-    "preconditions_original": "User is logged in and on Cart module",
-    "steps_original": [
-      "1. Perform remove from cart",
-      "2. Observe logs/output",
-      "3. Confirm correctness"
-    ],
-    "expected_results_original": [
-      "System correctly handles remove from cart scenario"
-    ],
-    "content_hash": "0739fb69e938f28a9f204c036b0c87e93c6284f419efc3a95316724cc20a7f70",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "3",
-    "type": "7",
-    "references": [],
-    "business_context": "Allows customers to remove unwanted items from their cart before completing a purchase, improving control over orders.",
-    "functional_intent": "Checks that removing an item from the cart updates the cart contents and totals correctly and that the change is persisted for the user session or account.",
-    "system_areas": [
-      "cart_service",
-      "cart_ui",
-      "session_management",
-      "pricing_service",
-      "logging_monitoring"
-    ],
-    "risk_tags": [
-      "incorrect_order_contents",
-      "billing_discrepancies",
-      "customer_frustration",
-      "ux_regression"
-    ],
-    "searchable_summary": "Test remove-from-cart behavior to ensure items are deleted correctly and cart totals and state are updated accordingly.",
-    "keywords": [
-      "remove_from_cart",
-      "cart_update",
-      "basket",
-      "ecommerce",
-      "order_total",
-      "cart_ui"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C647",
-    "record_id": "TestRail_C647",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Update cart quantity - Scenario 40",
-    "preconditions_original": "System active and user accesses Cart",
-    "steps_original": [
-      "1. Perform update cart quantity",
-      "2. Observe logs/output",
-      "3. Confirm correctness"
-    ],
-    "expected_results_original": [
-      "System correctly handles update cart quantity scenario"
-    ],
-    "content_hash": "7e8835f88ca4502da34b2451836287fb90c874e36f53366af7450a92366ebbda",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "4",
-    "type": "7",
-    "references": [],
-    "business_context": "Ensures that customers can adjust quantities of items in their cart to match their intended purchase volume.",
-    "functional_intent": "Verifies that changing item quantities in the cart recalculates totals, respects stock limits and business rules, and persists the updated cart state.",
-    "system_areas": [
-      "cart_service",
-      "pricing_service",
-      "inventory_service",
-      "cart_ui",
-      "session_management"
-    ],
-    "risk_tags": [
-      "incorrect_charges",
-      "stock_mismanagement",
-      "order_errors",
-      "customer_complaints"
-    ],
-    "searchable_summary": "Validate updating item quantities in the cart so that totals and availability checks are correctly recalculated and saved.",
-    "keywords": [
-      "cart_quantity",
-      "cart_update",
-      "pricing",
-      "inventory",
-      "basket",
-      "ecommerce_cart"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C648",
-    "record_id": "TestRail_C648",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Pay using UPI - Scenario 41",
-    "preconditions_original": "Payment service available and ready for operations",
-    "steps_original": [
-      "1. Execute pay using upi",
-      "2. Capture response",
-      "3. Validate outcome"
-    ],
-    "expected_results_original": [
-      "System correctly handles pay using upi scenario"
-    ],
-    "content_hash": "dc0da066a9619d457ee84d27e39366c8cb0ce2eb172e1a7a573256de776d43c2",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "3",
-    "type": "7",
-    "references": [],
-    "business_context": "Confirms that customers can complete payments using UPI so that orders are paid and confirmed through this method.",
-    "functional_intent": "Checks that initiating a UPI payment triggers the correct payment request, handles callbacks or status updates, and marks the order as paid or failed appropriately.",
-    "system_areas": [
-      "payment_gateway",
-      "upi_integration",
-      "order_management",
-      "transaction_ledger",
-      "notification_service"
-    ],
-    "risk_tags": [
-      "payment_failure",
-      "revenue_loss",
-      "reconciliation_issues",
-      "customer_support_incidents"
-    ],
-    "searchable_summary": "Test UPI payment flow to ensure UPI transactions are initiated, tracked, and reflected correctly in order and payment records.",
-    "keywords": [
-      "upi_payment",
-      "payment_gateway",
-      "checkout",
-      "transaction_status",
-      "order_payment",
-      "reconciliation"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C649",
-    "record_id": "TestRail_C649",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Pay using card - Scenario 42",
-    "preconditions_original": "User is logged in and on Payment module",
-    "steps_original": [
-      "1. Trigger pay using card",
-      "2. Monitor system behavior",
-      "3. Verify expected results"
-    ],
-    "expected_results_original": [
-      "System correctly handles pay using card scenario"
-    ],
-    "content_hash": "4c2930faa3c0a71d0d48972e168d6bc46360b0586ea9908730256b19deb00e33",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "1",
-    "type": "7",
-    "references": [],
-    "business_context": "Ensures that customers can pay for orders using credit or debit cards through the payment module.",
-    "functional_intent": "Validates that card payment processing collects card details securely, interacts with the payment gateway, and updates the order status based on authorization or failure.",
-    "system_areas": [
-      "payment_gateway",
-      "card_processing_service",
-      "payment_ui",
-      "order_management",
-      "fraud_checks"
-    ],
-    "risk_tags": [
-      "payment_declines",
-      "security_compliance_risk",
-      "revenue_impact",
-      "customer_trust_issues"
-    ],
-    "searchable_summary": "Verify card payment processing so that secure card transactions are authorized and correctly reflected in order status and records.",
-    "keywords": [
-      "card_payment",
-      "credit_card",
-      "debit_card",
-      "payment_gateway",
-      "checkout",
-      "transaction_authorization"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C650",
-    "record_id": "TestRail_C650",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Handle payment failure - Scenario 43",
-    "preconditions_original": "Payment service available and ready for operations",
-    "steps_original": [
-      "1. Perform handle payment failure",
-      "2. Observe logs/output",
-      "3. Confirm correctness"
-    ],
-    "expected_results_original": [
-      "System correctly handles handle payment failure scenario"
-    ],
-    "content_hash": "f7266241bcc1ec933997b3d52eaf5bda2d1c9f7067ec83b2e3e96263faf4bafe",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "3",
-    "type": "7",
-    "references": [],
-    "business_context": "Confirms that the system gracefully handles failed payments, informing users and keeping order and payment records consistent.",
-    "functional_intent": "Checks that when a payment fails, the system records the failure, does not mark the order as paid, and presents appropriate error messaging or recovery options.",
-    "system_areas": [
-      "payment_gateway",
-      "order_management",
-      "error_handling_layer",
-      "notification_service",
-      "logging_monitoring"
-    ],
-    "risk_tags": [
-      "incorrect_order_state",
-      "revenue_reporting_errors",
-      "poor_user_experience",
-      "support_escalations"
-    ],
-    "searchable_summary": "Test payment failure handling to ensure failed transactions do not complete orders and that clear feedback and logging are provided.",
-    "keywords": [
-      "payment_failure",
-      "error_handling",
-      "order_status",
-      "payment_gateway",
-      "declined_transaction",
-      "user_messaging"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C651",
-    "record_id": "TestRail_C651",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Create order - Scenario 44",
-    "preconditions_original": "Valid session and user is on Order page",
-    "steps_original": [
-      "1. Execute create order",
-      "2. Capture response",
-      "3. Validate outcome"
-    ],
-    "expected_results_original": [
-      "System correctly handles create order scenario"
-    ],
-    "content_hash": "8ea624c3ffc4355e5433e05ea4a44100c23cd5cd1ce63229bdab0f9d22201a7f",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "3",
-    "type": "7",
-    "references": [],
-    "business_context": "Ensures that a customer’s cart can be converted into a confirmed order record in the system.",
-    "functional_intent": "Verifies that invoking order creation builds an order from cart contents, assigns identifiers, calculates totals, and persists the order with correct initial status.",
-    "system_areas": [
-      "order_management",
-      "cart_service",
-      "pricing_service",
-      "inventory_reservation",
-      "database_persistence"
-    ],
-    "risk_tags": [
-      "order_creation_failure",
-      "data_inconsistency",
-      "revenue_loss",
-      "customer_confusion"
-    ],
-    "searchable_summary": "Validate order creation from the order page so that cart contents become a persisted order with correct totals and status.",
-    "keywords": [
-      "create_order",
-      "order_management",
-      "checkout",
-      "cart_conversion",
-      "order_total",
-      "order_id"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C652",
-    "record_id": "TestRail_C652",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Cancel order - Scenario 45",
-    "preconditions_original": "User is logged in and on Order module",
-    "steps_original": [
-      "1. Execute cancel order",
-      "2. Capture response",
-      "3. Validate outcome"
-    ],
-    "expected_results_original": [
-      "System correctly handles cancel order scenario"
-    ],
-    "content_hash": "eb2f99723cb64708b2ab6dbfd473733b4c36f43bf3163cebfbf6a4e5c6e52111",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "2",
-    "type": "7",
-    "references": [],
-    "business_context": "Allows customers or support agents to cancel orders when appropriate, ensuring downstream processes are updated.",
-    "functional_intent": "Checks that cancelling an order updates its status, reverses or releases any inventory or payment holds as required, and records the action for audit.",
-    "system_areas": [
-      "order_management",
-      "inventory_service",
-      "payment_gateway",
-      "notification_service",
-      "audit_logging"
-    ],
-    "risk_tags": [
-      "incorrect_cancellation_state",
-      "inventory_lock",
-      "refund_disputes",
-      "compliance_issues"
-    ],
-    "searchable_summary": "Test order cancellation flow so that order status, inventory, and payment implications are correctly updated and logged.",
-    "keywords": [
-      "cancel_order",
-      "order_status",
-      "inventory_release",
-      "refund",
-      "order_management",
-      "audit_trail"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C653",
-    "record_id": "TestRail_C653",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Return order - Scenario 46",
-    "preconditions_original": "Valid session and user is on Order page",
-    "steps_original": [
-      "1. Execute return order",
-      "2. Capture response",
-      "3. Validate outcome"
-    ],
-    "expected_results_original": [
-      "System correctly handles return order scenario"
-    ],
-    "content_hash": "4d4ab6a82eb76c17ce4ce15b406c35ab58a6dee3daa609690e21c03825ac307c",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "4",
-    "type": "7",
-    "references": [],
-    "business_context": "Ensures that customers can return orders and that the system processes returns correctly for inventory and refunds.",
-    "functional_intent": "Verifies that initiating a return updates order and item statuses, adjusts inventory as returned, and triggers any necessary refund or credit workflows.",
-    "system_areas": [
-      "order_management",
-      "returns_module",
-      "inventory_service",
-      "refund_service",
-      "customer_communication"
-    ],
-    "risk_tags": [
-      "refund_errors",
-      "inventory_mismatch",
-      "customer_disputes",
-      "financial_reporting_issues"
-    ],
-    "searchable_summary": "Validate order return processing so that returned items and associated refunds or credits are handled and recorded correctly.",
-    "keywords": [
-      "return_order",
-      "rma",
-      "refund",
-      "inventory_return",
-      "order_status",
-      "post_purchase"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C654",
-    "record_id": "TestRail_C654",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Logged-in checkout - Scenario 47",
-    "preconditions_original": "System active and user accesses Checkout",
-    "steps_original": [
-      "1. Trigger logged-in checkout",
-      "2. Monitor system behavior",
-      "3. Verify expected results"
-    ],
-    "expected_results_original": [
-      "System correctly handles logged-in checkout scenario"
-    ],
-    "content_hash": "6e548a91541d76e6d22809cca807f90054d2afcdd50a5ded1bee10e2ec80be0b",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "2",
-    "type": "7",
-    "references": [],
-    "business_context": "Confirms that authenticated customers can complete the full checkout process using their saved information.",
-    "functional_intent": "Checks that a logged-in user can proceed through checkout, using stored addresses and payment options where applicable, and successfully place an order without errors.",
-    "system_areas": [
-      "checkout_flow",
-      "authentication_service",
-      "order_management",
-      "payment_gateway",
-      "address_book"
-    ],
-    "risk_tags": [
-      "checkout_abandonment",
-      "order_creation_failures",
-      "revenue_loss",
-      "ux_regression"
-    ],
-    "searchable_summary": "Test logged-in user checkout flow to ensure authenticated customers can place orders using their saved details without issues.",
-    "keywords": [
-      "checkout",
-      "logged_in_user",
-      "order_placement",
-      "payment",
-      "shipping_address",
-      "ecommerce_flow"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C655",
-    "record_id": "TestRail_C655",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Guest checkout - Scenario 48",
-    "preconditions_original": "Checkout service available and ready for operations",
-    "steps_original": [
-      "1. Trigger guest checkout",
-      "2. Monitor system behavior",
-      "3. Verify expected results"
-    ],
-    "expected_results_original": [
-      "System correctly handles guest checkout scenario"
-    ],
-    "content_hash": "2b866cefe1f17d721db31ca7f8d72424da4b63dc3eeeddc3cc5e2659d1be2b2e",
-    "change_status": "new",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "1",
-    "type": "7",
-    "references": [],
-    "business_context": "Ensures that new or infrequent customers can complete purchases without creating an account via guest checkout.",
-    "functional_intent": "Verifies that the guest checkout flow collects necessary order and contact details, creates an order without a full user account, and processes payment successfully.",
-    "system_areas": [
-      "checkout_flow",
-      "order_management",
-      "payment_gateway",
-      "guest_profile_handling",
-      "notification_service"
-    ],
-    "risk_tags": [
-      "conversion_loss",
-      "order_tracking_issues",
-      "data_quality_risks",
-      "support_complexity"
-    ],
-    "searchable_summary": "Validate guest checkout so that users without accounts can enter details, pay, and place orders successfully.",
-    "keywords": [
-      "guest_checkout",
-      "checkout_flow",
-      "order_creation",
-      "payment",
-      "guest_user",
-      "ecommerce"
-    ]
-  },
-  {
-    "schema_version": "testrail_context.v1",
-    "case_id": "C657",
-    "record_id": "TestRail_C657",
-    "source": "TestRail",
-    "project_id": 3,
-    "suite_id": 10,
-    "section_id": 78,
-    "title": "Partial refund - Scenario 50",
-    "preconditions_original": "Refund service available and ready for operations",
-    "steps_original": [
-      "1. Trigger partial refund",
-      "2. Monitor system behavior",
-      "3. Verify expected results"
-    ],
-    "expected_results_original": [
-      "System correctly handles partial refund scenario"
-    ],
-    "content_hash": "1e31314279020c5a15b0fc0134ed47eb238348b90378b0b0d626ea3548d59d0c",
-    "change_status": "changed",
-    "kb_action": "include_in_active_kb",
-    "requires_contextualization": true,
-    "priority": "4",
-    "type": "7",
-    "references": [],
-    "previous_content_hash": "OLD_CHANGED_HASH_123456",
-    "business_context": "Ensures that the business can issue partial refunds for orders, such as for returned items or goodwill adjustments, while keeping financial records accurate.",
-    "functional_intent": "Verifies that triggering a partial refund correctly calculates the refundable amount, updates the payment and order records, and records the refund transaction without affecting unrelated charges.",
-    "system_areas": [
-      "refund_service",
-      "payment_gateway",
-      "order_management",
-      "financial_ledger",
-      "customer_communication"
-    ],
-    "risk_tags": [
-      "refund_miscalculation",
-      "financial_reporting_errors",
-      "customer_disputes",
-      "chargeback_risk"
-    ],
-    "searchable_summary": "Test partial refund processing so that a subset of an order’s amount can be refunded and accurately reflected in payment, order, and ledger records.",
-    "keywords": [
-      "partial_refund",
-      "refund_service",
-      "order_adjustment",
-      "payment_gateway",
-      "ledger",
-      "post_purchase_support"
+      "account_recovery",
+      "email_verification",
+      "security_policy",
+      "auth_flow"
     ]
   }
 ]
