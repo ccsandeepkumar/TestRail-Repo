@@ -24,26 +24,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Validates that users receive relevant push notifications reliably when the notification service is operational.",
-    "functional_intent": "Checks that triggering push notifications results in correctly formatted messages being dispatched and handled without duplication or loss.",
+    "business_context": "Validates that users receive timely and accurate push notifications about important events or updates so they stay informed without actively using the application.",
+    "functional_intent": "Checks that when a push notification event is triggered, the notification service reliably queues, sends, and delivers the message to the correct users without duplication or loss.",
     "system_areas": [
       "notification_service",
       "push_gateway",
-      "user_device_channels",
-      "logging_monitoring"
+      "user_preferences",
+      "mobile_client",
+      "event_bus"
     ],
     "risk_tags": [
       "missed_communications",
-      "user_engagement_drop",
-      "service_instability"
+      "user_dissatisfaction",
+      "operational_visibility_loss",
+      "regression_notification_service"
     ],
-    "searchable_summary": "Verify push notification service reliably dispatches and handles push messages without loss, duplication, or formatting errors.",
+    "searchable_summary": "End-to-end push notification scenario verifying that triggered events result in correctly delivered push messages honoring user preferences and without loss or duplication.",
     "keywords": [
       "push_notifications",
       "notification_service",
+      "event_trigger",
       "message_delivery",
-      "real_time_alerts",
-      "user_engagement"
+      "user_preferences"
     ]
   },
   {
@@ -71,26 +73,28 @@
     "priority": "1",
     "type": "7",
     "references": [],
-    "business_context": "Ensures the platform can send transactional or informational emails to users from the Notifications area.",
-    "functional_intent": "Validates that email notification triggers result in correctly addressed, formatted, and logged emails being sent without errors.",
+    "business_context": "Ensures that users receive critical information and updates via email so they can act on them even when not logged into the system.",
+    "functional_intent": "Validates that the system correctly composes, queues, and sends email notifications to the intended recipients with correct content and formatting when notification events are triggered.",
     "system_areas": [
       "notification_service",
       "email_gateway",
-      "user_profile_contact_info",
+      "templating_engine",
+      "user_profile",
       "audit_logging"
     ],
     "risk_tags": [
-      "failed_communications",
-      "compliance_notifications_missed",
-      "customer_support_overload"
+      "communication_failure",
+      "compliance_notification_risk",
+      "user_trust_impact",
+      "incorrect_content"
     ],
-    "searchable_summary": "Test email notification flow from Notifications page to confirm emails are sent, logged, and formatted correctly for valid users.",
+    "searchable_summary": "Email notification scenario verifying that triggered events generate correctly formatted emails sent to the right users and logged for traceability.",
     "keywords": [
       "email_notifications",
-      "transactional_email",
-      "notifications_page",
       "smtp_gateway",
-      "email_logging"
+      "message_template",
+      "recipient_address",
+      "audit_log"
     ]
   },
   {
@@ -118,27 +122,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Confirms that customers are shown correct prices based on business rules such as base price, discounts, and taxes.",
-    "functional_intent": "Checks that the pricing service computes totals accurately according to configured rules and returns consistent responses for given inputs.",
+    "business_context": "Confirms that customers see accurate prices when configuring or purchasing products so billing and quotations are financially correct.",
+    "functional_intent": "Validates that the pricing engine correctly applies base prices, taxes, discounts, and rounding rules to compute the final price for a given request.",
     "system_areas": [
-      "pricing_service",
-      "rules_engine",
+      "pricing_engine",
       "tax_calculation",
-      "order_totals"
+      "discount_module",
+      "currency_service",
+      "order_management"
     ],
     "risk_tags": [
       "revenue_loss",
-      "incorrect_pricing",
-      "billing_disputes"
+      "overcharging_customers",
+      "financial_reporting_errors",
+      "regulatory_tax_noncompliance"
     ],
-    "searchable_summary": "Validate pricing service price calculation logic to ensure correct totals based on configured rules, discounts, and taxes.",
+    "searchable_summary": "Price calculation scenario verifying that the pricing service returns correct totals with all discounts and taxes applied for a given request.",
     "keywords": [
-      "pricing_service",
       "price_calculation",
-      "totals",
+      "tax",
       "discounts",
-      "taxes",
-      "billing_accuracy"
+      "rounding_rules",
+      "pricing_service"
     ]
   },
   {
@@ -166,26 +171,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Ensures shoppers can apply promotional coupons to their orders and see the correct discounted price.",
-    "functional_intent": "Validates that when a coupon is applied, the system accepts valid codes, rejects invalid ones, and recalculates the order total appropriately.",
+    "business_context": "Ensures that shoppers can successfully apply promotional coupons to reduce order costs, supporting marketing campaigns and customer incentives.",
+    "functional_intent": "Checks that when a valid coupon code is applied, the system validates eligibility and correctly adjusts the order total, and rejects invalid or expired coupons with appropriate feedback.",
     "system_areas": [
-      "promotions_engine",
+      "promotion_service",
       "coupon_validation",
-      "cart_pricing",
-      "order_summary_ui"
+      "checkout_pricing",
+      "order_summary_ui",
+      "user_account"
     ],
     "risk_tags": [
-      "discount_misapplication",
-      "revenue_erosion",
-      "customer_trust_issues"
+      "incorrect_pricing",
+      "promotion_abuse",
+      "lost_revenue",
+      "customer_complaints"
     ],
-    "searchable_summary": "Verify coupon application flow so valid promo codes adjust cart totals correctly and invalid codes are rejected with proper feedback.",
+    "searchable_summary": "Coupon application scenario validating that eligible coupon codes correctly discount the order while invalid codes are rejected with clear messaging.",
     "keywords": [
-      "coupon",
-      "promo_code",
+      "coupon_code",
+      "promo",
       "discount_application",
-      "cart_total",
-      "promotion_rules"
+      "eligibility_rules",
+      "checkout"
     ]
   },
   {
@@ -213,26 +220,28 @@
     "priority": "2",
     "type": "7",
     "references": [],
-    "business_context": "Verifies that administrators can onboard new products into the catalog in line with business requirements.",
-    "functional_intent": "Checks that the admin add-product flow captures mandatory fields, enforces validation rules, and persists new products correctly.",
+    "business_context": "Verifies that administrators can add new products to the catalog so that they become available for browsing and purchase by customers.",
+    "functional_intent": "Ensures that the admin product creation flow correctly saves product attributes, validates mandatory fields, and exposes the new product to downstream catalog and search services.",
     "system_areas": [
       "admin_portal",
       "product_catalog_service",
-      "data_validation",
-      "audit_trail"
+      "validation_layer",
+      "search_indexing",
+      "inventory_service"
     ],
     "risk_tags": [
       "catalog_inconsistency",
       "data_quality_issues",
-      "operational_blockers"
+      "missing_products",
+      "operational_error"
     ],
-    "searchable_summary": "Test admin add-product workflow to ensure new items with required attributes are validated and saved correctly in the catalog.",
+    "searchable_summary": "Admin add-product scenario ensuring that a new product can be created with valid data and propagated to catalog, search, and inventory systems.",
     "keywords": [
-      "admin_add_product",
-      "product_catalog",
-      "admin_portal",
-      "field_validation",
-      "catalog_management"
+      "admin_product_creation",
+      "catalog",
+      "product_attributes",
+      "validation_rules",
+      "search_index"
     ]
   },
   {
@@ -260,26 +269,28 @@
     "priority": "1",
     "type": "7",
     "references": [],
-    "business_context": "Ensures that stock levels are updated correctly so sales channels reflect accurate product availability.",
-    "functional_intent": "Validates that the inventory service processes updates without errors, adjusts quantities correctly, and returns confirmation responses.",
+    "business_context": "Confirms that product stock levels are updated correctly so that availability shown to customers matches actual inventory.",
+    "functional_intent": "Validates that an inventory update request adjusts stock quantities as expected, maintains consistency across locations, and responds with the correct updated balances.",
     "system_areas": [
       "inventory_service",
-      "stock_ledger",
-      "synchronization_jobs",
-      "order_management"
+      "warehouse_management",
+      "stock_reservation",
+      "product_catalog",
+      "synchronization_jobs"
     ],
     "risk_tags": [
       "overselling",
       "stockouts",
-      "reporting_inaccuracy"
+      "shipping_delays",
+      "inventory_mismatch"
     ],
-    "searchable_summary": "Verify inventory update processing so stock quantity changes are applied accurately and confirmed by the inventory service.",
+    "searchable_summary": "Inventory update scenario verifying that stock adjustments are processed correctly and reflected consistently across inventory and catalog systems.",
     "keywords": [
       "inventory_update",
       "stock_levels",
-      "inventory_service",
-      "quantity_adjustment",
-      "availability"
+      "warehouse",
+      "availability",
+      "synchronization"
     ]
   },
   {
@@ -307,26 +318,28 @@
     "priority": "2",
     "type": "7",
     "references": [],
-    "business_context": "Assesses the platform’s ability to handle high concurrent user load without degrading customer experience.",
-    "functional_intent": "Checks that under a simulated load of around 10,000 users, core operations remain responsive and stable within performance thresholds.",
+    "business_context": "Assesses whether the platform can sustain high concurrent user volumes without unacceptable degradation in performance or stability.",
+    "functional_intent": "Checks that under a 10k concurrent user load, key user flows operate within defined response time thresholds and the system remains stable without errors or resource exhaustion.",
     "system_areas": [
       "load_balancer",
       "application_server_cluster",
-      "database_layer",
-      "performance_monitoring"
+      "database_cluster",
+      "caching_layer",
+      "monitoring_alerting"
     ],
     "risk_tags": [
       "performance_degradation",
-      "system_outage",
+      "service_outage",
+      "capacity_limits",
       "sla_breach"
     ],
-    "searchable_summary": "Load test system behavior under approximately 10k concurrent users to ensure response times and stability meet performance criteria.",
+    "searchable_summary": "High-load performance test verifying that core user flows remain responsive and stable when 10k concurrent users are simulated.",
     "keywords": [
       "load_testing",
-      "concurrency",
-      "scalability",
       "10k_users",
-      "performance_service"
+      "throughput",
+      "response_time",
+      "scalability"
     ]
   },
   {
@@ -354,26 +367,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Validates business continuity by ensuring the application keeps working when the primary database fails.",
-    "functional_intent": "Confirms that a database failover redirects traffic to a secondary node without data loss or major service disruption.",
+    "business_context": "Validates the platform’s resilience so business operations continue when the primary database node fails or is taken offline.",
+    "functional_intent": "Ensures that when a database failover is initiated, traffic is rerouted to the replica with minimal disruption, data consistency is preserved, and user operations resume successfully.",
     "system_areas": [
       "database_cluster",
-      "failover_controller",
+      "failover_manager",
       "connection_pooling",
-      "resilience_module"
+      "transaction_layer",
+      "monitoring"
     ],
     "risk_tags": [
+      "data_unavailability",
+      "transaction_loss",
       "extended_downtime",
-      "data_inconsistency",
-      "resilience_regression"
+      "consistency_issues"
     ],
-    "searchable_summary": "Verify database failover handling so application traffic switches to the secondary database without errors or data loss.",
+    "searchable_summary": "Database failover scenario verifying that application traffic transparently switches to a replica node while preserving data consistency and user operations.",
     "keywords": [
       "database_failover",
+      "replication",
       "high_availability",
       "resilience",
-      "replica_switch",
-      "continuity"
+      "connection_pool"
     ]
   },
   {
@@ -401,26 +416,28 @@
     "priority": "1",
     "type": "7",
     "references": [],
-    "business_context": "Ensures users can sign in quickly using their Google accounts instead of creating new credentials.",
-    "functional_intent": "Validates Google OAuth login flow including redirection, token handling, and account linkage within the auth service.",
+    "business_context": "Ensures that users can quickly access the application using their Google accounts, reducing sign-up friction and leveraging single sign-on.",
+    "functional_intent": "Validates that the Google OAuth flow completes successfully, creating or mapping the local user account and establishing a valid authenticated session after Google login.",
     "system_areas": [
       "authentication_service",
-      "oauth_google",
-      "session_management",
-      "user_account_linking"
+      "oauth_integration",
+      "identity_provider_google",
+      "user_account_linking",
+      "session_management"
     ],
     "risk_tags": [
-      "login_failures",
-      "security_misconfiguration",
-      "onboarding_friction"
+      "authentication_failure",
+      "account_lockout",
+      "security_risk_oauth",
+      "poor_user_experience"
     ],
-    "searchable_summary": "Test Google OAuth login to ensure external authentication, token exchange, and session creation work correctly.",
+    "searchable_summary": "Google social login scenario verifying a successful OAuth flow, account linkage, and session creation using a Google identity.",
     "keywords": [
-      "login_with_google",
+      "google_login",
       "oauth2",
-      "social_login",
-      "auth_service",
-      "single_sign_on"
+      "sso",
+      "social_auth",
+      "session_token"
     ]
   },
   {
@@ -448,26 +465,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Confirms that users who forget their passwords can securely regain access to their accounts.",
-    "functional_intent": "Checks that the password reset flow issues secure reset tokens, validates them, and updates credentials according to policy.",
+    "business_context": "Ensures that users who forget their password can securely regain access to their accounts without support intervention.",
+    "functional_intent": "Checks that password reset requests generate secure tokens, send appropriate reset communications, enforce token expiry, and allow users to set a new password that meets policy requirements.",
     "system_areas": [
       "authentication_service",
       "password_reset_flow",
-      "email_or_sms_delivery",
-      "credential_store"
+      "email_notifications",
+      "token_store",
+      "password_policy"
     ],
     "risk_tags": [
       "account_takeover",
-      "locked_out_users",
-      "security_policy_violations"
+      "lockout",
+      "security_vulnerability",
+      "support_cost_increase"
     ],
-    "searchable_summary": "Verify password reset workflow so users can request, receive, and apply secure reset tokens to change their credentials.",
+    "searchable_summary": "Password reset scenario validating secure token generation, email delivery, and successful password update according to policy.",
     "keywords": [
       "password_reset",
       "reset_token",
-      "auth_flow",
-      "account_recovery",
-      "credential_update"
+      "email_link",
+      "security_policy",
+      "account_recovery"
     ]
   },
   {
@@ -495,26 +514,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Ensures new customers can create accounts successfully to start using the application.",
-    "functional_intent": "Validates that the registration flow accepts valid user data, enforces required fields, and creates an account record without errors.",
+    "business_context": "Confirms that new users can successfully create accounts so they can start using the service without manual onboarding.",
+    "functional_intent": "Validates that the registration flow captures required user details, prevents duplicates, enforces validation rules, and creates an active user record ready for login.",
     "system_areas": [
-      "authentication_service",
-      "user_profile_store",
-      "input_validation",
-      "welcome_notifications"
+      "registration_flow",
+      "user_directory",
+      "validation_rules",
+      "email_verification",
+      "audit_logging"
     ],
     "risk_tags": [
       "onboarding_failure",
-      "data_quality_issues",
-      "conversion_drop"
+      "invalid_user_data",
+      "duplicate_accounts",
+      "security_exposure"
     ],
-    "searchable_summary": "Test user registration flow to confirm new accounts are created with validated information and appropriate system responses.",
+    "searchable_summary": "User registration scenario verifying creation of a new user account with validated data, uniqueness checks, and optional email verification.",
     "keywords": [
       "user_registration",
       "sign_up",
-      "auth_service",
-      "account_creation",
-      "input_validation"
+      "user_profile",
+      "validation",
+      "account_creation"
     ]
   },
   {
@@ -542,25 +563,27 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Confirms that logged-in users can update their passwords to maintain account security.",
-    "functional_intent": "Checks that the change-password function verifies current credentials, applies password policies, and updates the stored password securely.",
+    "business_context": "Ensures existing users can securely change their passwords to manage their own security posture.",
+    "functional_intent": "Checks that authenticated users can update their password after providing the correct current password, that new passwords meet policy, and that old credentials are invalidated.",
     "system_areas": [
       "authentication_service",
-      "credential_store",
-      "password_policy_validator",
-      "security_logging"
+      "password_change_flow",
+      "password_policy",
+      "session_management",
+      "audit_trail"
     ],
     "risk_tags": [
-      "account_compromise",
-      "failed_security_updates",
-      "user_lockout"
+      "unauthorized_access",
+      "weak_passwords",
+      "compliance_failure",
+      "account_compromise"
     ],
-    "searchable_summary": "Verify authenticated password change flow so users can securely update credentials with policy enforcement and proper logging.",
+    "searchable_summary": "Password change scenario validating that logged-in users can update their credentials following policy and that old passwords stop working.",
     "keywords": [
       "change_password",
-      "credential_update",
-      "auth_page",
+      "credentials_update",
       "password_policy",
+      "auth_service",
       "security_audit"
     ]
   },
@@ -589,26 +612,28 @@
     "priority": "4",
     "type": "7",
     "references": [],
-    "business_context": "Verifies that existing users can access their accounts using email-based login credentials.",
-    "functional_intent": "Validates the standard email-and-password login flow including credential verification, error handling, and session creation.",
+    "business_context": "Verifies that registered users can reliably sign in using their email and password to access their accounts.",
+    "functional_intent": "Ensures that the email/password authentication flow correctly validates credentials, handles locked or disabled accounts, and establishes a secure session on success.",
     "system_areas": [
       "authentication_service",
+      "credential_store",
+      "login_ui",
       "session_manager",
-      "user_directory",
-      "login_ui"
+      "rate_limiting"
     ],
     "risk_tags": [
-      "authentication_failures",
-      "unauthorized_access",
-      "user_friction"
+      "login_failure",
+      "brute_force_attack",
+      "user_lockout",
+      "security_breach"
     ],
-    "searchable_summary": "Test email credential login flow to ensure valid users can sign in and invalid attempts are rejected with proper feedback.",
+    "searchable_summary": "Email-password login scenario validating credential verification, account status checks, and secure session creation.",
     "keywords": [
       "email_login",
-      "username_password",
-      "auth_service",
+      "authentication",
+      "credential_validation",
       "session_creation",
-      "login_page"
+      "rate_limit"
     ]
   },
   {
@@ -636,26 +661,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Ensures shoppers can open a product page and see accurate information before purchasing.",
-    "functional_intent": "Checks that selecting a product loads the correct details such as name, price, description, and availability without errors.",
+    "business_context": "Confirms that shoppers can see accurate and complete information for a selected product to support purchase decisions.",
+    "functional_intent": "Validates that selecting a product loads the correct details page with accurate pricing, description, images, and availability data from backend services.",
     "system_areas": [
       "catalog_ui",
       "product_catalog_service",
-      "image_cdn",
-      "pricing_display"
+      "pricing_engine",
+      "inventory_service",
+      "content_delivery_network"
     ],
     "risk_tags": [
-      "conversion_loss",
-      "incorrect_information",
-      "ux_regression"
+      "misleading_information",
+      "conversion_drop",
+      "support_tickets",
+      "data_inconsistency"
     ],
-    "searchable_summary": "Verify product detail view so selecting an item shows the correct attributes, pricing, and availability in the catalog module.",
+    "searchable_summary": "Product detail view scenario verifying that selecting an item displays the correct product data including price, stock, and descriptions.",
     "keywords": [
       "product_details",
-      "catalog_module",
-      "product_page",
+      "catalog_page",
       "pricing_display",
-      "availability_info"
+      "availability",
+      "product_info"
     ]
   },
   {
@@ -683,26 +710,28 @@
     "priority": "4",
     "type": "7",
     "references": [],
-    "business_context": "Verifies that customers can search the catalog to quickly find products matching their queries.",
-    "functional_intent": "Validates that product search returns relevant, correctly filtered results based on the search criteria and catalog indexing.",
+    "business_context": "Ensures customers can find relevant products quickly using the site search, improving discoverability and sales.",
+    "functional_intent": "Checks that entering a search query returns relevant product results, respects filters and sorting rules, and handles empty or invalid queries gracefully.",
     "system_areas": [
       "search_service",
       "catalog_index",
-      "search_results_ui",
-      "filtering_sorting"
+      "search_ui",
+      "filtering_sorting_layer",
+      "analytics_tracking"
     ],
     "risk_tags": [
-      "discoverability_issues",
-      "lost_sales",
-      "search_relevance_regression"
+      "poor_findability",
+      "revenue_impact",
+      "bad_relevance",
+      "user_frustration"
     ],
-    "searchable_summary": "Test catalog product search to ensure queries return accurate, relevant results consistent with catalog data and filters.",
+    "searchable_summary": "Product search scenario validating relevant results, filter behavior, and graceful handling of edge-case queries.",
     "keywords": [
       "product_search",
-      "catalog",
-      "search_results",
-      "indexing",
-      "filters"
+      "search_index",
+      "filters",
+      "sorting",
+      "relevance"
     ]
   },
   {
@@ -730,26 +759,28 @@
     "priority": "2",
     "type": "7",
     "references": [],
-    "business_context": "Ensures users can scroll through catalog listings to discover products by browsing.",
-    "functional_intent": "Checks that the product list view loads pages of items correctly with proper ordering, pagination, and basic metadata.",
+    "business_context": "Verifies that users can browse product listings within categories to discover available items and promotions.",
+    "functional_intent": "Ensures that category or listing pages load with the correct set of products, pagination works, and sorting or default ordering is applied correctly.",
     "system_areas": [
       "catalog_listing_ui",
-      "catalog_service",
+      "product_catalog_service",
       "pagination_engine",
-      "caching_layer"
+      "caching_layer",
+      "analytics"
     ],
     "risk_tags": [
-      "poor_browse_experience",
-      "slow_navigation",
-      "missing_products"
+      "navigation_issues",
+      "missing_products_from_listing",
+      "performance_regression",
+      "conversion_impact"
     ],
-    "searchable_summary": "Verify catalog product list browsing so users can navigate paginated listings with correct items and metadata displayed.",
+    "searchable_summary": "Product list browsing scenario ensuring category pages show the correct products with working pagination and acceptable performance.",
     "keywords": [
       "product_list",
-      "catalog_browsing",
+      "catalog_browse",
       "pagination",
-      "listing_ui",
-      "catalog_service"
+      "category_page",
+      "listing_performance"
     ]
   },
   {
@@ -777,26 +808,28 @@
     "priority": "4",
     "type": "7",
     "references": [],
-    "business_context": "Validates that shoppers can add selected items to their shopping cart as part of the purchase journey.",
-    "functional_intent": "Ensures that invoking add-to-cart creates or updates a cart with the correct product, quantity, and pricing data.",
+    "business_context": "Ensures that shoppers can add desired products to their cart as a key step in the purchase journey.",
+    "functional_intent": "Validates that when a user selects 'add to cart', the chosen product and quantity are correctly recorded in the cart, stock rules are respected, and the cart UI updates appropriately.",
     "system_areas": [
       "cart_service",
-      "catalog_integration",
+      "catalog_ui",
+      "inventory_service",
       "pricing_engine",
-      "cart_ui"
+      "session_store"
     ],
     "risk_tags": [
-      "blocked_purchases",
-      "incorrect_cart_contents",
-      "revenue_loss"
+      "lost_sales",
+      "cart_errors",
+      "inventory_inconsistency",
+      "ux_regression"
     ],
-    "searchable_summary": "Test add-to-cart flow to confirm chosen products are added with correct quantity and pricing into the user’s cart.",
+    "searchable_summary": "Add-to-cart scenario checking that selected items are correctly added to the shopping cart with appropriate pricing and stock validation.",
     "keywords": [
       "add_to_cart",
-      "cart_service",
-      "cart_creation",
-      "cart_item",
-      "checkout_funnel"
+      "shopping_cart",
+      "inventory_check",
+      "cart_session",
+      "pricing"
     ]
   },
   {
@@ -824,26 +857,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Ensures customers can remove unwanted items from their shopping cart before checkout.",
-    "functional_intent": "Checks that removing an item updates the cart contents and totals correctly and persists the change.",
+    "business_context": "Verifies that users can remove unwanted items from their cart to adjust orders before checkout.",
+    "functional_intent": "Checks that when an item is removed from the cart, the system updates cart contents, totals, and any related discounts or promotions accurately.",
     "system_areas": [
       "cart_service",
       "cart_ui",
-      "pricing_update",
-      "session_state"
+      "pricing_engine",
+      "promotion_service",
+      "session_store"
     ],
     "risk_tags": [
-      "cart_inaccuracy",
-      "user_frustration",
-      "abandoned_carts"
+      "incorrect_order_total",
+      "abandoned_carts",
+      "user_confusion",
+      "promotion_calculation_errors"
     ],
-    "searchable_summary": "Verify remove-from-cart operation so items are deleted and cart totals recalculated correctly in the cart module.",
+    "searchable_summary": "Remove-from-cart scenario validating correct item removal, recalculated totals, and updated cart display.",
     "keywords": [
       "remove_from_cart",
       "cart_update",
-      "cart_totals",
-      "cart_ui",
-      "shopping_cart"
+      "order_total",
+      "promotion_recalc",
+      "cart_ui"
     ]
   },
   {
@@ -871,26 +906,28 @@
     "priority": "4",
     "type": "7",
     "references": [],
-    "business_context": "Verifies that shoppers can adjust item quantities in their cart before placing an order.",
-    "functional_intent": "Validates that changing quantities updates line totals and cart summaries correctly while respecting inventory limits.",
+    "business_context": "Ensures shoppers can change quantities of items in their cart to match purchase intent without starting the flow again.",
+    "functional_intent": "Validates that adjusting item quantities updates cart line items, recalculates totals, respects stock limits, and applies or removes promotions as necessary.",
     "system_areas": [
       "cart_service",
-      "quantity_update_logic",
+      "cart_ui",
+      "inventory_service",
       "pricing_engine",
-      "inventory_check"
+      "promotion_service"
     ],
     "risk_tags": [
       "incorrect_billing",
-      "inventory_mismatch",
-      "poor_user_experience"
+      "stock_overcommit",
+      "promotion_misapplication",
+      "user_frustration"
     ],
-    "searchable_summary": "Test update-cart-quantity behavior so changing item counts updates prices and respects inventory constraints.",
+    "searchable_summary": "Cart quantity update scenario checking that quantity changes recalculate totals and respect inventory and promotion rules.",
     "keywords": [
-      "update_cart_quantity",
-      "cart_edit",
-      "line_totals",
-      "inventory_check",
-      "cart_pricing"
+      "cart_quantity",
+      "cart_update",
+      "inventory_limits",
+      "price_recalculation",
+      "promotions"
     ]
   },
   {
@@ -918,26 +955,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Ensures customers can complete payments via UPI, a common digital payment method.",
-    "functional_intent": "Checks that UPI payment initiation, authorization, and confirmation are processed correctly and the order is updated to paid status.",
+    "business_context": "Verifies that customers can successfully complete payments using UPI so orders can be fulfilled without manual intervention.",
+    "functional_intent": "Checks that a UPI payment request is correctly initiated, status callbacks are processed, payment success or failure is recorded, and the order state is updated accordingly.",
     "system_areas": [
-      "payment_service",
-      "upi_gateway_integration",
-      "order_payment_status",
-      "transaction_logging"
+      "payment_gateway",
+      "upi_integration",
+      "order_management",
+      "transaction_logging",
+      "notification_service"
     ],
     "risk_tags": [
       "payment_failure",
-      "revenue_loss",
-      "reconciliation_issues"
+      "duplicate_charges",
+      "reconciliation_issues",
+      "order_stuck_in_pending"
     ],
-    "searchable_summary": "Verify UPI payment flow so transactions are authorized, confirmed, and reflected correctly in order payment status.",
+    "searchable_summary": "UPI payment scenario validating correct initiation, callback handling, and order state updates for UPI transactions.",
     "keywords": [
-      "UPI_payment",
+      "upi_payment",
       "payment_gateway",
-      "payment_service",
       "order_status",
-      "transaction_confirmation"
+      "transaction_callback",
+      "reconciliation"
     ]
   },
   {
@@ -965,26 +1004,28 @@
     "priority": "1",
     "type": "7",
     "references": [],
-    "business_context": "Verifies that customers can pay for orders using credit or debit cards.",
-    "functional_intent": "Validates card payment processing including card detail capture, authorization, and updating the order as successfully paid.",
+    "business_context": "Confirms that customers can pay by credit or debit card to complete purchases on the platform.",
+    "functional_intent": "Validates that card payments are processed through the payment gateway with correct authorization, capture, error handling, and order status updates.",
     "system_areas": [
-      "payment_module_ui",
-      "card_gateway",
-      "payment_service",
-      "order_management"
+      "payment_gateway",
+      "card_processor_integration",
+      "checkout_ui",
+      "order_management",
+      "fraud_detection"
     ],
     "risk_tags": [
-      "card_payment_failure",
-      "chargebacks",
-      "checkout_dropoff"
+      "authorization_failure",
+      "payment_disputes",
+      "fraud_risk",
+      "lost_revenue"
     ],
-    "searchable_summary": "Test card payment workflow so card details are processed via the gateway and successful payments update order status.",
+    "searchable_summary": "Card payment scenario verifying successful authorization, capture, and order update when paying with a card.",
     "keywords": [
       "card_payment",
       "credit_card",
-      "debit_card",
       "payment_gateway",
-      "checkout"
+      "authorization",
+      "capture"
     ]
   },
   {
@@ -1012,26 +1053,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Ensures that when a payment fails, customers receive clear feedback and orders are not incorrectly marked as paid.",
-    "functional_intent": "Checks that payment failures are detected, logged, and reflected in order status and user messaging without creating completed orders.",
+    "business_context": "Ensures that when payments fail, users receive clear feedback and orders are not incorrectly confirmed or charged.",
+    "functional_intent": "Checks that failed payment attempts are detected, appropriate error messages are shown, transactions are not captured, and the order remains in a non-confirmed state with logs for support.",
     "system_areas": [
-      "payment_service",
-      "payment_gateway_integration",
-      "order_status_management",
-      "error_messaging"
+      "payment_gateway",
+      "checkout_ui",
+      "order_management",
+      "error_handling_layer",
+      "logging_monitoring"
     ],
     "risk_tags": [
-      "incorrect_order_state",
-      "revenue_reconciliation_issues",
-      "customer_confusion"
+      "ghost_orders",
+      "customer_confusion",
+      "charge_disputes",
+      "data_inconsistency"
     ],
-    "searchable_summary": "Verify payment failure handling so unsuccessful transactions do not create paid orders and users see accurate error messages.",
+    "searchable_summary": "Payment failure handling scenario validating correct error reporting, no order confirmation, and proper logging when a transaction fails.",
     "keywords": [
       "payment_failure",
       "error_handling",
-      "order_status",
-      "payment_gateway",
-      "transaction_logging"
+      "order_state",
+      "transaction_log",
+      "customer_feedback"
     ]
   },
   {
@@ -1059,26 +1102,28 @@
     "priority": "3",
     "type": "7",
     "references": [],
-    "business_context": "Confirms that customers can successfully place an order from their cart.",
-    "functional_intent": "Validates that creating an order from selected cart items generates a correct, persistent order record with all necessary details.",
+    "business_context": "Verifies that successful checkouts result in valid orders being created so fulfillment and invoicing can proceed.",
+    "functional_intent": "Validates that order creation persists all required details (items, prices, customer info, shipping) and assigns a unique order identifier in the correct initial status.",
     "system_areas": [
-      "order_service",
-      "cart_integration",
-      "pricing_snapshot",
-      "order_confirmation"
+      "order_management",
+      "cart_service",
+      "pricing_engine",
+      "customer_profile",
+      "database_persistence"
     ],
     "risk_tags": [
       "lost_orders",
-      "incorrect_order_records",
-      "revenue_impact"
+      "incorrect_order_data",
+      "fulfillment_errors",
+      "billing_discrepancies"
     ],
-    "searchable_summary": "Test order creation flow so converting a cart into an order produces a complete, accurate order record.",
+    "searchable_summary": "Order creation scenario validating that a confirmed cart becomes a persisted order with all required customer and line-item details.",
     "keywords": [
-      "create_order",
-      "order_service",
-      "cart_conversion",
-      "order_record",
-      "checkout"
+      "order_creation",
+      "checkout",
+      "order_id",
+      "line_items",
+      "order_status"
     ]
   },
   {
@@ -1106,26 +1151,28 @@
     "priority": "2",
     "type": "7",
     "references": [],
-    "business_context": "Ensures customers or support agents can cancel orders when business rules allow it.",
-    "functional_intent": "Checks that canceling an order updates its status, triggers any necessary reversals, and prevents further fulfillment actions.",
+    "business_context": "Allows customers or agents to cancel orders when appropriate, preventing unwanted shipments and charges.",
+    "functional_intent": "Checks that a cancellation request moves the order to a cancelled state, stops downstream fulfillment, and triggers any necessary refund or stock adjustments.",
     "system_areas": [
       "order_management",
-      "status_workflow_engine",
-      "inventory_reversal",
-      "notification_service"
+      "inventory_service",
+      "payment_gateway",
+      "fulfillment_integration",
+      "notifications"
     ],
     "risk_tags": [
       "incorrect_cancellation",
-      "inventory_mismanagement",
-      "billing_disputes"
+      "shipment_of_cancelled_orders",
+      "refund_discrepancies",
+      "inventory_misalignment"
     ],
-    "searchable_summary": "Verify order cancellation process so eligible orders change to a canceled state with correct side effects applied.",
+    "searchable_summary": "Order cancellation scenario validating state transition to cancelled, halting fulfillment, and adjusting payments and inventory as required.",
     "keywords": [
-      "cancel_order",
+      "order_cancellation",
       "order_status",
-      "workflow",
-      "inventory_reversal",
-      "order_cancellation"
+      "refund",
+      "inventory_adjustment",
+      "fulfillment_stop"
     ]
   },
   {
@@ -1153,26 +1200,28 @@
     "priority": "4",
     "type": "7",
     "references": [],
-    "business_context": "Verifies that customers can initiate returns for previously placed orders in line with return policies.",
-    "functional_intent": "Validates that executing a return updates order and item status, initiates refund steps, and records return details.",
+    "business_context": "Ensures that customers can return previously purchased items and receive appropriate refunds or credits.",
+    "functional_intent": "Validates that initiating a return records return items, updates order and inventory states, and triggers refund or credit processing according to policy.",
     "system_areas": [
       "returns_management",
-      "order_service",
-      "refund_engine",
-      "inventory_update"
+      "order_management",
+      "inventory_service",
+      "payment_gateway",
+      "customer_accounting"
     ],
     "risk_tags": [
       "refund_errors",
-      "inventory_inaccuracy",
+      "inventory_miscounts",
+      "policy_noncompliance",
       "customer_dissatisfaction"
     ],
-    "searchable_summary": "Test order return workflow so returned items and associated refunds are processed and recorded correctly.",
+    "searchable_summary": "Order return scenario verifying that returned items are recorded, inventory updated, and corresponding refunds or credits processed correctly.",
     "keywords": [
-      "return_order",
-      "returns_management",
-      "refund",
-      "order_items",
-      "reverse_logistics"
+      "order_return",
+      "rma",
+      "refund_processing",
+      "inventory_update",
+      "return_policy"
     ]
   },
   {
@@ -1200,26 +1249,28 @@
     "priority": "2",
     "type": "7",
     "references": [],
-    "business_context": "Ensures signed-in customers can complete the checkout process from cart to payment confirmation.",
-    "functional_intent": "Checks that the logged-in checkout flow uses saved profiles and addresses, calculates totals, and leads into payment without errors.",
+    "business_context": "Confirms that authenticated customers can complete a full checkout using their saved details for a streamlined purchase experience.",
+    "functional_intent": "Checks that a logged-in user can proceed through checkout, using stored addresses and payment methods, resulting in a successful order and payment capture.",
     "system_areas": [
       "checkout_flow",
-      "cart_service",
       "user_profile",
-      "order_summary"
+      "payment_gateway",
+      "cart_service",
+      "order_management"
     ],
     "risk_tags": [
-      "checkout_breakage",
-      "revenue_loss",
-      "poor_user_experience"
+      "checkout_dropoff",
+      "duplicate_orders",
+      "payment_issues",
+      "incorrect_shipping_details"
     ],
-    "searchable_summary": "Verify logged-in checkout journey so authenticated users can review their cart and proceed to payment successfully.",
+    "searchable_summary": "Logged-in checkout scenario validating end-to-end purchase using saved profile data and successful order creation and payment.",
     "keywords": [
-      "logged_in_checkout",
-      "checkout_flow",
-      "cart_review",
-      "user_profile",
-      "order_summary"
+      "checkout",
+      "authenticated_user",
+      "saved_address",
+      "saved_payment_method",
+      "order_completion"
     ]
   },
   {
@@ -1247,26 +1298,28 @@
     "priority": "1",
     "type": "7",
     "references": [],
-    "business_context": "Confirms that new or occasional customers can place orders without creating an account.",
-    "functional_intent": "Validates guest checkout flow including temporary data capture, address entry, and order creation without persistent accounts.",
+    "business_context": "Ensures that new or infrequent customers can complete purchases without creating an account, reducing friction at checkout.",
+    "functional_intent": "Validates that a guest user can provide required shipping and payment details during checkout, leading to successful order placement without creating a persisted user account.",
     "system_areas": [
-      "checkout_service",
+      "checkout_flow",
       "guest_profile_handling",
-      "order_creation",
-      "email_notification"
+      "payment_gateway",
+      "order_management",
+      "email_notifications"
     ],
     "risk_tags": [
-      "checkout_abandonment",
-      "data_capture_errors",
-      "lost_conversions"
+      "abandoned_carts",
+      "data_capture_issues",
+      "order_fulfillment_errors",
+      "fraud_risk_guest"
     ],
-    "searchable_summary": "Test guest checkout so users without accounts can enter details, place orders, and receive confirmations correctly.",
+    "searchable_summary": "Guest checkout scenario verifying end-to-end purchase flow for non-registered users with correct order and notification handling.",
     "keywords": [
       "guest_checkout",
-      "anonymous_checkout",
-      "order_creation",
-      "checkout_service",
-      "confirmation_email"
+      "one-time_purchase",
+      "payment_processing",
+      "shipping_details",
+      "order_confirmation"
     ]
   },
   {
@@ -1294,25 +1347,26 @@
     "priority": "4",
     "type": "7",
     "references": [],
-    "previous_content_hash": "OLD_CHANGED_HASH_123456",
-    "business_context": "Ensures the business can return part of a payment to the customer for adjustments such as partial returns or goodwill credits.",
-    "functional_intent": "Validates that initiating a partial refund correctly calculates the refund amount, updates payment records, and links to the original transaction.",
+    "business_context": "Ensures that support or finance teams can issue partial refunds when customers return or dispute only part of an order.",
+    "functional_intent": "Validates that a partial refund request calculates the correct refund amount, updates payment records, and adjusts order and financial balances without affecting non-refunded items.",
     "system_areas": [
       "refund_service",
-      "payment_records",
-      "order_adjustments",
-      "financial_reporting"
+      "payment_gateway",
+      "order_management",
+      "ledger_accounting",
+      "customer_balance"
     ],
     "risk_tags": [
+      "incorrect_refund_amount",
       "financial_misstatement",
-      "incorrect_refunds",
-      "customer_disputes"
+      "customer_disputes",
+      "reconciliation_problems"
     ],
-    "searchable_summary": "Verify partial refund processing so a subset of the original payment is refunded and accurately recorded against the order.",
+    "searchable_summary": "Partial refund scenario verifying correct calculation, processing, and accounting of refunds for a subset of order items or amounts.",
     "keywords": [
       "partial_refund",
       "refund_service",
-      "payment_adjustment",
+      "payment_reversal",
       "order_adjustment",
       "financial_reconciliation"
     ]
