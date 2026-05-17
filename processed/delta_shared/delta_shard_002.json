@@ -4,6 +4,34 @@
     "cases": [
         {
             "schema_version": "testrail_context.v1",
+            "case_id": "C638",
+            "record_id": "TestRail_C638",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 78,
+            "title": "User registration - Scenario 31",
+            "preconditions_original": "System active and user accesses Auth",
+            "steps_original": [
+                "1. Execute user registration",
+                "2. Capture response",
+                "3. Validate outcome"
+            ],
+            "expected_results_original": [
+                "System correctly handles user registration scenario"
+            ],
+            "priority": "3",
+            "type": "7",
+            "references": [],
+            "content_hash": "85a1bf23cda8e0a399a51f77565ecda26e44ee8ab60d7e1732bd1569306ce48c",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517114152",
+            "shard_id": "delta_shard_002"
+        },
+        {
+            "schema_version": "testrail_context.v1",
             "case_id": "C639",
             "record_id": "TestRail_C639",
             "source": "TestRail",
@@ -27,7 +55,7 @@
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true,
-            "run_id": "run_20260517113935",
+            "run_id": "run_20260517114152",
             "shard_id": "delta_shard_002"
         },
         {
@@ -55,7 +83,7 @@
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true,
-            "run_id": "run_20260517113935",
+            "run_id": "run_20260517114152",
             "shard_id": "delta_shard_002"
         },
         {
@@ -83,7 +111,7 @@
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true,
-            "run_id": "run_20260517113935",
+            "run_id": "run_20260517114152",
             "shard_id": "delta_shard_002"
         },
         {
@@ -111,7 +139,7 @@
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true,
-            "run_id": "run_20260517113935",
+            "run_id": "run_20260517114152",
             "shard_id": "delta_shard_002"
         },
         {
@@ -139,7 +167,7 @@
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true,
-            "run_id": "run_20260517113935",
+            "run_id": "run_20260517114152",
             "shard_id": "delta_shard_002"
         },
         {
@@ -167,7 +195,7 @@
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true,
-            "run_id": "run_20260517113935",
+            "run_id": "run_20260517114152",
             "shard_id": "delta_shard_002"
         },
         {
@@ -195,7 +223,7 @@
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true,
-            "run_id": "run_20260517113935",
+            "run_id": "run_20260517114152",
             "shard_id": "delta_shard_002"
         },
         {
@@ -223,7 +251,7 @@
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true,
-            "run_id": "run_20260517113935",
+            "run_id": "run_20260517114152",
             "shard_id": "delta_shard_002"
         },
         {
@@ -251,35 +279,7 @@
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true,
-            "run_id": "run_20260517113935",
-            "shard_id": "delta_shard_002"
-        },
-        {
-            "schema_version": "testrail_context.v1",
-            "case_id": "C649",
-            "record_id": "TestRail_C649",
-            "source": "TestRail",
-            "project_id": 3,
-            "suite_id": 10,
-            "section_id": 78,
-            "title": "Pay using card - Scenario 42",
-            "preconditions_original": "User is logged in and on Payment module",
-            "steps_original": [
-                "1. Trigger pay using card",
-                "2. Monitor system behavior",
-                "3. Verify expected results"
-            ],
-            "expected_results_original": [
-                "System correctly handles pay using card scenario"
-            ],
-            "priority": "1",
-            "type": "7",
-            "references": [],
-            "content_hash": "4c2930faa3c0a71d0d48972e168d6bc46360b0586ea9908730256b19deb00e33",
-            "change_status": "new",
-            "kb_action": "include_in_active_kb",
-            "requires_contextualization": true,
-            "run_id": "run_20260517113935",
+            "run_id": "run_20260517114152",
             "shard_id": "delta_shard_002"
         }
     ]
