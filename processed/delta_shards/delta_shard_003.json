@@ -1,33 +1,117 @@
 {
     "shard_id": "delta_shard_003",
-    "case_count": 1,
+    "case_count": 6,
     "cases": [
         {
             "schema_version": "testrail_context.v1",
-            "case_id": "C635",
-            "record_id": "TestRail_C635",
+            "case_id": "C534",
+            "record_id": "TestRail_C534",
             "source": "TestRail",
             "project_id": 3,
             "suite_id": 10,
-            "section_id": 78,
-            "title": "Database failover - Scenario 28",
-            "preconditions_original": "User is logged in and on Resilience module",
+            "section_id": 77,
+            "title": "Price calculation - Scenario 27",
+            "preconditions_original": "Valid session and user is on Pricing page",
             "steps_original": [
-                "1. Execute database failover",
-                "2. Capture response",
-                "3. Validate outcome"
+                "1. Perform price calculation",
+                "2. Observe logs/output",
+                "3. Confirm correctness"
             ],
             "expected_results_original": [
-                "System correctly handles database failover scenario"
+                "System correctly handles price calculation scenario"
+            ],
+            "priority": "1",
+            "type": "7",
+            "references": [],
+            "content_hash": "21b269e30d074271d91e652173ef4e94a838053163139c36af792a2665e0eb65",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_003"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C535",
+            "record_id": "TestRail_C535",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Apply coupon - Scenario 28",
+            "preconditions_original": "System active and user accesses Promo",
+            "steps_original": [
+                "1. Initiate apply coupon",
+                "2. Check output",
+                "3. Validate business rules"
+            ],
+            "expected_results_original": [
+                "System correctly handles apply coupon scenario"
+            ],
+            "priority": "2",
+            "type": "7",
+            "references": [],
+            "content_hash": "0e6f9709ca861dfece6ff833775a67d8f5e84fed44bb0dff78715d1941b6a9ad",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_003"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C536",
+            "record_id": "TestRail_C536",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Admin add product - Scenario 29",
+            "preconditions_original": "System active and user accesses Admin",
+            "steps_original": [
+                "1. Initiate admin add product",
+                "2. Check output",
+                "3. Validate business rules"
+            ],
+            "expected_results_original": [
+                "System correctly handles admin add product scenario"
             ],
             "priority": "3",
             "type": "7",
             "references": [],
-            "content_hash": "d2aa24d675897d7e4d0796871f9a6e538dea549d816d19bca25d9700c0f899df",
+            "content_hash": "9273635bc2ce3abe45ad6a23c6037d50d677bee829a732184acd87d34272883b",
             "change_status": "new",
             "kb_action": "include_in_active_kb",
             "requires_contextualization": true,
-            "run_id": "run_20260513125824",
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_003"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C537",
+            "record_id": "TestRail_C537",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Inventory update - Scenario 30",
+            "preconditions_original": "User is logged in and on Inventory module",
+            "steps_original": [
+                "1. Perform inventory update",
+                "2. Observe logs/output",
+                "3. Confirm correctness"
+            ],
+            "expected_results_original": [
+                "System correctly handles inventory update scenario"
+            ],
+            "priority": "3",
+            "type": "7",
+            "references": [],
+            "content_hash": "5193306d600d4aea3b6da1308948d3d1de2a8371d43d81f4ece2cd85007d3f2e",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
             "shard_id": "delta_shard_003"
         }
     ]
