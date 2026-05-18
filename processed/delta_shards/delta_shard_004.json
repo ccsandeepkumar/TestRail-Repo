@@ -1,0 +1,146 @@
+{
+    "shard_id": "delta_shard_004",
+    "case_count": 10,
+    "cases": [
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C544",
+            "record_id": "TestRail_C544",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Login with email - Scenario 37",
+            "preconditions_original": "User is logged in and on Auth module",
+            "steps_original": [
+                "1. Perform login with email",
+                "2. Observe logs/output",
+                "3. Confirm correctness"
+            ],
+            "expected_results_original": [
+                "System correctly handles login with email scenario"
+            ],
+            "priority": "1",
+            "type": "7",
+            "references": [],
+            "content_hash": "cea38fbecc4fb5d0793e0f391c8d4f165d7ee4e534fa88b34a9edd963fcbf371",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_004"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C545",
+            "record_id": "TestRail_C545",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "View product details - Scenario 38",
+            "preconditions_original": "Valid session and user is on Catalog page",
+            "steps_original": [
+                "1. Execute view product details",
+                "2. Capture response",
+                "3. Validate outcome"
+            ],
+            "expected_results_original": [
+                "System correctly handles view product details scenario"
+            ],
+            "priority": "4",
+            "type": "7",
+            "references": [],
+            "content_hash": "c0dd379e3a596d6612b17f015a6cc90657c33cac088123513602797823d036d0",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_004"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C546",
+            "record_id": "TestRail_C546",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Search product - Scenario 39",
+            "preconditions_original": "Valid session and user is on Catalog page",
+            "steps_original": [
+                "1. Trigger search product",
+                "2. Monitor system behavior",
+                "3. Verify expected results"
+            ],
+            "expected_results_original": [
+                "System correctly handles search product scenario"
+            ],
+            "priority": "1",
+            "type": "7",
+            "references": [],
+            "content_hash": "2afee874829142d2837bf5d2b9b3f709532383b733132c63af48ae9aa4f65657",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_004"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C547",
+            "record_id": "TestRail_C547",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Product reviews - Scenario 40",
+            "preconditions_original": "Valid session and user is on Catalog page",
+            "steps_original": [
+                "1. Perform product reviews",
+                "2. Observe logs/output",
+                "3. Confirm correctness"
+            ],
+            "expected_results_original": [
+                "System correctly handles product reviews scenario"
+            ],
+            "priority": "2",
+            "type": "7",
+            "references": [],
+            "content_hash": "a6c3f3a486db1153c9da3cf5aa14c62b2d350c9025380d6240a33fb4cb708e46",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_004"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C548",
+            "record_id": "TestRail_C548",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Browse product list - Scenario 41",
+            "preconditions_original": "Catalog service available and ready for operations",
+            "steps_original": [
+                "1. Trigger browse product list",
+                "2. Monitor system behavior",
+                "3. Verify expected results"
+            ],
+            "expected_results_original": [
+                "System correctly handles browse product list scenario"
+            ],
+            "priority": "3",
+            "type": "7",
+            "references": [],
+            "content_hash": "bc958928ff5b236a80b0f494f97e212b0808c1d39de4c4c527885a068560fab6",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_004"
+        }
+    ]
+}
