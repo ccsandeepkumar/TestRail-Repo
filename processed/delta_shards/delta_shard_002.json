@@ -1,6 +1,6 @@
 {
     "shard_id": "delta_shard_002",
-    "case_count": 10,
+    "case_count": 5,
     "cases": [
         {
             "schema_version": "testrail_context.v1",
