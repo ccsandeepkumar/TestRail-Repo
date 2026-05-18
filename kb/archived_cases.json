@@ -1,10 +1,10 @@
 {
-  "cases": [],
   "kb_metadata": {
+    "version": "1.0",
     "last_updated": "2026-05-17T12:35:02Z",
-    "run_id": "run_20260517123502",
-    "source": "TestRail",
     "total_cases": 0,
-    "version": "1.0"
-  }
+    "source": "TestRail",
+    "run_id": "run_20260517123502"
+  },
+  "cases": []
 }
