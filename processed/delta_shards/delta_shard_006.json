@@ -1,0 +1,202 @@
+{
+    "shard_id": "delta_shard_006",
+    "case_count": 10,
+    "cases": [
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C564",
+            "record_id": "TestRail_C564",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Push notifications - Scenario 7",
+            "preconditions_original": "System active and user accesses Notifications",
+            "steps_original": [
+                "1. Trigger push notifications",
+                "2. Monitor system behavior",
+                "3. Verify expected results"
+            ],
+            "expected_results_original": [
+                "System correctly handles push notifications scenario"
+            ],
+            "priority": "2",
+            "type": "7",
+            "references": [],
+            "content_hash": "e7a61ceda08f8c7e2f17d9e2fbbce8475d825439654d8769eb721028ce718e00",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_006"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C565",
+            "record_id": "TestRail_C565",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Email notifications - Scenario 8",
+            "preconditions_original": "System active and user accesses Notifications",
+            "steps_original": [
+                "1. Perform email notifications",
+                "2. Observe logs/output",
+                "3. Confirm correctness"
+            ],
+            "expected_results_original": [
+                "System correctly handles email notifications scenario"
+            ],
+            "priority": "1",
+            "type": "7",
+            "references": [],
+            "content_hash": "0086619441dd68ca97c8dbf55bbb4ecec329f4c2179ebad1bb74c7563e7cf01f",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_006"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C566",
+            "record_id": "TestRail_C566",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Price calculation - Scenario 9",
+            "preconditions_original": "User is logged in and on Pricing module",
+            "steps_original": [
+                "1. Trigger price calculation",
+                "2. Monitor system behavior",
+                "3. Verify expected results"
+            ],
+            "expected_results_original": [
+                "System correctly handles price calculation scenario"
+            ],
+            "priority": "3",
+            "type": "7",
+            "references": [],
+            "content_hash": "88d8b679b5f4f6257f77e8adeebc5f13009ee083919035e2b5efaf6195d59ce1",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_006"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C567",
+            "record_id": "TestRail_C567",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Apply coupon - Scenario 10",
+            "preconditions_original": "System active and user accesses Promo",
+            "steps_original": [
+                "1. Initiate apply coupon",
+                "2. Check output",
+                "3. Validate business rules"
+            ],
+            "expected_results_original": [
+                "System correctly handles apply coupon scenario"
+            ],
+            "priority": "4",
+            "type": "7",
+            "references": [],
+            "content_hash": "8361f14c61b73275bdb35d849fb75dabe490115d0b131378ffc65a281a8167d2",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_006"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C568",
+            "record_id": "TestRail_C568",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Admin add product - Scenario 11",
+            "preconditions_original": "Valid session and user is on Admin page",
+            "steps_original": [
+                "1. Initiate admin add product",
+                "2. Check output",
+                "3. Validate business rules"
+            ],
+            "expected_results_original": [
+                "System correctly handles admin add product scenario"
+            ],
+            "priority": "2",
+            "type": "7",
+            "references": [],
+            "content_hash": "e482cdaa74136ac57cfd367739f31154cfcbdd75e9427795de46d1abb4d64643",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_006"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C569",
+            "record_id": "TestRail_C569",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Inventory update - Scenario 12",
+            "preconditions_original": "Valid session and user is on Inventory page",
+            "steps_original": [
+                "1. Initiate inventory update",
+                "2. Check output",
+                "3. Validate business rules"
+            ],
+            "expected_results_original": [
+                "System correctly handles inventory update scenario"
+            ],
+            "priority": "2",
+            "type": "7",
+            "references": [],
+            "content_hash": "4cb7ed422a426d9aed43795733e750c92cf4813c9529cfcb1378be108c4fcdc7",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_006"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C570",
+            "record_id": "TestRail_C570",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Support 10k users - Scenario 13",
+            "preconditions_original": "System active and user accesses Performance",
+            "steps_original": [
+                "1. Execute support 10k users",
+                "2. Capture response",
+                "3. Validate outcome"
+            ],
+            "expected_results_original": [
+                "System correctly handles support 10k users scenario"
+            ],
+            "priority": "3",
+            "type": "7",
+            "references": [],
+            "content_hash": "0efea856e7cf1288e717774f7b3c6632c84046eb9a0a55918c18ca9a0bda89ae",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_006"
+        }
+    ]
+}
