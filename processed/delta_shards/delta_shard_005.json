@@ -1,0 +1,146 @@
+{
+    "shard_id": "delta_shard_005",
+    "case_count": 10,
+    "cases": [
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C554",
+            "record_id": "TestRail_C554",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Handle payment failure - Scenario 47",
+            "preconditions_original": "System active and user accesses Payment",
+            "steps_original": [
+                "1. Execute handle payment failure",
+                "2. Capture response",
+                "3. Validate outcome"
+            ],
+            "expected_results_original": [
+                "System correctly handles handle payment failure scenario"
+            ],
+            "priority": "2",
+            "type": "7",
+            "references": [],
+            "content_hash": "693f20d243236d03a8de1bd8b909cb3244beb41774a19e3a1c36b8da9eab841e",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_005"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C555",
+            "record_id": "TestRail_C555",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Create order - Scenario 48",
+            "preconditions_original": "System active and user accesses Order",
+            "steps_original": [
+                "1. Perform create order",
+                "2. Observe logs/output",
+                "3. Confirm correctness"
+            ],
+            "expected_results_original": [
+                "System correctly handles create order scenario"
+            ],
+            "priority": "1",
+            "type": "7",
+            "references": [],
+            "content_hash": "607724e82fd9abbb5fad8e2ca260c7888ed0f8794b59981c51975c3ee572d989",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_005"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C556",
+            "record_id": "TestRail_C556",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Cancel order - Scenario 49",
+            "preconditions_original": "System active and user accesses Order",
+            "steps_original": [
+                "1. Execute cancel order",
+                "2. Capture response",
+                "3. Validate outcome"
+            ],
+            "expected_results_original": [
+                "System correctly handles cancel order scenario"
+            ],
+            "priority": "2",
+            "type": "7",
+            "references": [],
+            "content_hash": "6a774171d7152862a8ec35b4c651c323efd610e247144f3cb3de650b33fec5a1",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_005"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C557",
+            "record_id": "TestRail_C557",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Return order - Scenario 50",
+            "preconditions_original": "Valid session and user is on Order page",
+            "steps_original": [
+                "1. Execute return order",
+                "2. Capture response",
+                "3. Validate outcome"
+            ],
+            "expected_results_original": [
+                "System correctly handles return order scenario"
+            ],
+            "priority": "2",
+            "type": "7",
+            "references": [],
+            "content_hash": "52a3c1a516d7f32f09138776cb9aa62679493b445c7915fd1fca9a88b2087dec",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_005"
+        },
+        {
+            "schema_version": "testrail_context.v1",
+            "case_id": "C558",
+            "record_id": "TestRail_C558",
+            "source": "TestRail",
+            "project_id": 3,
+            "suite_id": 10,
+            "section_id": 77,
+            "title": "Logged-in checkout - Scenario 1",
+            "preconditions_original": "Checkout service available and ready for operations",
+            "steps_original": [
+                "1. Initiate logged-in checkout",
+                "2. Check output",
+                "3. Validate business rules"
+            ],
+            "expected_results_original": [
+                "System correctly handles logged-in checkout scenario"
+            ],
+            "priority": "2",
+            "type": "7",
+            "references": [],
+            "content_hash": "d6ad94bbfe988d568b506ab6e652d07cb874fe9978d52c221706cc55efac6b1b",
+            "change_status": "new",
+            "kb_action": "include_in_active_kb",
+            "requires_contextualization": true,
+            "run_id": "run_20260517123502",
+            "shard_id": "delta_shard_005"
+        }
+    ]
+}
