@@ -34,8 +34,8 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_001",
-      "business_context": "Validates user authentication via email credentials to ensure secure access to the system. Critical for user identity verification and access control.",
-      "functional_intent": "To verify that users can successfully authenticate using their email address and password, ensuring proper session establishment and access rights.",
+      "business_context": "Validates user authentication via email credentials to ensure secure access to the system. Critical for user identity verification and session establishment.",
+      "functional_intent": "Verify that users can successfully authenticate using email and password, establishing a valid session with appropriate access rights.",
       "system_areas": [
         "Authentication",
         "User Management",
@@ -45,18 +45,17 @@
       "risk_tags": [
         "security",
         "authentication",
-        "user_access",
-        "critical_path"
+        "user-access"
       ],
-      "searchable_summary": "Email-based login authentication test validating user credentials, session creation, and access control for the Auth module.",
+      "searchable_summary": "Email-based login authentication test validating user credentials and session creation for secure system access",
       "keywords": [
         "login",
         "email",
         "authentication",
         "auth",
         "credentials",
-        "user access",
-        "session"
+        "session",
+        "user-access"
       ]
     },
     {
@@ -87,7 +86,7 @@
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_001",
       "business_context": "Enables customers to view comprehensive product information including specifications, pricing, and availability to support informed purchase decisions.",
-      "functional_intent": "To verify that authenticated users can access and view detailed product information from the catalog, ensuring data accuracy and proper rendering.",
+      "functional_intent": "Verify that authenticated users can access and view complete product details from the catalog with accurate information display.",
       "system_areas": [
         "Catalog",
         "Product Management",
@@ -95,19 +94,19 @@
         "Data Display"
       ],
       "risk_tags": [
-        "user_experience",
-        "data_integrity",
-        "catalog_functionality"
+        "data-accuracy",
+        "user-experience",
+        "catalog-integrity"
       ],
-      "searchable_summary": "Product detail view test ensuring authenticated users can access complete product information including specifications and pricing in the Catalog module.",
+      "searchable_summary": "Product detail view test ensuring accurate display of product information for authenticated catalog users",
       "keywords": [
         "product",
         "details",
-        "catalog",
         "view",
-        "product information",
-        "specifications",
-        "pricing"
+        "catalog",
+        "information",
+        "display",
+        "specifications"
       ]
     },
     {
@@ -137,21 +136,20 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_001",
-      "business_context": "Provides product discovery functionality allowing users to find items quickly through search queries, directly impacting conversion rates and user satisfaction.",
-      "functional_intent": "To verify that the product search functionality returns accurate and relevant results based on user queries, with proper filtering and ranking.",
+      "business_context": "Provides product search functionality enabling customers to quickly find desired items, improving user experience and conversion rates.",
+      "functional_intent": "Verify that the search functionality returns accurate and relevant product results based on user queries with proper filtering and ranking.",
       "system_areas": [
         "Catalog",
         "Search Engine",
         "Product Discovery",
-        "Database Query"
+        "Data Retrieval"
       ],
       "risk_tags": [
-        "critical_path",
-        "user_experience",
+        "search-accuracy",
         "performance",
-        "search_accuracy"
+        "user-experience"
       ],
-      "searchable_summary": "Product search functionality test validating query processing, result accuracy, and relevance ranking in the Catalog service.",
+      "searchable_summary": "Product search functionality test validating accurate retrieval and display of catalog items based on search queries",
       "keywords": [
         "search",
         "product",
@@ -189,28 +187,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_001",
-      "business_context": "Enables customer feedback and social proof through product reviews, influencing purchase decisions and building trust in the platform.",
-      "functional_intent": "To verify that users can view, submit, and interact with product reviews, ensuring proper display, validation, and storage of review data.",
+      "business_context": "Allows customers to read and submit product reviews, building trust and providing social proof to influence purchasing decisions.",
+      "functional_intent": "Verify that users can view, submit, and manage product reviews with proper validation, moderation, and display functionality.",
       "system_areas": [
         "Catalog",
         "User Generated Content",
-        "Reviews System",
-        "Data Validation"
+        "Review Management",
+        "Social Features"
       ],
       "risk_tags": [
-        "user_experience",
-        "content_moderation",
-        "data_integrity"
+        "content-moderation",
+        "data-integrity",
+        "user-engagement"
       ],
-      "searchable_summary": "Product review functionality test validating review submission, display, and management within the Catalog service.",
+      "searchable_summary": "Product review functionality test ensuring proper submission, display, and management of customer feedback",
       "keywords": [
         "reviews",
         "product",
         "feedback",
         "ratings",
-        "customer reviews",
-        "user content",
-        "catalog"
+        "comments",
+        "user-content",
+        "testimonials"
       ]
     },
     {
@@ -240,28 +238,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_001",
-      "business_context": "Provides browsing capability for users to explore product catalog with filtering and sorting options, essential for product discovery and sales.",
-      "functional_intent": "To verify that authenticated users can browse through product listings with proper pagination, filtering, and sorting functionality.",
+      "business_context": "Enables customers to browse through product catalog with filtering, sorting, and pagination to facilitate product discovery and selection.",
+      "functional_intent": "Verify that users can navigate through product listings with proper display, filtering options, sorting capabilities, and pagination controls.",
       "system_areas": [
         "Catalog",
         "Product Listing",
         "UI/UX",
-        "Data Retrieval"
+        "Navigation"
       ],
       "risk_tags": [
-        "user_experience",
         "performance",
-        "catalog_functionality"
+        "user-experience",
+        "data-display"
       ],
-      "searchable_summary": "Product list browsing test ensuring users can navigate, filter, and sort through product catalog with proper pagination and display.",
+      "searchable_summary": "Product browsing test validating catalog navigation, filtering, sorting, and pagination functionality",
       "keywords": [
         "browse",
-        "product list",
+        "product-list",
         "catalog",
-        "pagination",
-        "filtering",
-        "sorting",
-        "navigation"
+        "navigation",
+        "filter",
+        "sort",
+        "pagination"
       ]
     },
     {
@@ -291,8 +289,8 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_001",
-      "business_context": "Core e-commerce functionality enabling users to select products for purchase, directly impacting conversion funnel and revenue generation.",
-      "functional_intent": "To verify that users can successfully add products to their shopping cart with proper quantity, pricing, and inventory validation.",
+      "business_context": "Core e-commerce functionality allowing customers to add products to their shopping cart, essential for the purchase flow and revenue generation.",
+      "functional_intent": "Verify that users can successfully add products to cart with correct quantity, pricing, and inventory validation.",
       "system_areas": [
         "Cart",
         "Shopping Cart",
@@ -300,20 +298,19 @@
         "Session Management"
       ],
       "risk_tags": [
-        "critical_path",
-        "revenue_impact",
-        "cart_functionality",
-        "inventory"
+        "transaction-critical",
+        "inventory-sync",
+        "data-integrity"
       ],
-      "searchable_summary": "Add to cart functionality test validating product addition, quantity management, and cart state persistence for authenticated users.",
+      "searchable_summary": "Add to cart functionality test ensuring products are correctly added with accurate pricing and inventory checks",
       "keywords": [
-        "add to cart",
+        "add-to-cart",
         "cart",
-        "shopping cart",
+        "shopping",
         "product",
         "purchase",
-        "e-commerce",
-        "checkout"
+        "inventory",
+        "quantity"
       ]
     },
     {
@@ -343,27 +340,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_001",
-      "business_context": "Allows users to modify their purchase intent by removing unwanted items, essential for cart management and user control.",
-      "functional_intent": "To verify that users can successfully remove products from their shopping cart with proper cart total recalculation and state updates.",
+      "business_context": "Allows customers to remove unwanted items from cart, providing flexibility in purchase decisions and cart management.",
+      "functional_intent": "Verify that users can successfully remove items from cart with proper cart total recalculation and inventory release.",
       "system_areas": [
         "Cart",
         "Shopping Cart",
-        "Cart Management",
+        "Inventory Management",
         "Session Management"
       ],
       "risk_tags": [
-        "critical_path",
-        "cart_functionality",
-        "user_experience"
+        "transaction-integrity",
+        "inventory-sync",
+        "cart-management"
       ],
-      "searchable_summary": "Remove from cart functionality test validating item removal, cart total updates, and proper state management for user sessions.",
+      "searchable_summary": "Remove from cart test validating item removal with accurate cart updates and inventory adjustments",
       "keywords": [
         "remove",
         "cart",
-        "shopping cart",
         "delete",
-        "cart management",
-        "modify cart"
+        "shopping",
+        "item-removal",
+        "cart-management",
+        "inventory"
       ]
     },
     {
@@ -393,8 +391,8 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_001",
-      "business_context": "Enables users to adjust product quantities in cart, affecting order value and inventory allocation while maintaining cart flexibility.",
-      "functional_intent": "To verify that users can update item quantities in their cart with proper validation, pricing recalculation, and inventory checks.",
+      "business_context": "Enables customers to adjust product quantities in cart, optimizing order size and supporting bulk purchases.",
+      "functional_intent": "Verify that users can update item quantities in cart with proper validation, pricing recalculation, and inventory availability checks.",
       "system_areas": [
         "Cart",
         "Shopping Cart",
@@ -402,20 +400,19 @@
         "Pricing Engine"
       ],
       "risk_tags": [
-        "critical_path",
-        "cart_functionality",
-        "inventory",
-        "pricing"
+        "transaction-integrity",
+        "inventory-validation",
+        "pricing-accuracy"
       ],
-      "searchable_summary": "Cart quantity update test validating quantity changes, price recalculation, inventory validation, and cart state management.",
+      "searchable_summary": "Cart quantity update test ensuring accurate quantity changes with proper pricing and inventory validation",
       "keywords": [
         "update",
         "quantity",
         "cart",
-        "shopping cart",
+        "shopping",
         "modify",
-        "cart management",
-        "inventory"
+        "inventory",
+        "pricing"
       ]
     },
     {
@@ -445,31 +442,29 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_001",
-      "business_context": "Critical payment processing functionality enabling card-based transactions, directly impacting revenue and customer satisfaction.",
-      "functional_intent": "To verify that users can successfully complete payments using credit/debit cards with proper validation, security, and transaction processing.",
+      "business_context": "Critical payment functionality enabling card-based transactions, directly impacting revenue and customer satisfaction.",
+      "functional_intent": "Verify that card payment processing works correctly with proper validation, authorization, and secure transaction handling.",
       "system_areas": [
         "Payment",
         "Payment Gateway",
         "Transaction Processing",
-        "Security",
-        "PCI Compliance"
+        "Security"
       ],
       "risk_tags": [
-        "critical_path",
-        "revenue_impact",
+        "payment-critical",
         "security",
-        "payment_processing",
-        "pci_compliance"
+        "pci-compliance",
+        "financial-transaction"
       ],
-      "searchable_summary": "Card payment processing test validating transaction flow, security measures, payment gateway integration, and successful payment completion.",
+      "searchable_summary": "Card payment processing test validating secure transaction handling and payment authorization",
       "keywords": [
         "payment",
         "card",
-        "credit card",
-        "debit card",
+        "credit-card",
         "transaction",
-        "payment gateway",
-        "checkout"
+        "pay",
+        "checkout",
+        "financial"
       ]
     },
     {
@@ -499,8 +494,8 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_001",
-      "business_context": "Ensures graceful handling of payment failures to maintain user trust, provide clear error messaging, and enable recovery options.",
-      "functional_intent": "To verify that the system properly handles payment failures with appropriate error messages, logging, and user guidance for resolution.",
+      "business_context": "Ensures graceful handling of payment failures, maintaining data integrity and providing clear user feedback for recovery actions.",
+      "functional_intent": "Verify that payment failures are properly detected, logged, and communicated to users with appropriate error messages and retry options.",
       "system_areas": [
         "Payment",
         "Error Handling",
@@ -508,19 +503,19 @@
         "User Communication"
       ],
       "risk_tags": [
-        "error_handling",
-        "user_experience",
-        "payment_processing",
-        "revenue_impact"
+        "error-handling",
+        "transaction-integrity",
+        "user-experience"
       ],
-      "searchable_summary": "Payment failure handling test validating error detection, user notification, transaction rollback, and recovery options for failed payments.",
+      "searchable_summary": "Payment failure handling test ensuring proper error detection, logging, and user notification",
       "keywords": [
-        "payment failure",
-        "error handling",
-        "payment",
-        "transaction failed",
-        "error recovery",
-        "payment error"
+        "payment-failure",
+        "error",
+        "transaction",
+        "declined",
+        "retry",
+        "error-handling",
+        "recovery"
       ]
     },
     {
@@ -550,28 +545,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_002",
-      "business_context": "Core order management functionality that converts cart items into confirmed orders, initiating fulfillment and revenue recognition processes.",
-      "functional_intent": "To verify that authenticated users can successfully create orders with proper data validation, inventory allocation, and order confirmation.",
+      "business_context": "Core order creation functionality converting cart items into confirmed orders, essential for revenue generation and fulfillment.",
+      "functional_intent": "Verify that orders are created successfully with accurate product details, pricing, customer information, and order status initialization.",
       "system_areas": [
         "Order Management",
-        "Order Processing",
+        "Transaction Processing",
         "Inventory Management",
         "Database"
       ],
       "risk_tags": [
-        "critical_path",
-        "revenue_impact",
-        "order_processing",
-        "data_integrity"
+        "transaction-critical",
+        "data-integrity",
+        "order-fulfillment"
       ],
-      "searchable_summary": "Order creation test validating order placement, data persistence, inventory updates, and confirmation for authenticated users in Order module.",
+      "searchable_summary": "Order creation test validating successful conversion of cart to order with accurate data persistence",
       "keywords": [
-        "create order",
+        "create-order",
         "order",
-        "order management",
-        "place order",
-        "order processing",
-        "checkout"
+        "purchase",
+        "transaction",
+        "checkout",
+        "order-management",
+        "fulfillment"
       ]
     },
     {
@@ -601,28 +596,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_002",
-      "business_context": "Allows users to cancel orders before fulfillment, managing customer expectations and inventory allocation while maintaining operational flexibility.",
-      "functional_intent": "To verify that users can cancel orders with proper validation of cancellation eligibility, inventory restoration, and status updates.",
+      "business_context": "Allows customers to cancel orders before fulfillment, providing flexibility while managing inventory and refund processes.",
+      "functional_intent": "Verify that orders can be cancelled with proper status updates, inventory restoration, and refund initiation if payment was processed.",
       "system_areas": [
         "Order Management",
-        "Order Cancellation",
         "Inventory Management",
-        "Refund Processing"
+        "Refund Processing",
+        "Status Management"
       ],
       "risk_tags": [
-        "order_processing",
-        "inventory",
-        "refund_management",
-        "user_experience"
+        "transaction-integrity",
+        "inventory-sync",
+        "refund-processing"
       ],
-      "searchable_summary": "Order cancellation test validating cancellation workflow, inventory restoration, refund initiation, and order status updates for valid sessions.",
+      "searchable_summary": "Order cancellation test ensuring proper status updates, inventory restoration, and refund handling",
       "keywords": [
-        "cancel order",
-        "order cancellation",
-        "order management",
+        "cancel",
+        "order",
+        "cancellation",
         "refund",
         "inventory",
-        "order status"
+        "order-management",
+        "status"
       ]
     },
     {
@@ -652,28 +647,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_002",
-      "business_context": "Manages post-purchase returns to maintain customer satisfaction and comply with return policies while handling inventory and refund processes.",
-      "functional_intent": "To verify that authenticated users can initiate order returns with proper validation, return authorization, and refund processing.",
+      "business_context": "Manages product returns after delivery, supporting customer satisfaction and return policy compliance.",
+      "functional_intent": "Verify that return requests are processed correctly with proper validation, return authorization, and refund initiation.",
       "system_areas": [
         "Order Management",
-        "Returns Processing",
+        "Return Processing",
         "Refund Management",
         "Inventory Management"
       ],
       "risk_tags": [
-        "critical_path",
-        "customer_satisfaction",
-        "refund_management",
-        "inventory"
+        "return-policy",
+        "refund-processing",
+        "inventory-management"
       ],
-      "searchable_summary": "Order return processing test validating return initiation, eligibility checks, refund processing, and inventory management for completed orders.",
+      "searchable_summary": "Order return processing test validating return authorization and refund workflow",
       "keywords": [
-        "return order",
-        "returns",
-        "order management",
+        "return",
+        "order",
         "refund",
-        "return processing",
-        "RMA"
+        "return-policy",
+        "rma",
+        "order-management",
+        "customer-service"
       ]
     },
     {
@@ -703,8 +698,8 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_002",
-      "business_context": "Streamlined checkout experience for authenticated users leveraging saved information to reduce friction and increase conversion rates.",
-      "functional_intent": "To verify that logged-in users can complete checkout with pre-filled information, address selection, and payment method options.",
+      "business_context": "Streamlined checkout process for authenticated users leveraging saved information to reduce friction and improve conversion rates.",
+      "functional_intent": "Verify that logged-in users can complete checkout with pre-filled information, saved addresses, and payment methods.",
       "system_areas": [
         "Checkout",
         "User Management",
@@ -712,19 +707,19 @@
         "Order Management"
       ],
       "risk_tags": [
-        "critical_path",
-        "revenue_impact",
-        "conversion_rate",
-        "user_experience"
+        "conversion-critical",
+        "user-experience",
+        "transaction-processing"
       ],
-      "searchable_summary": "Authenticated user checkout test validating streamlined checkout flow with saved user data, payment processing, and order completion.",
+      "searchable_summary": "Authenticated user checkout test validating streamlined purchase flow with saved user data",
       "keywords": [
         "checkout",
         "logged-in",
-        "authenticated checkout",
+        "authenticated",
         "purchase",
-        "order completion",
-        "payment"
+        "order",
+        "payment",
+        "conversion"
       ]
     },
     {
@@ -754,8 +749,8 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_002",
-      "business_context": "Enables purchases without account creation, reducing barriers to conversion while capturing essential transaction and contact information.",
-      "functional_intent": "To verify that unauthenticated users can complete checkout by providing necessary information without creating an account.",
+      "business_context": "Enables purchases without account creation, reducing barriers to conversion and supporting one-time buyers.",
+      "functional_intent": "Verify that guest users can complete checkout by providing necessary information without authentication requirements.",
       "system_areas": [
         "Checkout",
         "Guest Management",
@@ -763,19 +758,19 @@
         "Order Management"
       ],
       "risk_tags": [
-        "revenue_impact",
-        "conversion_rate",
-        "user_experience",
-        "data_validation"
+        "conversion-critical",
+        "user-experience",
+        "data-validation"
       ],
-      "searchable_summary": "Guest checkout test validating anonymous user purchase flow with information collection, payment processing, and order completion without authentication.",
+      "searchable_summary": "Guest checkout test validating purchase completion without user authentication",
       "keywords": [
-        "guest checkout",
-        "anonymous checkout",
-        "no account",
-        "purchase",
+        "guest-checkout",
         "checkout",
-        "guest user"
+        "anonymous",
+        "purchase",
+        "no-account",
+        "conversion",
+        "order"
       ]
     },
     {
@@ -805,28 +800,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_002",
-      "business_context": "Processes refunds back to original payment method, maintaining financial accuracy and customer trust while managing transaction reversals.",
-      "functional_intent": "To verify that refunds are correctly processed to the original payment source with proper amount calculation and transaction logging.",
+      "business_context": "Processes refunds back to original payment method, ensuring proper financial reconciliation and customer satisfaction.",
+      "functional_intent": "Verify that refunds are correctly processed to the original payment source with accurate amounts and proper transaction recording.",
       "system_areas": [
         "Refund Management",
         "Payment Processing",
-        "Transaction Management",
-        "Financial Reconciliation"
+        "Financial Reconciliation",
+        "Transaction Management"
       ],
       "risk_tags": [
-        "financial_accuracy",
-        "payment_processing",
-        "refund_management",
-        "compliance"
+        "financial-transaction",
+        "refund-processing",
+        "payment-integrity"
       ],
-      "searchable_summary": "Refund to source test validating refund processing to original payment method with accurate amount calculation and transaction tracking.",
+      "searchable_summary": "Refund to source test validating accurate refund processing to original payment method",
       "keywords": [
         "refund",
-        "refund to source",
-        "payment reversal",
+        "payment",
+        "refund-to-source",
         "transaction",
-        "refund processing",
-        "payment"
+        "reversal",
+        "financial",
+        "reimbursement"
       ]
     },
     {
@@ -856,27 +851,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_002",
-      "business_context": "Enables flexible refund processing for partial order returns or adjustments, supporting various customer service scenarios and maintaining financial accuracy.",
-      "functional_intent": "To verify that partial refunds can be processed with correct amount calculation, validation, and proper order status updates.",
+      "business_context": "Supports partial refunds for specific items or amounts, providing flexibility in return and refund scenarios.",
+      "functional_intent": "Verify that partial refunds are calculated and processed correctly with accurate amount distribution and order status updates.",
       "system_areas": [
         "Refund Management",
         "Payment Processing",
         "Order Management",
-        "Financial Reconciliation"
+        "Financial Calculation"
       ],
       "risk_tags": [
-        "financial_accuracy",
-        "refund_management",
-        "order_processing",
-        "data_integrity"
+        "financial-accuracy",
+        "refund-processing",
+        "calculation-integrity"
       ],
-      "searchable_summary": "Partial refund processing test validating selective item refunds, amount calculations, order updates, and transaction management for authenticated users.",
+      "searchable_summary": "Partial refund test ensuring accurate calculation and processing of partial amount refunds",
       "keywords": [
-        "partial refund",
+        "partial-refund",
         "refund",
-        "partial payment",
-        "order adjustment",
-        "refund processing"
+        "payment",
+        "partial",
+        "amount",
+        "financial",
+        "calculation"
       ]
     },
     {
@@ -906,30 +902,29 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_002",
-      "business_context": "Critical security control protecting database integrity and preventing unauthorized data access through SQL injection attacks.",
-      "functional_intent": "To verify that the system properly sanitizes and validates user inputs to prevent SQL injection vulnerabilities and protect database security.",
+      "business_context": "Critical security control preventing SQL injection attacks that could compromise database integrity and expose sensitive data.",
+      "functional_intent": "Verify that the system properly sanitizes and validates user inputs to prevent SQL injection vulnerabilities.",
       "system_areas": [
         "Security",
-        "Database Security",
         "Input Validation",
-        "Application Security"
+        "Database Security",
+        "Vulnerability Prevention"
       ],
       "risk_tags": [
-        "security",
-        "critical_vulnerability",
-        "data_protection",
-        "compliance",
-        "owasp"
-      ],
-      "searchable_summary": "SQL injection prevention test validating input sanitization, parameterized queries, and security controls against database injection attacks.",
-      "keywords": [
-        "SQL injection",
-        "security",
-        "database security",
-        "input validation",
+        "security-critical",
+        "sql-injection",
         "vulnerability",
-        "OWASP",
-        "injection attack"
+        "data-protection"
+      ],
+      "searchable_summary": "SQL injection prevention test validating input sanitization and database security controls",
+      "keywords": [
+        "sql-injection",
+        "security",
+        "vulnerability",
+        "input-validation",
+        "database",
+        "attack-prevention",
+        "sanitization"
       ]
     },
     {
@@ -959,28 +954,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_002",
-      "business_context": "Enables real-time user engagement through push notifications for order updates, promotions, and important alerts to drive user retention.",
-      "functional_intent": "To verify that push notifications are correctly sent, delivered, and displayed to authenticated users with proper content and timing.",
+      "business_context": "Enables real-time communication with users through push notifications for order updates, promotions, and important alerts.",
+      "functional_intent": "Verify that push notifications are sent, delivered, and displayed correctly to users with proper content and timing.",
       "system_areas": [
         "Notifications",
-        "Push Notification Service",
-        "User Engagement",
+        "Push Service",
+        "User Communication",
         "Mobile Integration"
       ],
       "risk_tags": [
-        "user_experience",
-        "engagement",
-        "notification_delivery",
-        "mobile"
+        "user-engagement",
+        "communication",
+        "delivery-reliability"
       ],
-      "searchable_summary": "Push notification test validating notification creation, delivery, display, and user interaction for authenticated users in Notifications module.",
+      "searchable_summary": "Push notification test validating message delivery and display to user devices",
       "keywords": [
-        "push notifications",
-        "notifications",
-        "alerts",
-        "mobile notifications",
-        "user engagement",
-        "messaging"
+        "push-notification",
+        "notification",
+        "alert",
+        "message",
+        "communication",
+        "mobile",
+        "real-time"
       ]
     },
     {
@@ -1010,28 +1005,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_002",
-      "business_context": "Provides email-based communication for transactional updates, marketing campaigns, and customer service, essential for user engagement and retention.",
-      "functional_intent": "To verify that email notifications are correctly generated, formatted, and delivered with proper content, timing, and recipient validation.",
+      "business_context": "Provides email-based communication for order confirmations, shipping updates, and marketing messages to maintain customer engagement.",
+      "functional_intent": "Verify that email notifications are generated, sent, and delivered with correct content, formatting, and recipient information.",
       "system_areas": [
         "Notifications",
         "Email Service",
-        "Communication",
+        "User Communication",
         "Template Management"
       ],
       "risk_tags": [
-        "user_experience",
         "communication",
-        "deliverability",
-        "compliance"
+        "delivery-reliability",
+        "content-accuracy"
       ],
-      "searchable_summary": "Email notification test validating email generation, template rendering, delivery, and tracking through the Notifications service.",
+      "searchable_summary": "Email notification test ensuring proper generation, sending, and delivery of email messages",
       "keywords": [
         "email",
-        "notifications",
-        "email notifications",
-        "messaging",
+        "notification",
+        "message",
         "communication",
-        "transactional email"
+        "smtp",
+        "delivery",
+        "template"
       ]
     },
     {
@@ -1061,28 +1056,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_003",
-      "business_context": "Core pricing engine functionality ensuring accurate price calculations including discounts, taxes, and promotions, directly impacting revenue and customer trust.",
-      "functional_intent": "To verify that the pricing engine correctly calculates final prices with all applicable discounts, taxes, fees, and promotional adjustments.",
+      "business_context": "Core pricing engine calculating product prices with discounts, taxes, and promotions, directly impacting revenue and customer trust.",
+      "functional_intent": "Verify that prices are calculated accurately including base price, discounts, taxes, shipping, and promotional adjustments.",
       "system_areas": [
-        "Pricing",
         "Pricing Engine",
-        "Tax Calculation",
-        "Discount Management"
+        "Financial Calculation",
+        "Tax Management",
+        "Promotion Engine"
       ],
       "risk_tags": [
-        "critical_path",
-        "financial_accuracy",
-        "revenue_impact",
-        "pricing"
+        "financial-accuracy",
+        "pricing-integrity",
+        "revenue-impact"
       ],
-      "searchable_summary": "Price calculation test validating accurate pricing with discounts, taxes, promotions, and fees for valid user sessions on Pricing page.",
+      "searchable_summary": "Price calculation test validating accurate computation of product prices with all applicable adjustments",
       "keywords": [
-        "price calculation",
+        "price",
+        "calculation",
         "pricing",
         "discount",
         "tax",
-        "pricing engine",
-        "total price"
+        "promotion",
+        "financial"
       ]
     },
     {
@@ -1112,29 +1107,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_003",
-      "business_context": "Enables promotional discount application through coupon codes, driving marketing campaigns and customer acquisition while managing discount rules.",
-      "functional_intent": "To verify that users can apply coupon codes with proper validation, discount calculation, and business rule enforcement.",
+      "business_context": "Enables promotional discount application through coupon codes, supporting marketing campaigns and customer acquisition.",
+      "functional_intent": "Verify that coupon codes are validated, applied correctly, and discount amounts are accurately calculated and reflected in cart total.",
       "system_areas": [
-        "Promo",
-        "Coupon Management",
-        "Discount Engine",
-        "Pricing"
+        "Promotion Engine",
+        "Pricing",
+        "Cart Management",
+        "Validation"
       ],
       "risk_tags": [
-        "revenue_impact",
-        "marketing",
-        "discount_management",
-        "fraud_prevention"
+        "pricing-accuracy",
+        "promotion-integrity",
+        "fraud-prevention"
       ],
-      "searchable_summary": "Coupon application test validating coupon code validation, discount calculation, business rule enforcement, and price updates in Promo module.",
+      "searchable_summary": "Coupon application test validating code validation and accurate discount calculation",
       "keywords": [
         "coupon",
-        "promo code",
+        "promo-code",
         "discount",
         "promotion",
-        "apply coupon",
-        "promo",
-        "voucher"
+        "apply",
+        "validation",
+        "marketing"
       ]
     },
     {
@@ -1164,28 +1158,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_003",
-      "business_context": "Administrative functionality for catalog management enabling product creation and maintenance, essential for inventory and sales operations.",
-      "functional_intent": "To verify that admin users can add new products to the catalog with proper data validation, image upload, and attribute configuration.",
+      "business_context": "Administrative function for adding new products to catalog, essential for inventory management and product offerings expansion.",
+      "functional_intent": "Verify that administrators can successfully add new products with complete information, images, pricing, and inventory details.",
       "system_areas": [
-        "Admin",
+        "Admin Panel",
         "Product Management",
         "Catalog Management",
-        "Content Management"
+        "Inventory Management"
       ],
       "risk_tags": [
-        "admin_functionality",
-        "data_integrity",
-        "catalog_management",
-        "authorization"
+        "data-integrity",
+        "admin-access",
+        "catalog-management"
       ],
-      "searchable_summary": "Admin product creation test validating product addition, data validation, attribute configuration, and catalog updates in Admin module.",
+      "searchable_summary": "Admin product addition test validating successful creation of new catalog items with complete data",
       "keywords": [
         "admin",
-        "add product",
-        "product management",
+        "add-product",
+        "product-management",
         "catalog",
-        "admin panel",
-        "product creation"
+        "inventory",
+        "administration",
+        "create"
       ]
     },
     {
@@ -1215,28 +1209,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_003",
-      "business_context": "Critical inventory management functionality ensuring accurate stock levels, preventing overselling, and maintaining supply chain integrity.",
-      "functional_intent": "To verify that inventory levels can be updated accurately with proper validation, audit logging, and real-time availability updates.",
+      "business_context": "Maintains accurate inventory levels to prevent overselling and ensure product availability information is current.",
+      "functional_intent": "Verify that inventory quantities can be updated accurately with proper validation, audit trails, and real-time availability updates.",
       "system_areas": [
-        "Inventory",
         "Inventory Management",
         "Stock Control",
-        "Supply Chain"
+        "Data Synchronization",
+        "Audit Logging"
       ],
       "risk_tags": [
-        "inventory",
-        "data_integrity",
-        "stock_accuracy",
-        "operational"
+        "inventory-accuracy",
+        "data-integrity",
+        "stock-management"
       ],
-      "searchable_summary": "Inventory update test validating stock level changes, data accuracy, audit logging, and availability updates for authenticated users in Inventory module.",
+      "searchable_summary": "Inventory update test ensuring accurate stock level modifications with proper validation and logging",
       "keywords": [
         "inventory",
         "stock",
-        "inventory update",
-        "stock level",
-        "inventory management",
-        "availability"
+        "update",
+        "quantity",
+        "availability",
+        "inventory-management",
+        "stock-control"
       ]
     },
     {
@@ -1266,8 +1260,8 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_003",
-      "business_context": "Performance and scalability validation ensuring the system can handle high concurrent user loads without degradation, critical for business growth.",
-      "functional_intent": "To verify that the system maintains acceptable performance, response times, and stability under load of 10,000 concurrent users.",
+      "business_context": "Validates system scalability and performance under high concurrent user load to ensure business continuity during peak traffic.",
+      "functional_intent": "Verify that the system can handle 10,000 concurrent users with acceptable response times, stability, and resource utilization.",
       "system_areas": [
         "Performance",
         "Scalability",
@@ -1275,20 +1269,19 @@
         "Infrastructure"
       ],
       "risk_tags": [
-        "performance",
+        "performance-critical",
         "scalability",
-        "load_testing",
-        "infrastructure",
-        "sla"
+        "capacity-planning"
       ],
-      "searchable_summary": "Load testing scenario validating system performance, stability, and response times under 10,000 concurrent users on Performance page.",
+      "searchable_summary": "Load testing validating system performance and stability under 10,000 concurrent users",
       "keywords": [
         "performance",
-        "load testing",
+        "load-test",
         "scalability",
-        "concurrent users",
-        "10k users",
-        "stress test"
+        "concurrent-users",
+        "capacity",
+        "stress-test",
+        "10k-users"
       ]
     },
     {
@@ -1318,29 +1311,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_003",
-      "business_context": "Critical disaster recovery capability ensuring business continuity through automatic database failover during outages or failures.",
-      "functional_intent": "To verify that the system automatically fails over to backup database with minimal downtime and no data loss during primary database failure.",
+      "business_context": "Critical disaster recovery capability ensuring business continuity by automatically switching to backup database during primary failure.",
+      "functional_intent": "Verify that database failover occurs seamlessly with minimal downtime, data consistency, and automatic recovery to backup instance.",
       "system_areas": [
-        "Resilience",
         "Database",
         "Disaster Recovery",
-        "High Availability"
+        "High Availability",
+        "Infrastructure"
       ],
       "risk_tags": [
-        "critical_path",
-        "disaster_recovery",
-        "high_availability",
-        "data_integrity",
-        "sla"
+        "business-continuity",
+        "disaster-recovery",
+        "data-integrity"
       ],
-      "searchable_summary": "Database failover test validating automatic failover mechanism, data consistency, recovery time, and service continuity on Resilience page.",
+      "searchable_summary": "Database failover test validating automatic switchover to backup database with data consistency",
       "keywords": [
-        "database failover",
-        "disaster recovery",
-        "high availability",
+        "database",
         "failover",
+        "disaster-recovery",
+        "high-availability",
+        "backup",
         "resilience",
-        "backup"
+        "continuity"
       ]
     },
     {
@@ -1370,28 +1362,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_003",
-      "business_context": "Social authentication integration enabling frictionless login through Google OAuth, improving user experience and reducing registration barriers.",
-      "functional_intent": "To verify that users can authenticate using Google OAuth with proper token validation, user profile creation, and session establishment.",
+      "business_context": "Provides social login integration with Google, reducing friction in user onboarding and improving conversion rates.",
+      "functional_intent": "Verify that users can authenticate using Google OAuth with proper token validation, user profile retrieval, and session creation.",
       "system_areas": [
         "Authentication",
-        "OAuth",
+        "OAuth Integration",
         "Third-party Integration",
         "User Management"
       ],
       "risk_tags": [
-        "authentication",
-        "third_party_integration",
         "security",
-        "user_experience"
+        "third-party-dependency",
+        "authentication"
       ],
-      "searchable_summary": "Google OAuth authentication test validating social login flow, token exchange, user profile creation, and session management in Auth module.",
+      "searchable_summary": "Google OAuth login test validating social authentication integration and user session creation",
       "keywords": [
-        "Google login",
-        "OAuth",
-        "social login",
+        "google-login",
+        "oauth",
+        "social-login",
         "authentication",
-        "Google auth",
-        "SSO"
+        "sso",
+        "third-party",
+        "integration"
       ]
     },
     {
@@ -1421,27 +1413,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_003",
-      "business_context": "Self-service password recovery functionality reducing support burden while maintaining security through verified reset process.",
-      "functional_intent": "To verify that users can reset forgotten passwords through secure email verification with proper token generation and validation.",
+      "business_context": "Enables users to recover account access when password is forgotten, maintaining user retention and account security.",
+      "functional_intent": "Verify that password reset process works correctly with email verification, secure token generation, and successful password update.",
       "system_areas": [
         "Authentication",
-        "Password Management",
+        "User Management",
         "Email Service",
         "Security"
       ],
       "risk_tags": [
         "security",
-        "authentication",
-        "user_experience",
-        "account_recovery"
+        "account-recovery",
+        "user-experience"
       ],
-      "searchable_summary": "Password reset test validating secure password recovery flow with email verification, token validation, and password update on Auth page.",
+      "searchable_summary": "Password reset test validating secure account recovery process with email verification",
       "keywords": [
-        "password reset",
-        "forgot password",
-        "password recovery",
+        "password-reset",
+        "forgot-password",
+        "account-recovery",
         "authentication",
-        "account recovery"
+        "email-verification",
+        "security",
+        "reset"
       ]
     },
     {
@@ -1471,28 +1464,28 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_003",
-      "business_context": "New user onboarding process enabling account creation, essential for user acquisition and building customer base.",
-      "functional_intent": "To verify that new users can successfully register with proper data validation, email verification, and account creation.",
+      "business_context": "Core user onboarding functionality enabling new customer acquisition and account creation for personalized experiences.",
+      "functional_intent": "Verify that new users can register successfully with proper validation, email verification, and account creation.",
       "system_areas": [
-        "Authentication",
         "User Management",
+        "Authentication",
         "Registration",
         "Email Service"
       ],
       "risk_tags": [
-        "user_acquisition",
-        "data_validation",
-        "security",
-        "onboarding"
+        "user-acquisition",
+        "data-validation",
+        "security"
       ],
-      "searchable_summary": "User registration test validating new account creation, data validation, email verification, and user profile setup in Auth module.",
+      "searchable_summary": "User registration test validating new account creation with proper validation and verification",
       "keywords": [
         "registration",
-        "sign up",
-        "create account",
-        "user registration",
-        "new user",
-        "onboarding"
+        "signup",
+        "create-account",
+        "user-onboarding",
+        "authentication",
+        "new-user",
+        "account-creation"
       ]
     },
     {
@@ -1522,28 +1515,539 @@
       "requires_contextualization": true,
       "run_id": "run_20260517123502",
       "shard_id": "delta_shard_003",
-      "business_context": "Security feature allowing authenticated users to update passwords, supporting security best practices and compliance requirements.",
-      "functional_intent": "To verify that logged-in users can change their password with proper current password verification and new password validation.",
+      "business_context": "Allows authenticated users to update their password for security maintenance and compliance with password policies.",
+      "functional_intent": "Verify that logged-in users can change their password with proper current password verification and new password validation.",
+      "system_areas": [
+        "User Management",
+        "Authentication",
+        "Security",
+        "Account Settings"
+      ],
+      "risk_tags": [
+        "security",
+        "account-management",
+        "password-policy"
+      ],
+      "searchable_summary": "Password change test validating secure password update for authenticated users",
+      "keywords": [
+        "change-password",
+        "update-password",
+        "password",
+        "security",
+        "authentication",
+        "account-settings",
+        "credentials"
+      ]
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C544",
+      "record_id": "TestRail_C544",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Login with email - Scenario 37",
+      "preconditions_original": "User is logged in and on Auth module",
+      "steps_original": [
+        "1. Perform login with email",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles login with email scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "cea38fbecc4fb5d0793e0f391c8d4f165d7ee4e534fa88b34a9edd963fcbf371",
+      "change_status": "new",
+      "kb_action": "include_in_active_kb",
+      "requires_contextualization": true,
+      "run_id": "run_20260517123502",
+      "shard_id": "delta_shard_004",
+      "business_context": "Validates user authentication via email credentials to ensure secure access to the system. Critical for user identity verification and session establishment.",
+      "functional_intent": "Verify that users can successfully authenticate using email and password, establishing a valid session with appropriate access rights.",
       "system_areas": [
         "Authentication",
-        "Password Management",
         "User Management",
+        "Session Management",
         "Security"
       ],
       "risk_tags": [
         "security",
         "authentication",
-        "password_policy",
-        "user_management"
+        "user-access"
       ],
-      "searchable_summary": "Password change test validating authenticated user password update with current password verification and new password policy enforcement.",
+      "searchable_summary": "Email-based login authentication test validating user credentials and session creation for secure system access",
       "keywords": [
-        "change password",
-        "update password",
-        "password management",
+        "login",
+        "email",
         "authentication",
+        "auth",
+        "credentials",
+        "session",
+        "user-access"
+      ]
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C545",
+      "record_id": "TestRail_C545",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "View product details - Scenario 38",
+      "preconditions_original": "Valid session and user is on Catalog page",
+      "steps_original": [
+        "1. Execute view product details",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles view product details scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "c0dd379e3a596d6612b17f015a6cc90657c33cac088123513602797823d036d0",
+      "change_status": "new",
+      "kb_action": "include_in_active_kb",
+      "requires_contextualization": true,
+      "run_id": "run_20260517123502",
+      "shard_id": "delta_shard_004",
+      "business_context": "Enables customers to view comprehensive product information including specifications, pricing, and availability to support informed purchase decisions.",
+      "functional_intent": "Verify that authenticated users can access and view complete product details from the catalog with accurate information display.",
+      "system_areas": [
+        "Catalog",
+        "Product Management",
+        "UI/UX",
+        "Data Display"
+      ],
+      "risk_tags": [
+        "data-accuracy",
+        "user-experience",
+        "catalog-integrity"
+      ],
+      "searchable_summary": "Product detail view test ensuring accurate display of product information for authenticated catalog users",
+      "keywords": [
+        "product",
+        "details",
+        "view",
+        "catalog",
+        "information",
+        "display",
+        "specifications"
+      ]
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C546",
+      "record_id": "TestRail_C546",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Search product - Scenario 39",
+      "preconditions_original": "Valid session and user is on Catalog page",
+      "steps_original": [
+        "1. Trigger search product",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles search product scenario"
+      ],
+      "priority": "1",
+      "type": "7",
+      "references": [],
+      "content_hash": "2afee874829142d2837bf5d2b9b3f709532383b733132c63af48ae9aa4f65657",
+      "change_status": "new",
+      "kb_action": "include_in_active_kb",
+      "requires_contextualization": true,
+      "run_id": "run_20260517123502",
+      "shard_id": "delta_shard_004",
+      "business_context": "Provides product search functionality enabling customers to quickly find desired items, improving user experience and conversion rates.",
+      "functional_intent": "Verify that the search functionality returns accurate and relevant product results based on user queries with proper filtering and ranking.",
+      "system_areas": [
+        "Catalog",
+        "Search Engine",
+        "Product Discovery",
+        "Data Retrieval"
+      ],
+      "risk_tags": [
+        "search-accuracy",
+        "performance",
+        "user-experience"
+      ],
+      "searchable_summary": "Product search functionality test validating accurate retrieval and display of catalog items based on search queries",
+      "keywords": [
+        "search",
+        "product",
+        "catalog",
+        "query",
+        "find",
+        "discovery",
+        "results"
+      ]
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C547",
+      "record_id": "TestRail_C547",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Product reviews - Scenario 40",
+      "preconditions_original": "Valid session and user is on Catalog page",
+      "steps_original": [
+        "1. Perform product reviews",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles product reviews scenario"
+      ],
+      "priority": "2",
+      "type": "7",
+      "references": [],
+      "content_hash": "a6c3f3a486db1153c9da3cf5aa14c62b2d350c9025380d6240a33fb4cb708e46",
+      "change_status": "new",
+      "kb_action": "include_in_active_kb",
+      "requires_contextualization": true,
+      "run_id": "run_20260517123502",
+      "shard_id": "delta_shard_004",
+      "business_context": "Allows customers to read and submit product reviews, building trust and providing social proof to influence purchasing decisions.",
+      "functional_intent": "Verify that users can view, submit, and manage product reviews with proper validation, moderation, and display functionality.",
+      "system_areas": [
+        "Catalog",
+        "User Generated Content",
+        "Review Management",
+        "Social Features"
+      ],
+      "risk_tags": [
+        "content-moderation",
+        "data-integrity",
+        "user-engagement"
+      ],
+      "searchable_summary": "Product review functionality test ensuring proper submission, display, and management of customer feedback",
+      "keywords": [
+        "reviews",
+        "product",
+        "feedback",
+        "ratings",
+        "comments",
+        "user-content",
+        "testimonials"
+      ]
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C548",
+      "record_id": "TestRail_C548",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Browse product list - Scenario 41",
+      "preconditions_original": "Catalog service available and ready for operations",
+      "steps_original": [
+        "1. Trigger browse product list",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles browse product list scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "bc958928ff5b236a80b0f494f97e212b0808c1d39de4c4c527885a068560fab6",
+      "change_status": "new",
+      "kb_action": "include_in_active_kb",
+      "requires_contextualization": true,
+      "run_id": "run_20260517123502",
+      "shard_id": "delta_shard_004",
+      "business_context": "Enables customers to browse through product catalog with filtering, sorting, and pagination to facilitate product discovery and selection.",
+      "functional_intent": "Verify that users can navigate through product listings with proper display, filtering options, sorting capabilities, and pagination controls.",
+      "system_areas": [
+        "Catalog",
+        "Product Listing",
+        "UI/UX",
+        "Navigation"
+      ],
+      "risk_tags": [
+        "performance",
+        "user-experience",
+        "data-display"
+      ],
+      "searchable_summary": "Product browsing test validating catalog navigation, filtering, sorting, and pagination functionality",
+      "keywords": [
+        "browse",
+        "product-list",
+        "catalog",
+        "navigation",
+        "filter",
+        "sort",
+        "pagination"
+      ]
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C549",
+      "record_id": "TestRail_C549",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Add to cart - Scenario 42",
+      "preconditions_original": "User is logged in and on Cart module",
+      "steps_original": [
+        "1. Execute add to cart",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles add to cart scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "40c3110492b496355f534dc548c46738b73cbc26c9a1ea052bb0fecdb1cd9f74",
+      "change_status": "new",
+      "kb_action": "include_in_active_kb",
+      "requires_contextualization": true,
+      "run_id": "run_20260517123502",
+      "shard_id": "delta_shard_004",
+      "business_context": "Core e-commerce functionality allowing customers to add products to their shopping cart, essential for the purchase flow and revenue generation.",
+      "functional_intent": "Verify that users can successfully add products to cart with correct quantity, pricing, and inventory validation.",
+      "system_areas": [
+        "Cart",
+        "Shopping Cart",
+        "Inventory Management",
+        "Session Management"
+      ],
+      "risk_tags": [
+        "transaction-critical",
+        "inventory-sync",
+        "data-integrity"
+      ],
+      "searchable_summary": "Add to cart functionality test ensuring products are correctly added with accurate pricing and inventory checks",
+      "keywords": [
+        "add-to-cart",
+        "cart",
+        "shopping",
+        "product",
+        "purchase",
+        "inventory",
+        "quantity"
+      ]
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C550",
+      "record_id": "TestRail_C550",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Remove from cart - Scenario 43",
+      "preconditions_original": "User is logged in and on Cart module",
+      "steps_original": [
+        "1. Perform remove from cart",
+        "2. Observe logs/output",
+        "3. Confirm correctness"
+      ],
+      "expected_results_original": [
+        "System correctly handles remove from cart scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "337921d534ce945c0a9f45c216434617e877b041ef0c16ea349f65eab87981d0",
+      "change_status": "new",
+      "kb_action": "include_in_active_kb",
+      "requires_contextualization": true,
+      "run_id": "run_20260517123502",
+      "shard_id": "delta_shard_004",
+      "business_context": "Allows customers to remove unwanted items from cart, providing flexibility in purchase decisions and cart management.",
+      "functional_intent": "Verify that users can successfully remove items from cart with proper cart total recalculation and inventory release.",
+      "system_areas": [
+        "Cart",
+        "Shopping Cart",
+        "Inventory Management",
+        "Session Management"
+      ],
+      "risk_tags": [
+        "transaction-integrity",
+        "inventory-sync",
+        "cart-management"
+      ],
+      "searchable_summary": "Remove from cart test validating item removal with accurate cart updates and inventory adjustments",
+      "keywords": [
+        "remove",
+        "cart",
+        "delete",
+        "shopping",
+        "item-removal",
+        "cart-management",
+        "inventory"
+      ]
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C551",
+      "record_id": "TestRail_C551",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Update cart quantity - Scenario 44",
+      "preconditions_original": "User is logged in and on Cart module",
+      "steps_original": [
+        "1. Trigger update cart quantity",
+        "2. Monitor system behavior",
+        "3. Verify expected results"
+      ],
+      "expected_results_original": [
+        "System correctly handles update cart quantity scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "7d713f32c502b11f06225a1a8b13fa24fb962b7c2fab1e4fb5e99e83cce55411",
+      "change_status": "new",
+      "kb_action": "include_in_active_kb",
+      "requires_contextualization": true,
+      "run_id": "run_20260517123502",
+      "shard_id": "delta_shard_004",
+      "business_context": "Enables customers to adjust product quantities in cart, optimizing order size and supporting bulk purchases.",
+      "functional_intent": "Verify that users can update item quantities in cart with proper validation, pricing recalculation, and inventory availability checks.",
+      "system_areas": [
+        "Cart",
+        "Shopping Cart",
+        "Inventory Management",
+        "Pricing Engine"
+      ],
+      "risk_tags": [
+        "transaction-integrity",
+        "inventory-validation",
+        "pricing-accuracy"
+      ],
+      "searchable_summary": "Cart quantity update test ensuring accurate quantity changes with proper pricing and inventory validation",
+      "keywords": [
+        "update",
+        "quantity",
+        "cart",
+        "shopping",
+        "modify",
+        "inventory",
+        "pricing"
+      ]
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C552",
+      "record_id": "TestRail_C552",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Pay using UPI - Scenario 45",
+      "preconditions_original": "Valid session and user is on Payment page",
+      "steps_original": [
+        "1. Execute pay using upi",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles pay using upi scenario"
+      ],
+      "priority": "4",
+      "type": "7",
+      "references": [],
+      "content_hash": "b3dd49d5c208a6dc3c90ae336d4e8f6109e9892c5bc238c328e490e9266abd2c",
+      "change_status": "new",
+      "kb_action": "include_in_active_kb",
+      "requires_contextualization": true,
+      "run_id": "run_20260517123502",
+      "shard_id": "delta_shard_004",
+      "business_context": "Supports UPI payment method popular in India, expanding payment options and improving conversion for regional customers.",
+      "functional_intent": "Verify that UPI payment processing works correctly with proper validation, authorization, and transaction confirmation.",
+      "system_areas": [
+        "Payment",
+        "Payment Gateway",
+        "UPI Integration",
+        "Transaction Processing"
+      ],
+      "risk_tags": [
+        "payment-critical",
+        "regional-payment",
+        "financial-transaction"
+      ],
+      "searchable_summary": "UPI payment processing test validating secure transaction handling for Indian payment method",
+      "keywords": [
+        "upi",
+        "payment",
+        "transaction",
+        "pay",
+        "india",
+        "digital-payment",
+        "financial"
+      ]
+    },
+    {
+      "schema_version": "testrail_context.v1",
+      "case_id": "C553",
+      "record_id": "TestRail_C553",
+      "source": "TestRail",
+      "project_id": 3,
+      "suite_id": 10,
+      "section_id": 77,
+      "title": "Pay using card - Scenario 46",
+      "preconditions_original": "Valid session and user is on Payment page",
+      "steps_original": [
+        "1. Execute pay using card",
+        "2. Capture response",
+        "3. Validate outcome"
+      ],
+      "expected_results_original": [
+        "System correctly handles pay using card scenario"
+      ],
+      "priority": "3",
+      "type": "7",
+      "references": [],
+      "content_hash": "483e3baa336202d081c5ae8fc33185ab3b974dd1f5469b78e236122a5f19730c",
+      "change_status": "new",
+      "kb_action": "include_in_active_kb",
+      "requires_contextualization": true,
+      "run_id": "run_20260517123502",
+      "shard_id": "delta_shard_004",
+      "business_context": "Critical payment functionality enabling card-based transactions, directly impacting revenue and customer satisfaction.",
+      "functional_intent": "Verify that card payment processing works correctly with proper validation, authorization, and secure transaction handling.",
+      "system_areas": [
+        "Payment",
+        "Payment Gateway",
+        "Transaction Processing",
+        "Security"
+      ],
+      "risk_tags": [
+        "payment-critical",
         "security",
-        "password policy"
+        "pci-compliance",
+        "financial-transaction"
+      ],
+      "searchable_summary": "Card payment processing test validating secure transaction handling and payment authorization",
+      "keywords": [
+        "payment",
+        "card",
+        "credit-card",
+        "transaction",
+        "pay",
+        "checkout",
+        "financial"
       ]
     }
   ]
