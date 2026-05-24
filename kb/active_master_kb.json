@@ -1,504 +1,293 @@
 {
-  "enriched_test_cases": [
-    {
-      "business_context": "Validates that users receive and can rely on timely push notifications for critical updates.",
-      "case_id": "C564",
-      "change_status": "new",
-      "content_hash": "e7a61ceda08f8c7e2f17d9e2fbbce8475d825439654d8769eb721028ce718e00",
-      "expected_results_original": [
-        "System correctly handles push notifications scenario"
-      ],
-      "functional_intent": "Verify the end-to-end handling, delivery, and display behavior of push notifications.",
-      "kb_action": "include_in_active_kb",
-      "keywords": [
-        "push notifications",
-        "notifications",
-        "system behavior",
-        "delivery",
-        "user alerts"
-      ],
-      "preconditions_original": "System active and user accesses Notifications",
-      "priority": "2",
-      "project_id": 3,
-      "record_id": "TestRail_C564",
-      "references": [],
-      "requires_contextualization": true,
-      "risk_tags": [
-        "Customer Experience",
-        "Reliability",
-        "Notification Delivery",
-        "Regression"
-      ],
-      "run_id": "run_20260517174927",
-      "schema_version": "testrail_context.v1",
-      "searchable_summary": "Ensures the system correctly processes and delivers push notifications, with expected behavior and results observed by the user.",
-      "section_id": 77,
-      "shard_id": "delta_shard_006",
-      "source": "TestRail",
-      "steps_original": [
-        "1. Trigger push notifications",
-        "2. Monitor system behavior",
-        "3. Verify expected results"
-      ],
-      "suite_id": 10,
-      "system_areas": [
-        "Notifications",
-        "Push Service",
-        "Mobile/Client App",
-        "Messaging Infrastructure"
-      ],
-      "title": "Push notifications - Scenario 7",
-      "type": "7"
-    },
-    {
-      "business_context": "Ensures transactional and informational emails are sent correctly so users receive critical communications.",
-      "case_id": "C565",
-      "change_status": "new",
-      "content_hash": "0086619441dd68ca97c8dbf55bbb4ecec329f4c2179ebad1bb74c7563e7cf01f",
-      "expected_results_original": [
-        "System correctly handles email notifications scenario"
-      ],
-      "functional_intent": "Validate that the system generates, queues, and sends email notifications with correct content and logging.",
-      "kb_action": "include_in_active_kb",
-      "keywords": [
-        "email notifications",
-        "transactional email",
-        "logs",
-        "notification system",
-        "messaging"
-      ],
-      "preconditions_original": "System active and user accesses Notifications",
-      "priority": "1",
-      "project_id": 3,
-      "record_id": "TestRail_C565",
-      "references": [],
-      "requires_contextualization": true,
-      "risk_tags": [
-        "Customer Communication",
-        "Reliability",
-        "Compliance",
-        "Email Delivery"
-      ],
-      "run_id": "run_20260517174927",
-      "schema_version": "testrail_context.v1",
-      "searchable_summary": "Verifies that email notifications are generated, sent, and logged correctly when notification workflows are executed.",
-      "section_id": 77,
-      "shard_id": "delta_shard_006",
-      "source": "TestRail",
-      "steps_original": [
-        "1. Perform email notifications",
-        "2. Observe logs/output",
-        "3. Confirm correctness"
-      ],
-      "suite_id": 10,
-      "system_areas": [
-        "Notifications",
-        "Email Service",
-        "Messaging Infrastructure",
-        "Logging"
-      ],
-      "title": "Email notifications - Scenario 8",
-      "type": "7"
-    },
-    {
-      "business_context": "Confirms that pricing is calculated accurately so users are charged the correct amount and revenue is protected.",
-      "case_id": "C566",
-      "change_status": "new",
-      "content_hash": "88d8b679b5f4f6257f77e8adeebc5f13009ee083919035e2b5efaf6195d59ce1",
-      "expected_results_original": [
-        "System correctly handles price calculation scenario"
-      ],
-      "functional_intent": "Verify the correctness and stability of the price calculation logic for the Pricing module.",
-      "kb_action": "include_in_active_kb",
-      "keywords": [
-        "price calculation",
-        "pricing module",
-        "billing",
-        "business rules",
-        "calculation logic"
-      ],
-      "preconditions_original": "User is logged in and on Pricing module",
-      "priority": "3",
-      "project_id": 3,
-      "record_id": "TestRail_C566",
-      "references": [],
-      "requires_contextualization": true,
-      "risk_tags": [
-        "Revenue Impact",
-        "Financial Accuracy",
-        "Business Rules",
-        "Regression"
-      ],
-      "run_id": "run_20260517174927",
-      "schema_version": "testrail_context.v1",
-      "searchable_summary": "Tests that the Pricing module correctly calculates prices using the configured business rules and produces the expected results.",
-      "section_id": 77,
-      "shard_id": "delta_shard_006",
-      "source": "TestRail",
-      "steps_original": [
-        "1. Trigger price calculation",
-        "2. Monitor system behavior",
-        "3. Verify expected results"
-      ],
-      "suite_id": 10,
-      "system_areas": [
-        "Pricing",
-        "Billing",
-        "Order Management",
-        "Business Rules Engine"
-      ],
-      "title": "Price calculation - Scenario 9",
-      "type": "7"
-    },
-    {
-      "business_context": "Ensures promotional coupons are applied correctly so discounts and campaigns behave as intended.",
-      "case_id": "C567",
-      "change_status": "new",
-      "content_hash": "8361f14c61b73275bdb35d849fb75dabe490115d0b131378ffc65a281a8167d2",
-      "expected_results_original": [
-        "System correctly handles apply coupon scenario"
-      ],
-      "functional_intent": "Validate that coupon codes are applied according to promotion rules and adjust pricing accurately.",
-      "kb_action": "include_in_active_kb",
-      "keywords": [
-        "apply coupon",
-        "promo",
-        "discount",
-        "pricing",
-        "promotion rules"
-      ],
-      "preconditions_original": "System active and user accesses Promo",
-      "priority": "4",
-      "project_id": 3,
-      "record_id": "TestRail_C567",
-      "references": [],
-      "requires_contextualization": true,
-      "risk_tags": [
-        "Revenue Impact",
-        "Discount Miscalculation",
-        "Promotion Integrity",
-        "Customer Experience"
-      ],
-      "run_id": "run_20260517174927",
-      "schema_version": "testrail_context.v1",
-      "searchable_summary": "Checks that applying a coupon in the Promo area correctly enforces promotion business rules and updates pricing as expected.",
-      "section_id": 77,
-      "shard_id": "delta_shard_006",
-      "source": "TestRail",
-      "steps_original": [
-        "1. Initiate apply coupon",
-        "2. Check output",
-        "3. Validate business rules"
-      ],
-      "suite_id": 10,
-      "system_areas": [
-        "Promotions",
-        "Pricing",
-        "Checkout",
-        "Business Rules Engine"
-      ],
-      "title": "Apply coupon - Scenario 10",
-      "type": "7"
-    },
-    {
-      "business_context": "Validates that administrators can add new products to the catalog accurately for downstream sales and inventory processes.",
-      "case_id": "C568",
-      "change_status": "new",
-      "content_hash": "e482cdaa74136ac57cfd367739f31154cfcbdd75e9427795de46d1abb4d64643",
-      "expected_results_original": [
-        "System correctly handles admin add product scenario"
-      ],
-      "functional_intent": "Verify the admin workflow for adding products, including field validation and business rule enforcement.",
-      "kb_action": "include_in_active_kb",
-      "keywords": [
-        "admin add product",
-        "product catalog",
-        "admin page",
-        "business rules",
-        "data entry"
-      ],
-      "preconditions_original": "Valid session and user is on Admin page",
-      "priority": "2",
-      "project_id": 3,
-      "record_id": "TestRail_C568",
-      "references": [],
-      "requires_contextualization": true,
-      "risk_tags": [
-        "Data Integrity",
-        "Catalog Accuracy",
-        "Admin Functionality",
-        "Regression"
-      ],
-      "run_id": "run_20260517174927",
-      "schema_version": "testrail_context.v1",
-      "searchable_summary": "Confirms that an admin can successfully add a new product from the Admin page with all business rules and validations applied.",
-      "section_id": 77,
-      "shard_id": "delta_shard_006",
-      "source": "TestRail",
-      "steps_original": [
-        "1. Initiate admin add product",
-        "2. Check output",
-        "3. Validate business rules"
-      ],
-      "suite_id": 10,
-      "system_areas": [
-        "Admin",
-        "Product Catalog",
-        "Inventory",
-        "Data Management"
-      ],
-      "title": "Admin add product - Scenario 11",
-      "type": "7"
-    },
-    {
-      "business_context": "Ensures inventory levels are updated correctly so stock, ordering, and fulfillment decisions remain accurate.",
-      "case_id": "C569",
-      "change_status": "new",
-      "content_hash": "4cb7ed422a426d9aed43795733e750c92cf4813c9529cfcb1378be108c4fcdc7",
-      "expected_results_original": [
-        "System correctly handles inventory update scenario"
-      ],
-      "functional_intent": "Validate that inventory updates from the Inventory page are processed according to defined business rules.",
-      "kb_action": "include_in_active_kb",
-      "keywords": [
-        "inventory update",
-        "inventory page",
-        "stock levels",
-        "business rules",
-        "inventory management"
-      ],
-      "preconditions_original": "Valid session and user is on Inventory page",
-      "priority": "2",
-      "project_id": 3,
-      "record_id": "TestRail_C569",
-      "references": [],
-      "requires_contextualization": true,
-      "risk_tags": [
-        "Inventory Accuracy",
-        "Operational Risk",
-        "Data Integrity",
-        "Regression"
-      ],
-      "run_id": "run_20260517174927",
-      "schema_version": "testrail_context.v1",
-      "searchable_summary": "Verifies that performing an inventory update from the Inventory page correctly adjusts stock data and enforces business rules.",
-      "section_id": 77,
-      "shard_id": "delta_shard_006",
-      "source": "TestRail",
-      "steps_original": [
-        "1. Initiate inventory update",
-        "2. Check output",
-        "3. Validate business rules"
-      ],
-      "suite_id": 10,
-      "system_areas": [
-        "Inventory",
-        "Warehouse Management",
-        "Product Catalog",
-        "Data Management"
-      ],
-      "title": "Inventory update - Scenario 12",
-      "type": "7"
-    },
-    {
-      "business_context": "Confirms the platform can scale to handle at least 10k concurrent users without performance degradation.",
-      "case_id": "C570",
-      "change_status": "new",
-      "content_hash": "0efea856e7cf1288e717774f7b3c6632c84046eb9a0a55918c18ca9a0bda89ae",
-      "expected_results_original": [
-        "System correctly handles support 10k users scenario"
-      ],
-      "functional_intent": "Validate system performance and capacity under a 10k user load scenario.",
-      "kb_action": "include_in_active_kb",
-      "keywords": [
-        "support 10k users",
-        "performance",
-        "load testing",
-        "scalability",
-        "concurrency"
-      ],
-      "preconditions_original": "System active and user accesses Performance",
-      "priority": "3",
-      "project_id": 3,
-      "record_id": "TestRail_C570",
-      "references": [],
-      "requires_contextualization": true,
-      "risk_tags": [
-        "Performance",
-        "Scalability",
-        "Availability",
-        "Capacity Planning"
-      ],
-      "run_id": "run_20260517174927",
-      "schema_version": "testrail_context.v1",
-      "searchable_summary": "Assesses whether the system can support a load of 10k users by executing performance workflows and validating outcomes.",
-      "section_id": 77,
-      "shard_id": "delta_shard_006",
-      "source": "TestRail",
-      "steps_original": [
-        "1. Execute support 10k users",
-        "2. Capture response",
-        "3. Validate outcome"
-      ],
-      "suite_id": 10,
-      "system_areas": [
-        "Performance",
-        "Scalability",
-        "Infrastructure",
-        "Load Balancing"
-      ],
-      "title": "Support 10k users - Scenario 13",
-      "type": "7"
-    },
-    {
-      "business_context": "Ensures that database failover works correctly so the system remains available during primary database outages.",
-      "case_id": "C571",
-      "change_status": "new",
-      "content_hash": "109a1171d704c0dfa61cd41db55b0652442503aeed8a95fe9eac9953db5957b3",
-      "expected_results_original": [
-        "System correctly handles database failover scenario"
-      ],
-      "functional_intent": "Verify the behavior and correctness of the database failover process managed by the resilience service.",
-      "kb_action": "include_in_active_kb",
-      "keywords": [
-        "database failover",
-        "resilience service",
-        "high availability",
-        "failover process",
-        "disaster recovery"
-      ],
-      "preconditions_original": "Resilience service available and ready for operations",
-      "priority": "3",
-      "project_id": 3,
-      "record_id": "TestRail_C571",
-      "references": [],
-      "requires_contextualization": true,
-      "risk_tags": [
-        "Availability",
-        "Disaster Recovery",
-        "Data Integrity",
-        "Operational Risk"
-      ],
-      "run_id": "run_20260517174927",
-      "schema_version": "testrail_context.v1",
-      "searchable_summary": "Tests that initiating a database failover via the resilience service maintains system availability and satisfies failover rules.",
-      "section_id": 77,
-      "shard_id": "delta_shard_006",
-      "source": "TestRail",
-      "steps_original": [
-        "1. Initiate database failover",
-        "2. Check output",
-        "3. Validate business rules"
-      ],
-      "suite_id": 10,
-      "system_areas": [
-        "Database",
-        "Resilience",
-        "High Availability",
-        "Infrastructure"
-      ],
-      "title": "Database failover - Scenario 14",
-      "type": "7"
-    },
-    {
-      "business_context": "Validates that users can authenticate via Google, improving sign-up and login convenience.",
-      "case_id": "C572",
-      "change_status": "new",
-      "content_hash": "124aff80e2ee6eaa35392e9267b10c00096ae8707586e459e15cd09386478417",
-      "expected_results_original": [
-        "System correctly handles login with google scenario"
-      ],
-      "functional_intent": "Verify the Google-based single sign-on login flow through the authentication service.",
-      "kb_action": "include_in_active_kb",
-      "keywords": [
-        "login with Google",
-        "Google SSO",
-        "authentication",
-        "OAuth",
-        "auth service"
-      ],
-      "preconditions_original": "Auth service available and ready for operations",
-      "priority": "2",
-      "project_id": 3,
-      "record_id": "TestRail_C572",
-      "references": [],
-      "requires_contextualization": true,
-      "risk_tags": [
-        "Security",
-        "Access Control",
-        "Third-Party Integration",
-        "Compliance"
-      ],
-      "run_id": "run_20260517174927",
-      "schema_version": "testrail_context.v1",
-      "searchable_summary": "Checks that users can successfully log in with Google through the auth service and that outputs and logs indicate a correct SSO flow.",
-      "section_id": 77,
-      "shard_id": "delta_shard_006",
-      "source": "TestRail",
-      "steps_original": [
-        "1. Perform login with google",
-        "2. Observe logs/output",
-        "3. Confirm correctness"
-      ],
-      "suite_id": 10,
-      "system_areas": [
-        "Authentication",
-        "Single Sign-On",
-        "OAuth/OpenID",
-        "User Management"
-      ],
-      "title": "Login with Google - Scenario 15",
-      "type": "7"
-    },
-    {
-      "business_context": "Ensures users can securely reset their passwords to regain access without compromising account security.",
-      "case_id": "C573",
-      "change_status": "new",
-      "content_hash": "bd23442abdb92b923c91154fa6d527a0d872fc53e2dc554a8176223a33f05d33",
-      "expected_results_original": [
-        "System correctly handles password reset scenario"
-      ],
-      "functional_intent": "Validate the password reset workflow from the Auth page, including behavior and expected outcomes.",
-      "kb_action": "include_in_active_kb",
-      "keywords": [
-        "password reset",
-        "auth page",
-        "account recovery",
-        "authentication",
-        "security"
-      ],
-      "preconditions_original": "Valid session and user is on Auth page",
-      "priority": "4",
-      "project_id": 3,
-      "record_id": "TestRail_C573",
-      "references": [],
-      "requires_contextualization": true,
-      "risk_tags": [
-        "Security",
-        "Access Control",
-        "Account Recovery",
-        "User Experience"
-      ],
-      "run_id": "run_20260517174927",
-      "schema_version": "testrail_context.v1",
-      "searchable_summary": "Verifies that triggering a password reset from the Auth page correctly executes the account recovery flow with expected secure behavior.",
-      "section_id": 77,
-      "shard_id": "delta_shard_006",
-      "source": "TestRail",
-      "steps_original": [
-        "1. Trigger password reset",
-        "2. Monitor system behavior",
-        "3. Verify expected results"
-      ],
-      "suite_id": 10,
-      "system_areas": [
-        "Authentication",
-        "User Account Management",
-        "Security",
-        "Notifications"
-      ],
-      "title": "Password reset - Scenario 16",
-      "type": "7"
-    }
-  ]
+  "branch": "main",
+  "case_count": 10,
+  "data": {
+    "case_count": 10,
+    "cases": [
+      {
+        "case_id": "C564",
+        "change_status": "new",
+        "content_hash": "e7a61ceda08f8c7e2f17d9e2fbbce8475d825439654d8769eb721028ce718e00",
+        "expected_results_original": [
+          "System correctly handles push notifications scenario"
+        ],
+        "kb_action": "include_in_active_kb",
+        "preconditions_original": "System active and user accesses Notifications",
+        "priority": "2",
+        "project_id": 3,
+        "record_id": "TestRail_C564",
+        "references": [],
+        "requires_contextualization": true,
+        "run_id": "run_20260517174927",
+        "schema_version": "testrail_context.v1",
+        "section_id": 77,
+        "shard_id": "delta_shard_006",
+        "source": "TestRail",
+        "steps_original": [
+          "1. Trigger push notifications",
+          "2. Monitor system behavior",
+          "3. Verify expected results"
+        ],
+        "suite_id": 10,
+        "title": "Push notifications - Scenario 7",
+        "type": "7"
+      },
+      {
+        "case_id": "C565",
+        "change_status": "new",
+        "content_hash": "0086619441dd68ca97c8dbf55bbb4ecec329f4c2179ebad1bb74c7563e7cf01f",
+        "expected_results_original": [
+          "System correctly handles email notifications scenario"
+        ],
+        "kb_action": "include_in_active_kb",
+        "preconditions_original": "System active and user accesses Notifications",
+        "priority": "1",
+        "project_id": 3,
+        "record_id": "TestRail_C565",
+        "references": [],
+        "requires_contextualization": true,
+        "run_id": "run_20260517174927",
+        "schema_version": "testrail_context.v1",
+        "section_id": 77,
+        "shard_id": "delta_shard_006",
+        "source": "TestRail",
+        "steps_original": [
+          "1. Perform email notifications",
+          "2. Observe logs/output",
+          "3. Confirm correctness"
+        ],
+        "suite_id": 10,
+        "title": "Email notifications - Scenario 8",
+        "type": "7"
+      },
+      {
+        "case_id": "C566",
+        "change_status": "new",
+        "content_hash": "88d8b679b5f4f6257f77e8adeebc5f13009ee083919035e2b5efaf6195d59ce1",
+        "expected_results_original": [
+          "System correctly handles price calculation scenario"
+        ],
+        "kb_action": "include_in_active_kb",
+        "preconditions_original": "User is logged in and on Pricing module",
+        "priority": "3",
+        "project_id": 3,
+        "record_id": "TestRail_C566",
+        "references": [],
+        "requires_contextualization": true,
+        "run_id": "run_20260517174927",
+        "schema_version": "testrail_context.v1",
+        "section_id": 77,
+        "shard_id": "delta_shard_006",
+        "source": "TestRail",
+        "steps_original": [
+          "1. Trigger price calculation",
+          "2. Monitor system behavior",
+          "3. Verify expected results"
+        ],
+        "suite_id": 10,
+        "title": "Price calculation - Scenario 9",
+        "type": "7"
+      },
+      {
+        "case_id": "C567",
+        "change_status": "new",
+        "content_hash": "8361f14c61b73275bdb35d849fb75dabe490115d0b131378ffc65a281a8167d2",
+        "expected_results_original": [
+          "System correctly handles apply coupon scenario"
+        ],
+        "kb_action": "include_in_active_kb",
+        "preconditions_original": "System active and user accesses Promo",
+        "priority": "4",
+        "project_id": 3,
+        "record_id": "TestRail_C567",
+        "references": [],
+        "requires_contextualization": true,
+        "run_id": "run_20260517174927",
+        "schema_version": "testrail_context.v1",
+        "section_id": 77,
+        "shard_id": "delta_shard_006",
+        "source": "TestRail",
+        "steps_original": [
+          "1. Initiate apply coupon",
+          "2. Check output",
+          "3. Validate business rules"
+        ],
+        "suite_id": 10,
+        "title": "Apply coupon - Scenario 10",
+        "type": "7"
+      },
+      {
+        "case_id": "C568",
+        "change_status": "new",
+        "content_hash": "e482cdaa74136ac57cfd367739f31154cfcbdd75e9427795de46d1abb4d64643",
+        "expected_results_original": [
+          "System correctly handles admin add product scenario"
+        ],
+        "kb_action": "include_in_active_kb",
+        "preconditions_original": "Valid session and user is on Admin page",
+        "priority": "2",
+        "project_id": 3,
+        "record_id": "TestRail_C568",
+        "references": [],
+        "requires_contextualization": true,
+        "run_id": "run_20260517174927",
+        "schema_version": "testrail_context.v1",
+        "section_id": 77,
+        "shard_id": "delta_shard_006",
+        "source": "TestRail",
+        "steps_original": [
+          "1. Initiate admin add product",
+          "2. Check output",
+          "3. Validate business rules"
+        ],
+        "suite_id": 10,
+        "title": "Admin add product - Scenario 11",
+        "type": "7"
+      },
+      {
+        "case_id": "C569",
+        "change_status": "new",
+        "content_hash": "4cb7ed422a426d9aed43795733e750c92cf4813c9529cfcb1378be108c4fcdc7",
+        "expected_results_original": [
+          "System correctly handles inventory update scenario"
+        ],
+        "kb_action": "include_in_active_kb",
+        "preconditions_original": "Valid session and user is on Inventory page",
+        "priority": "2",
+        "project_id": 3,
+        "record_id": "TestRail_C569",
+        "references": [],
+        "requires_contextualization": true,
+        "run_id": "run_20260517174927",
+        "schema_version": "testrail_context.v1",
+        "section_id": 77,
+        "shard_id": "delta_shard_006",
+        "source": "TestRail",
+        "steps_original": [
+          "1. Initiate inventory update",
+          "2. Check output",
+          "3. Validate business rules"
+        ],
+        "suite_id": 10,
+        "title": "Inventory update - Scenario 12",
+        "type": "7"
+      },
+      {
+        "case_id": "C570",
+        "change_status": "new",
+        "content_hash": "0efea856e7cf1288e717774f7b3c6632c84046eb9a0a55918c18ca9a0bda89ae",
+        "expected_results_original": [
+          "System correctly handles support 10k users scenario"
+        ],
+        "kb_action": "include_in_active_kb",
+        "preconditions_original": "System active and user accesses Performance",
+        "priority": "3",
+        "project_id": 3,
+        "record_id": "TestRail_C570",
+        "references": [],
+        "requires_contextualization": true,
+        "run_id": "run_20260517174927",
+        "schema_version": "testrail_context.v1",
+        "section_id": 77,
+        "shard_id": "delta_shard_006",
+        "source": "TestRail",
+        "steps_original": [
+          "1. Execute support 10k users",
+          "2. Capture response",
+          "3. Validate outcome"
+        ],
+        "suite_id": 10,
+        "title": "Support 10k users - Scenario 13",
+        "type": "7"
+      },
+      {
+        "case_id": "C571",
+        "change_status": "new",
+        "content_hash": "109a1171d704c0dfa61cd41db55b0652442503aeed8a95fe9eac9953db5957b3",
+        "expected_results_original": [
+          "System correctly handles database failover scenario"
+        ],
+        "kb_action": "include_in_active_kb",
+        "preconditions_original": "Resilience service available and ready for operations",
+        "priority": "3",
+        "project_id": 3,
+        "record_id": "TestRail_C571",
+        "references": [],
+        "requires_contextualization": true,
+        "run_id": "run_20260517174927",
+        "schema_version": "testrail_context.v1",
+        "section_id": 77,
+        "shard_id": "delta_shard_006",
+        "source": "TestRail",
+        "steps_original": [
+          "1. Initiate database failover",
+          "2. Check output",
+          "3. Validate business rules"
+        ],
+        "suite_id": 10,
+        "title": "Database failover - Scenario 14",
+        "type": "7"
+      },
+      {
+        "case_id": "C572",
+        "change_status": "new",
+        "content_hash": "124aff80e2ee6eaa35392e9267b10c00096ae8707586e459e15cd09386478417",
+        "expected_results_original": [
+          "System correctly handles login with google scenario"
+        ],
+        "kb_action": "include_in_active_kb",
+        "preconditions_original": "Auth service available and ready for operations",
+        "priority": "2",
+        "project_id": 3,
+        "record_id": "TestRail_C572",
+        "references": [],
+        "requires_contextualization": true,
+        "run_id": "run_20260517174927",
+        "schema_version": "testrail_context.v1",
+        "section_id": 77,
+        "shard_id": "delta_shard_006",
+        "source": "TestRail",
+        "steps_original": [
+          "1. Perform login with google",
+          "2. Observe logs/output",
+          "3. Confirm correctness"
+        ],
+        "suite_id": 10,
+        "title": "Login with Google - Scenario 15",
+        "type": "7"
+      },
+      {
+        "case_id": "C573",
+        "change_status": "new",
+        "content_hash": "bd23442abdb92b923c91154fa6d527a0d872fc53e2dc554a8176223a33f05d33",
+        "expected_results_original": [
+          "System correctly handles password reset scenario"
+        ],
+        "kb_action": "include_in_active_kb",
+        "preconditions_original": "Valid session and user is on Auth page",
+        "priority": "4",
+        "project_id": 3,
+        "record_id": "TestRail_C573",
+        "references": [],
+        "requires_contextualization": true,
+        "run_id": "run_20260517174927",
+        "schema_version": "testrail_context.v1",
+        "section_id": 77,
+        "shard_id": "delta_shard_006",
+        "source": "TestRail",
+        "steps_original": [
+          "1. Trigger password reset",
+          "2. Monitor system behavior",
+          "3. Verify expected results"
+        ],
+        "suite_id": 10,
+        "title": "Password reset - Scenario 16",
+        "type": "7"
+      }
+    ],
+    "shard_id": "delta_shard_006"
+  },
+  "file_path": "processed/delta_shared/delta_shard_006.json",
+  "repository": "TestRail-Repo",
+  "status": "success"
 }
